@@ -3,6 +3,8 @@
 
 
 # comments are ignored in the code, this is for you to make notes about what the code does
+# you can comment a line you are on by pressing control + /
+# you can comment multiple lines as well if you have multiple lines selected
 
 # this is a single line comment
 print("this stuff below wont get commented because its not on the same line")
@@ -45,11 +47,8 @@ number = False
     
 """
 
-variable = 2
-number = 5
 
-number = variable # you can assign one variable to another
-# number is now 2
+
 
 
 """
@@ -74,7 +73,9 @@ number = variable # you can assign one variable to another
 
 
 
-im_going_to_print_this = """Check this out you can print a triple comment, you cant do it with single line prints"""
+im_going_to_print_this = """
+Check this out you can print a triple comment, 
+but you cant do it with single line prints"""
 print(im_going_to_print_this)
 
 # whats cool about this is it will print it out as you see it in triple quotes with the proper tabs and format
@@ -110,3 +111,14 @@ cool_print = """
 """
 
 print(cool_print)
+
+# print examples
+print(2)
+print("Hello")
+mylist = ["a", "list", "of", "words"] # literally print anything
+print(mylist)
+
+"""
+    Printing is probably the most useful tool you have, if you dont know what is happening, print it out!
+"""
+
