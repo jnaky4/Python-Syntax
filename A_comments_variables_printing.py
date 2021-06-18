@@ -47,11 +47,13 @@ number = False
     
 """
 
+
 variable = 2
 number = 5
 
 number = variable # you can assign one variable to another
 # number is now 2
+
 
 
 """
