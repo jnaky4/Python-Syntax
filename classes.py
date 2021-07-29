@@ -1,5 +1,6 @@
 import unittest
 
+
 class Taco:
     tomatos = 14
     meat_chunks = 22
@@ -110,36 +111,67 @@ item2.display()
 print('  (Expires:({}))'.format(item2.get_expiration()))
 
 
+# access modifiers
+# public
+class Student:
+    schoolName = 'XYZ School' # class attribute
+
+    def __init__(self, name, age):
+        self.name = name # instance attribute
+        self.age = age # instance attribute
+
+
+# protected _ leading variables
+class Student1:
+    _schoolName = 'XYZ School'  # protected class attribute
+
+    def __init__(self, name, age):
+        self._name = name  # protected instance attribute
+        self._age = age  # protected instance attribute
+
+
+# private __ leading variables
+class Student3:
+    __schoolName = 'XYZ School' # private class attribute
+
+    def __init__(self, name, age):
+        self.__name = name  # private instance attribute
+
+    def __display(self):  # private method
+        print('This is private method.')
+
+
 # overriding
 class Item:
-   def __init__(self):
+    def __init__(self):
        self.name = ''
        self.quantity = 0
 
-   def set_name(self, nm):
+    def set_name(self, nm):
        self.name = nm
 
-   def set_quantity(self, qnty):
+    def set_quantity(self, qnty):
        self.quantity = qnty
 
-   def display(self):
+    def display(self):
        print(self.name, self.quantity)
 
 
 class Produce(Item):  # Derived from Item
-   def __init__(self):
-       Item.__init__(self)  # Call base class constructor
-       self.expiration = ''
+    def __init__(self):
+        super().__init__()  # Call base class constructor
+        # Item.__init__(self)  # does the same thing, just shows who the super class is
+        self.expiration = ''
 
-   def set_expiration(self, expir):
-       self.expiration = expir
+    def set_expiration(self, expir):
+        self.expiration = expir
 
-   def get_expiration(self):
-       return self.expiration
+    def get_expiration(self):
+        return self.expiration
 
-   def display(self):
-       print(self.name, self.quantity, end=' ')
-       print('  (Expires: {})'.format(self.expiration))
+    def display(self):
+        print(self.name, self.quantity, end=' ')
+        print('  (Expires: {})'.format(self.expiration))
 
 
 item1 = Item()
@@ -171,6 +203,8 @@ assertGreaterEqual(a, b)	a >= b
 assertLess(a, b)	a < b
 assertLessEqual(a, b)	a <= b
 """
+
+
 # Unit testing
 # User-defined class
 class Circle(object):
@@ -193,6 +227,7 @@ class TestCircle(unittest.TestCase):
     def test_will_fail(self):
         c = Circle(5)
         self.assertLess(c.compute_area(), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

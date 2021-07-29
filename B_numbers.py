@@ -34,3 +34,27 @@ number = 5 // 2 # this will round the number down to 2 and keep it an integer
 """
 remainder = 10 % 3 # 10 / 3 = 3 with a remainder of 1, remainder will get assigned
 
+
+
+
+
+
+"""
+with replacement -> a stat term meaning dont remove the value from the list when you roll it, 
+rolls 100 times, betweeen 0 or 1
+sum cumulative total
+
+30% chance of 0, 70% chance of 1
+"""
+from numpy.random import choice
+
+def flip(flips):
+    r = [0,1]
+    trials = 0
+    for i in range(flips):
+        trials += choice(r, p=[0.3, 0.7], replace=True)
+
+    return trials
+
+
+print(flip(100))

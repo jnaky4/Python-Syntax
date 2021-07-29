@@ -14,30 +14,30 @@ players = {
 players['jack'] = 4
 players["jake"] = 69
 
-print(players)
-print(players["jake"])
+# print(players)
+# print(players["jake"])
 
 del players["jack"]
 
 # clear a dictionary
 my_dict = {'Ahmad': 1, 'Jane': 42}
 my_dict.clear()
-print(my_dict)
+# print(my_dict)
 
 # get key from dictionary, if doesnt exist returns N/A
 my_dict = {'Ahmad': 1, 'Jane': 42}
-print(my_dict.get('Jane', 'N/A'))
-print(my_dict.get('Chad', 'N/A'))
+# print(my_dict.get('Jane', 'N/A'))
+# print(my_dict.get('Chad', 'N/A'))
 
 # merging dictionaries, if duplicate keys, the dict being merged into keys are replaced
 my_dict = {'Ahmad': 1, 'Jane': 42}
 my_dict.update({'John': 50})
-print(my_dict)
+# print(my_dict)
 
 # removes a key
 my_dict = {'Ahmad': 1, 'Jane': 42}
 val = my_dict.pop('Ahmad')
-print(my_dict)
+# print(my_dict)
 
 # iterations
 # iterate items
@@ -116,7 +116,7 @@ while user_input != 'exit':
         total_points = sum([i for i in homeworks]) + midterm + final
         print('Final percentage: {:.1f}%'.format(100*(total_points / 500.0)))
 
-    user_input = input('Enter student name: ')
+    user_input = "exit"
 
 
 
@@ -134,3 +134,56 @@ print('Time is: %(month)02d/%(day)02d/%(year)04d  %(hour)02d:%(min)02d %(sec)02d
         'hour': gmt.tm_hour, 'min': gmt.tm_min, 'sec': gmt.tm_sec
       }
 )
+
+dict = {
+    # equipment_id
+    45 : {
+        # company_id
+        1 : {
+            "eq_name" : "leaf blower",
+            "comp_name" : "Riven-dell computers",
+            "day" : 20,
+            "week" : 100,
+            "month" : 400
+        },
+        2: {
+            "eq_name" : "leaf blower",
+            "comp_name": "Abalonga Wonga",
+            "day": 40,
+            "week": 350,
+            "month": 4000
+        }
+    },
+    22 : {
+
+        # company_id
+        1: {
+            "eq_name": "tacos",
+            "comp_name": "six flags",
+            "day": 20,
+            "week": 100,
+            "month": 400
+        },
+        2: {
+            "eq_name": "chainsaw 3000",
+            "comp_name": "Abalonga Wonga",
+            "day": 40,
+            "week": 350,
+            "month": 4000
+        }
+    }
+}
+
+# Nested Dictionary Example
+javascript_dict = {}
+
+for key,row in dict.items():
+    key_name = key
+    for key2,column in row.items():
+        print(key2)
+        print(column)
+
+
+eq_id = 22
+comp_id = 1
+#print(dict[eq_id][comp_id])

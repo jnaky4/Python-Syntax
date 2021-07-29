@@ -27,7 +27,7 @@ set.clear(nums2)
 """A set is often used to reduce a list of items that potentially contains duplicates into a collection of unique values.
 Simply passing a list into set() will cause any duplicates to be omitted in the created set."""
 # Initial list contains some duplicate values
-first_names = [ 'Harry', 'Hermione', 'Ron', 'Harry', 'Albus', 'Ron', 'Ron' ]
+first_names = ['Harry', 'Hermione', 'Ron', 'Harry', 'Albus', 'Ron', 'Ron']
 
 # Creating a set removes any duplicate values
 names_set = set(first_names)
@@ -51,3 +51,4 @@ result_set = result_set.intersection(names3)
 
 # Difference btwn result_set and names4
 result_set = result_set.difference(names4)
+
