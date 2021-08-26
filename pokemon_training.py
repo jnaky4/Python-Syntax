@@ -9,7 +9,8 @@ filename = "Pokemon.csv"
 
 # explanation of csv reader
 # https://www.delftstack.com/howto/python/python-csv-to-dictionary/
-items = pd.read_csv(filename, index_col=0)
+# UTF encoding error with this csv use cp1252
+items = pd.read_csv(filename, index_col=0, sep=",", encoding='cp1252')
 
 # print(items)
 
@@ -29,7 +30,7 @@ print(pokemon_csv_data[1]['Description'])
 
 class Pokedex():
     # static member
-    pokedex_dict = create_pokedex_dict()
+    # pokedex_dict = Pokedex.create_pokedex_dict()
 
     # Constructor
 

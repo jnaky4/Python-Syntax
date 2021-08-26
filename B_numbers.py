@@ -37,8 +37,6 @@ remainder = 10 % 3 # 10 / 3 = 3 with a remainder of 1, remainder will get assign
 
 
 
-
-
 """
 with replacement -> a stat term meaning dont remove the value from the list when you roll it, 
 rolls 100 times, betweeen 0 or 1

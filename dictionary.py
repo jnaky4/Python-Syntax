@@ -1,4 +1,5 @@
 import time
+import pandas as pd
 
 # initalize dictionary to specific size
 a = dict.fromkeys((range(4000000)))
@@ -187,3 +188,49 @@ for key,row in dict.items():
 eq_id = 22
 comp_id = 1
 #print(dict[eq_id][comp_id])
+
+
+"""
+Nested dictionary Creation
+
+"""
+# Create Nested Dictionary
+listy = [1,2,3,4]
+layer2 = [6,54,3]
+test_dict = {}
+
+# first layer creation
+for item in listy:
+    if item not in test_dict:
+        test_dict[item] = {}
+
+# second layer
+for item in test_dict:
+    for li in layer2:
+        if li not in test_dict[item]:
+            test_dict[item][li] = layer2
+print(test_dict)
+
+
+"""
+CSV to Dictionary
+"""
+
+# csv to dictionary example
+filename = "Pokemon.csv"
+
+# explanation of csv reader
+# https://www.delftstack.com/howto/python/python-csv-to-dictionary/
+# UTF encoding error with this csv use cp1252
+items = pd.read_csv(filename, index_col=0, sep=",", encoding='cp1252')
+
+
+# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transpose.html?highlight=transpose#pandas.DataFrame.transpose
+# transpose flips the keys to be the row instead of column
+pokemon_csv_data = items.transpose().to_dict(orient='series')
+
+
+# example of accessing values
+# key is the pokedex number, 1 is bulbasaur
+# print(pokemon_dictionary)
+print(pokemon_csv_data[1]['Description'])
