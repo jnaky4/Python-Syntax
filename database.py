@@ -14,8 +14,6 @@ engine = create_engine('sqlite:///:memory:')
 
 base = declarative_base()
 
-
-
 pokemon_csv = "./Pokemon.csv"
 
 # explanation of csv reader
@@ -67,7 +65,6 @@ class Pokemon(base):
                 self.base_exp, self.catch_rate, self.description)
 
 
-
 def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
     return Pokemon(
         dexnum=dexnum,
@@ -89,25 +86,11 @@ def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
 
 
 
-class Student(base):
-    __tablename__ = 'Students'
-    StudentID = Column(Integer, primary_key=True)
-    name = Column(String)
-    age = Column(Integer)
-    marks = Column(Integer)
-
-
-
 
 base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
 session = Session()
-
-
-# s1 = Student(name='Juhi', age=25, marks=200)
-# sessionobj.add(s1)
-# sessionobj.commit()
 
 for i in range(1, 152):
     created_pokemon = createPokemon(i, pokemon_csv_dict)

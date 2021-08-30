@@ -92,9 +92,15 @@ mylist = ["a", "list", "of", "words"] # literally print anything
 print(mylist)
 
 
+"""
+f strings are a better solution to printing variables
+"""
+print(f"My List: {mylist}")
+
 
 im_going_to_print_this = """
 Check this out you can print a triple comment, 
+Triple Quotes are called a Docstring
 but you cant do it with single line prints"""
 print(im_going_to_print_this)
 
