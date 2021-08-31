@@ -1,12 +1,40 @@
-from sqlalchemy import create_engine, Column, Integer, String, Numeric, Float
+from sqlalchemy import create_engine, Column, Integer, String, Numeric, Float, Table, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy_utils import database_exists, create_database
 import pandas as pd
 from typing import Dict
+from docker_library import is_container_running, run_container
+
+
+
+
+run_container("postgres", "pokemon-postgres")
+# look at docker_library for explanation of Docker
+container_running = is_container_running('pokemon-postgres')
+
+
+
+
+# if not container_running:
+#     pass
+
+
+# client.containers.run("postgres", detach=True, ports=[5432])
+
+
+# Manual Command to run a docker container
+# docker run --name pokemon-postgres -e POSTGRES_PASSWORD=pokemon -d -p 5432:5432 postgres
 
 
 # SQL Lite
-engine = create_engine('sqlite:///:memory:')
+# engine = create_engine('sqlite:///:memory:')
+
+# Postgres
+engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
+
+if not database_exists(engine.url):
+    create_database(engine.url)
 
 # My SQL
 # engine = create_engine('mysql+pymydsql://root@localhost/mydb')
@@ -37,7 +65,7 @@ class Pokemon(base):
     type2 = Column(String(10))
     stage = Column(String(12))
     evolve_level = Column(Integer)
-    gender_ratio = Column(String(5))
+    gender_ratio = Column(String(10))
     height = Column(Float(3))
     weight = Column(Float(3))
     description = Column(String(125))
@@ -86,6 +114,30 @@ def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
 
 
 
+metadata = MetaData()
+
+Pokedex_table = Table('Pokedex', metadata,
+    Column('dexnum', Integer, primary_key=True),
+    Column('name', String(11), nullable=False),
+    Column('type1', String(10), nullable=False),
+    Column('type2', String(10), nullable=True),
+    Column('stage', String(12), nullable=False),
+    Column('evolve_level', Integer, nullable=False),
+    Column('gender_ratio', String(5), nullable=False),
+    Column('height', Float(3), nullable=False),
+    Column('weight', Float(3), nullable=False),
+    Column('description', String(125), nullable=False),
+    Column('category', String(20), nullable=False),
+    Column('lvl_speed', Float(3), nullable=False),
+    Column('base_exp', Integer, nullable=False),
+    Column('catch_rate', Integer, nullable=False)
+                      )
+
+try:
+    Pokemon.__table__.drop(engine)
+except Exception as e:
+    print(e)
+
 
 base.metadata.create_all(engine)
 
@@ -102,17 +154,17 @@ query = session.query(Pokemon)
 P1 = query.get(1)
 print(P1)
 
-user_count = session.query(Pokemon).count()
-print(f"User Count Before Delete: {user_count}")
-
-# Id Of 1 no longer exists
-session.delete(P1)
-session.commit()
-
-user_count = session.query(Pokemon).count()
-print(f"User Count After Delete: {user_count}")
-
-
-query = session.query(Pokemon)
-P1 = query.get(2)
-print(P1)
+# user_count = session.query(Pokemon).count()
+# print(f"User Count Before Delete: {user_count}")
+#
+# # Id Of 1 no longer exists
+# session.delete(P1)
+# session.commit()
+#
+# user_count = session.query(Pokemon).count()
+# print(f"User Count After Delete: {user_count}")
+#
+#
+# query = session.query(Pokemon)
+# P1 = query.get(2)
+# print(P1)

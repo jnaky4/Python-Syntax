@@ -1,0 +1,7 @@
+.env
+.gitlab-ci.yml
+.gitignore
+.git/
+README.md
+__pycache__
+client_secrets.json
