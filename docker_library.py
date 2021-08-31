@@ -12,8 +12,9 @@ import platform
 # TODO add save container state as image
 # TODO add dockerfile/build from dockerfile: https://docs.docker.com/language/python/build-images/
 # TODO configure CI/CD for docker application: https://docs.docker.com/language/python/configure-ci-cd/
-# TODO add image and container class for type reference
-
+# TODO add image and container class for type reference:
+#   Image Object https://docker-py.readthedocs.io/en/stable/images.html#image-objects
+#   Container Object https://docker-py.readthedocs.io/en/stable/containers.html#container-objects
 
 def is_container_running(container_name: str) -> Optional[bool]:
     container_running = False
