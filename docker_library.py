@@ -2,11 +2,16 @@ import docker
 from typing import Optional, Dict
 import os
 import platform
+import time
+from docker.errors import APIError, NotFound
+
 
 # Docker Python SDK docs
 # https://docker-py.readthedocs.io/en/stable/
 # Docker Docs guide
 # https://docs.docker.com/language/python/
+# Docker Errors Example
+# https://www.programcreek.com/python/example/107515/docker.errors
 # TODO add Compose config to develop locally: https://docs.docker.com/language/python/develop/
 # TODO add build/run container method
 # TODO add save container state as image
@@ -15,6 +20,9 @@ import platform
 # TODO add image and container class for type reference:
 #   Image Object https://docker-py.readthedocs.io/en/stable/images.html#image-objects
 #   Container Object https://docker-py.readthedocs.io/en/stable/containers.html#container-objects
+# TODO add multiple Databases on start: https://github.com/mrts/docker-postgresql-multiple-databases
+# TODO add test query to confirm database is running line 183
+
 
 def is_container_running(container_name: str) -> Optional[bool]:
     container_running = False
@@ -29,8 +37,11 @@ def is_container_running(container_name: str) -> Optional[bool]:
         # get the state of the container
         container_state = docker_container.attrs['State']
         container_running = container_state['Status'] == 'running'
-        print(f"Container State: {container_running}")
+        print(f"Container Status: {container_state['Status']}")
 
+    except NotFound as e:
+        print(f"Container Doesn't Exists")
+        print(f"Error: {e}")
     except Exception as e:
         print(f"Error: {e}")
     finally:
@@ -48,8 +59,10 @@ def container_exists(container_name: Optional[str] = None, container_id: Optiona
     identification = container_name if container_id is None else container_id
     try:
         exists = docker_client.containers.get(identification)
-        print(f"Container ID: {exists.id}")
+        print(f"Container {identification} Exists ID: {exists.id}")
         return True
+    except NotFound as e:
+        print(f"Container Doesn't Exists: Error Generated: {e}")
     except Exception as e:
         print(f"Exception: {e}")
     return exists
@@ -77,8 +90,10 @@ def image_exists(image_name: str) -> Optional[bool]:
 
         """
         image = docker_client.images.get(image_name)
-        print(image.id)
+        print(f"Image {image_name} Exists: {image.id}")
         return True
+    except NotFound as e:
+        print(f"Image Doesn't Exists: Error Generated: {e}")
     except Exception as e:
         print(f"Exception: {e}")
         return False
@@ -138,6 +153,7 @@ def run_container(image_name: str, container_name: str):
         if not image_exists(image_name):
             image_id = pull_image(image_name)
             if image_id is None:
+                print("Image does not exist as a repository to pull from, try another name")
                 return
         try:
             """
@@ -162,18 +178,28 @@ def run_container(image_name: str, container_name: str):
                     A list of integers, if you want to bind multiple host ports to a single container port. For example: 
                         {'1111/tcp': [1234, 4567]}.
                 Incompatible with host network mode.
+                
+            Postgres Environment Variables:
+            https://github.com/docker-library/docs/tree/master/postgres
+            POSTGRES_DB
+                This optional environment variable can be used to define a different name for the default database that 
+                is created when the image is first started. If it is not specified, then the value of POSTGRES_USER will 
+                be used.
+                
+            POSTGRES_PASSWORD
+                This environment variable is required for you to use the PostgreSQL image. It must not be 
+                empty or undefined. This environment variable sets the superuser password for PostgreSQL. 
+                The default superuser is defined by the POSTGRES_USER environment variable.
             """
 
-            client.containers.run(image_name, detach=True, name=container_name, ports={'5432/tcp': 5432}, environment={"POSTGRES_PASSWORD":"pokemon"})
+            container_id = client.containers.run(image_name, detach=True, name=container_name, ports={'5432/tcp': 5432}, environment={"POSTGRES_PASSWORD":"pokemon", "POSTGRES_DB": "Pokemon"})
+            sleep_time = 2
+            print(f"Container {container_id} Started, waiting {sleep_time} seconds for database to initialize")
+            time.sleep(sleep_time)
         except Exception as e:
             print(f"Exception: {e}")
 
         pass
-
-
-
-
-
 
 
 def stop_all_containers():
@@ -206,10 +232,6 @@ def print_container_logs(container_name: Optional[str] = None, container_id: Opt
     client = docker.from_env()
     container = client.containers.get(identification)
     print(container.logs())
-
-
-
-
 
 
 if __name__ == "__main__":

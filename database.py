@@ -5,7 +5,7 @@ from sqlalchemy_utils import database_exists, create_database
 import pandas as pd
 from typing import Dict
 from docker_library import is_container_running, run_container
-
+import time
 
 
 
@@ -31,10 +31,17 @@ container_running = is_container_running('pokemon-postgres')
 # engine = create_engine('sqlite:///:memory:')
 
 # Postgres
+# Driver :// user : password @ hostname(uri) : port / Database
 engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
 
-if not database_exists(engine.url):
-    create_database(engine.url)
+# print("HERE")
+# abbreviated_database = 'postgresql://postgres:pokemon@localhost:5432/Pokemon'
+# if not database_exists(engine.url):
+#     create_database(abbreviated_database)
+#     # conn = engine.connect()
+#     # conn.execute("commit")
+#     # conn.execute("create database Pokemon")
+#     # conn.close()
 
 # My SQL
 # engine = create_engine('mysql+pymydsql://root@localhost/mydb')
@@ -60,9 +67,9 @@ class Pokemon(base):
     __tablename__ = 'Pokedex'
     dexnum = Column(Integer, primary_key=True)
     # some databases require len of stings
-    name = Column(String(11))
-    type1 = Column(String(10))
-    type2 = Column(String(10))
+    name = Column(String(11), nullable=False)
+    type1 = Column(String(10), nullable=False)
+    type2 = Column(String(10), nullable=True)
     stage = Column(String(12))
     evolve_level = Column(Integer)
     gender_ratio = Column(String(10))
@@ -111,38 +118,22 @@ def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
         catch_rate=int(pokemon_csv_dict[dexnum]['Catch_Rate']),
     )
 
-
-
-
 metadata = MetaData()
 
-Pokedex_table = Table('Pokedex', metadata,
-    Column('dexnum', Integer, primary_key=True),
-    Column('name', String(11), nullable=False),
-    Column('type1', String(10), nullable=False),
-    Column('type2', String(10), nullable=True),
-    Column('stage', String(12), nullable=False),
-    Column('evolve_level', Integer, nullable=False),
-    Column('gender_ratio', String(5), nullable=False),
-    Column('height', Float(3), nullable=False),
-    Column('weight', Float(3), nullable=False),
-    Column('description', String(125), nullable=False),
-    Column('category', String(20), nullable=False),
-    Column('lvl_speed', Float(3), nullable=False),
-    Column('base_exp', Integer, nullable=False),
-    Column('catch_rate', Integer, nullable=False)
-                      )
 
 try:
+    print("Dropping Table on startup")
     Pokemon.__table__.drop(engine)
 except Exception as e:
-    print(e)
+    print(f"Failed to Drop: Table doesn't exists")
 
 
+# # ERROR on first run
 base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
 session = Session()
+
 
 for i in range(1, 152):
     created_pokemon = createPokemon(i, pokemon_csv_dict)
@@ -154,17 +145,18 @@ query = session.query(Pokemon)
 P1 = query.get(1)
 print(P1)
 
-# user_count = session.query(Pokemon).count()
-# print(f"User Count Before Delete: {user_count}")
-#
-# # Id Of 1 no longer exists
-# session.delete(P1)
-# session.commit()
-#
-# user_count = session.query(Pokemon).count()
-# print(f"User Count After Delete: {user_count}")
-#
-#
-# query = session.query(Pokemon)
-# P1 = query.get(2)
-# print(P1)
+
+user_count = session.query(Pokemon).count()
+print(f"User Count Before Delete: {user_count}")
+
+# Id Of 1 no longer exists
+session.delete(P1)
+session.commit()
+
+user_count = session.query(Pokemon).count()
+print(f"User Count After Delete: {user_count}")
+
+
+query = session.query(Pokemon)
+P1 = query.get(2)
+print(P1)
