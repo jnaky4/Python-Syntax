@@ -1,13 +1,9 @@
-from sqlalchemy import create_engine, Column, Integer, String, Numeric, Float, Table, MetaData
+from sqlalchemy import create_engine, Column, Integer, String, Float, MetaData, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy_utils import database_exists, create_database
+from sqlalchemy.orm import sessionmaker, relationship, backref
 import pandas as pd
 from typing import Dict
-from docker_library import is_container_running, run_container
-import time
-
-
+from Docker.docker_library import is_container_running, run_container
 
 run_container("postgres", "pokemon-postgres")
 # look at docker_library for explanation of Docker
@@ -49,16 +45,20 @@ engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
 
 base = declarative_base()
 
-pokemon_csv = "./Pokemon.csv"
+pokemon_csv = "./CSV/Pokemon.csv"
+base_stats_csv = "./CSV/Base_Stats.csv"
+
 
 # explanation of csv reader
 # https://www.delftstack.com/howto/python/python-csv-to-dictionary/
-items = pd.read_csv(pokemon_csv, index_col=0, sep=",", encoding='cp1252')
+pokedex_items = pd.read_csv(pokemon_csv, index_col=0, sep=",", encoding='cp1252')
+base_stats_items = pd.read_csv(base_stats_csv, index_col=0, sep=",", encoding='cp1252')
 # items = pd.read_csv(pokemon_csv, index_col=0, sep=",")
 
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transpose.html?highlight=transpose#pandas.DataFrame.transpose
 # transpose flips the keys to be row 0 instead of column 0
-pokemon_csv_dict = items.transpose().to_dict(orient='series')
+pokemon_csv_dict = pokedex_items.transpose().to_dict(orient='series')
+base_stats_dict = base_stats_items.transpose().to_dict(orient='series')
 
 
 class Pokemon(base):
@@ -81,6 +81,8 @@ class Pokemon(base):
     base_exp = Column(Integer)
     catch_rate = Column(Integer)
 
+    # child = relationship("Child", back_populates="Parent", uselist=False)
+
     # __init__ where are you?
 
     # Our User class, as defined using the Declarative system, : from Base in __init__.py
@@ -98,6 +100,27 @@ class Pokemon(base):
                (self.dexnum, self.name, self.type1, self.type2, self.evolve_level,
                 self.gender_ratio, self.height, self.weight, self.category, self.lvl_speed,
                 self.base_exp, self.catch_rate, self.description)
+
+
+class Base_Stats(base):
+    __tablename__ = 'Stats'
+    dexnum = Column(Integer, primary_key=True)
+    hp = Column(Integer)
+    attack = Column(Integer)
+    defense = Column(Integer)
+    special_attack = Column(Integer)
+    special_defense = Column(Integer)
+    speed = Column(Integer)
+    # total = Column(Integer)
+    # dexnum = Column(Integer, ForeignKey(Pokemon.dexnum), primary_key=True)
+
+    # parent = relationship("Parent", backref=backref("child", uselist=False))
+
+    def __repr__(self):
+        return "<Base_Stats(dexnum=%d, hp=%d, attack=%d, defense=%d," \
+               "special_attack=%d, special_defense=%d, speed=%d)>" % \
+               (self.dexnum, self.hp, self.attack, self.defense, self.special_attack,
+                self.special_defense, self.speed)
 
 
 def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
@@ -118,12 +141,26 @@ def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
         catch_rate=int(pokemon_csv_dict[dexnum]['Catch_Rate']),
     )
 
+
+def createBaseStats(dexnum: int, base_stats_csv_dict: Dict) -> Base_Stats:
+    return Base_Stats(
+        dexnum=dexnum,
+        hp=int(base_stats_dict[dexnum]['HP']),
+        attack=int(base_stats_dict[dexnum]['Attack']),
+        defense=int(base_stats_dict[dexnum]['Defense']),
+        special_attack=int(base_stats_dict[dexnum]['Sp. Atk']),
+        special_defense=int(base_stats_dict[dexnum]['Sp. Def']),
+        speed=int(base_stats_dict[dexnum]['Speed']),
+                      )
+
+
 metadata = MetaData()
 
 
 try:
     print("Dropping Table on startup")
     Pokemon.__table__.drop(engine)
+    Base_Stats.__table__.drop(engine)
 except Exception as e:
     print(f"Failed to Drop: Table doesn't exists")
 
@@ -139,24 +176,34 @@ for i in range(1, 152):
     created_pokemon = createPokemon(i, pokemon_csv_dict)
     session.add(created_pokemon)
     session.commit()
+    created_base_stats = createBaseStats(i, base_stats_dict)
+    session.add(created_base_stats)
+    session.commit()
 
 query = session.query(Pokemon)
 # get grabs ID of 1
 P1 = query.get(1)
 print(P1)
 
+query = session.query(Base_Stats)
+B1 = query.get(1)
+print(B1)
 
 user_count = session.query(Pokemon).count()
-print(f"User Count Before Delete: {user_count}")
+print(f"Pokemon Count Before Delete: {user_count}")
+
+base_count = session.query(Base_Stats).count()
+print(f"Base Stat Count Before Delete: {base_count}")
+
 
 # Id Of 1 no longer exists
-session.delete(P1)
-session.commit()
-
-user_count = session.query(Pokemon).count()
-print(f"User Count After Delete: {user_count}")
-
-
-query = session.query(Pokemon)
-P1 = query.get(2)
-print(P1)
+# session.delete(P1)
+# session.commit()
+#
+# user_count = session.query(Pokemon).count()
+# print(f"User Count After Delete: {user_count}")
+#
+#
+# query = session.query(Pokemon)
+# P1 = query.get(2)
+# print(P1)

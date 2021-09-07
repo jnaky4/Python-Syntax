@@ -3,7 +3,7 @@ import pandas as pd
 # dependencies: pandas, Pokemon.csv
 
 # make sure the Pokemon.csv is in the same folder as this file
-filename = "Pokemon.csv"
+filename = "CSV/Pokemon.csv"
 
 
 

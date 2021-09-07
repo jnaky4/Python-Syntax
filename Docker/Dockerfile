@@ -6,11 +6,11 @@ ARG DOCKER_IMAGE_TAG=0
 ENV VERSION=$DOCKER_IMAGE_TAG
 EXPOSE 5000
 
-ADD requirements.txt .
+ADD ../requirements.txt .
 RUN pip install ${PIP_INDEX_ARGS} --no-cache-dir -r requirements.txt
 
 WORKDIR /project
-ADD . /project
+ADD .. /project
 RUN useradd appuser && chown -R appuser /project
 
 USER appuser

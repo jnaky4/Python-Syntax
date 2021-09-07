@@ -217,7 +217,7 @@ CSV to Dictionary
 """
 
 # csv to dictionary example
-filename = "Pokemon.csv"
+filename = "CSV/Pokemon.csv"
 
 # explanation of csv reader
 # https://www.delftstack.com/howto/python/python-csv-to-dictionary/

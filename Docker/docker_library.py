@@ -192,10 +192,31 @@ def run_container(image_name: str, container_name: str):
                 The default superuser is defined by the POSTGRES_USER environment variable.
             """
 
-            container_id = client.containers.run(image_name, detach=True, name=container_name, ports={'5432/tcp': 5432}, environment={"POSTGRES_PASSWORD":"pokemon", "POSTGRES_DB": "Pokemon"})
-            sleep_time = 2
-            print(f"Container {container_id} Started, waiting {sleep_time} seconds for database to initialize")
-            time.sleep(sleep_time)
+            container = client.containers.run(
+                image_name,
+                detach=True,
+                name=container_name,
+                ports={'5432/tcp': 5432},
+                environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
+            )
+
+            """
+            Similar to the pg_isready command: https://www.postgresql.org/docs/9.3/app-pg-isready.html
+            waits until the server is accepting connections    
+            """
+            timeout = 10
+            current_time = 0
+            exit_code = -2
+            while exit_code != 0 and current_time != timeout:
+                returned = container.exec_run(f"pg_isready")
+                print(returned)
+                if len(returned) > 0:
+                    exit_code = returned[0]
+                time.sleep(1)
+                current_time += 1
+
+            print(f"Container {container} Started")
+
         except Exception as e:
             print(f"Exception: {e}")
 
