@@ -51,8 +51,10 @@ base = declarative_base()
 # grabs route correctly independent of OS routing:
 #   Linux/Mac: ..//CSV//Pokemon.csv
 #   Windows: ..\\CSV\\Pokemon.csv
-pokemon_csv = os.path.join('..', 'CSV', "Pokemon.csv")
-base_stats_csv = os.path.join('..', 'CSV', "Base_Stats.csv")
+
+cwd = os.getcwd()
+pokemon_csv = os.path.join(cwd, 'CSV', "Pokemon.csv")
+base_stats_csv = os.path.join(cwd, 'CSV', "Base_Stats.csv")
 
 
 
