@@ -4,6 +4,8 @@ from sqlalchemy.orm import sessionmaker, relationship, backref
 import pandas as pd
 from typing import Dict
 from Docker.docker_library import is_container_running, run_container
+import os
+
 
 run_container("postgres", "pokemon-postgres")
 # look at docker_library for explanation of Docker
@@ -45,8 +47,13 @@ engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
 
 base = declarative_base()
 
-pokemon_csv = "./CSV/Pokemon.csv"
-base_stats_csv = "./CSV/Base_Stats.csv"
+
+# grabs route correctly independent of OS routing:
+#   Linux/Mac: ..//CSV//Pokemon.csv
+#   Windows: ..\\CSV\\Pokemon.csv
+pokemon_csv = os.path.join('..', 'CSV', "Pokemon.csv")
+base_stats_csv = os.path.join('..', 'CSV', "Base_Stats.csv")
+
 
 
 # explanation of csv reader
@@ -123,6 +130,26 @@ class Base_Stats(base):
                 self.special_defense, self.speed)
 
 
+class User(base):
+    __tablename__='Users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50))
+    email = Column(String(25))
+    password = Column(String(25))
+    telephone = Column(String(10))
+    address = Column(String(250))
+    city = Column(String(25))
+    state = Column(String(25))
+    zipcode = Column(Integer)
+
+    def __repr__(self):
+        return "<User(id=%d, name='%s', email='%s', password='%s', telephone='%s'," \
+               "address='%s'," \
+               "city='%s', state='%s', zipcode=%d)>" % \
+               (self.id, self.name, self.email, self.password, self.telephone,
+                self.address, self.city, self.state, self.zipcode)
+
+
 def createPokemon(dexnum: int, pokemon_csv_dict: Dict) -> Pokemon:
     return Pokemon(
         dexnum=dexnum,
@@ -161,6 +188,7 @@ try:
     print("Dropping Table on startup")
     Pokemon.__table__.drop(engine)
     Base_Stats.__table__.drop(engine)
+    User.__table__.drop(engine)
 except Exception as e:
     print(f"Failed to Drop: Table doesn't exists")
 

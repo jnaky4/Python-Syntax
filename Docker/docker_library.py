@@ -116,23 +116,13 @@ def save_container_state(container_name: Optional[str] = None, container_id: Opt
     pass
 
 
+
+
+
+
 def run_container(image_name: str, container_name: str):
 
     client = docker.from_env()
-    os_name = os.name
-    """
-    platform.system output
-    Linux: Linux
-    Mac: Darwin
-    Windows: Windows
-    """
-    os_platform = platform.system()
-    platform_version = platform.release()
-    print(f"""
-    Computer Operating System: {os_name}
-    Computer Platform: {os_platform}
-    Platform Version: {platform_version}
-    """)
 
     # does container exists on system
     already_exists = container_exists(container_name)

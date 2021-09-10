@@ -1,7 +1,17 @@
-import os, struct, pandas as pd
+import os
+import struct
+import pandas as pd
 import struct, csv, pickle
 
 #TODO add Pickle
+
+
+# Open a file regardless of OS
+# grabs route correctly independent of OS routing:
+#   Linux/Mac: CSV//Pokemon.csv
+#   Windows: CSV\\Pokemon.csv
+pokemon_csv = os.path.join('CSV', "Pokemon.csv")
+base_stats_csv = os.path.join('CSV', "Base_Stats.csv")
 
 
 # with: opens file, execute block and automatically close
