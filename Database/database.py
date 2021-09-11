@@ -187,12 +187,12 @@ metadata = MetaData()
 
 
 try:
-    print("Dropping Table on startup")
+    print("Dropping all Tables on startup")
     Pokemon.__table__.drop(engine)
     Base_Stats.__table__.drop(engine)
     User.__table__.drop(engine)
 except Exception as e:
-    print(f"Failed to Drop: Table doesn't exists")
+    print(f"Failed to Drop all: One or More Tables doesn't exists")
 
 
 # # ERROR on first run
