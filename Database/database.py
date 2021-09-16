@@ -53,8 +53,8 @@ base = declarative_base()
 #   Windows: ..\\CSV\\Pokemon.csv
 
 cwd = os.getcwd()
-pokemon_csv = os.path.join(cwd, 'CSV', "Pokemon.csv")
-base_stats_csv = os.path.join(cwd, 'CSV', "Base_Stats.csv")
+pokemon_csv = os.path.join(cwd, '..', 'CSV', "Pokemon.csv")
+base_stats_csv = os.path.join(cwd, '..', 'CSV', "Base_Stats.csv")
 
 
 
