@@ -24,27 +24,31 @@ container_running = is_container_running('pokemon-postgres')
 # Manual Command to run a docker container
 # docker run --name pokemon-postgres -e POSTGRES_PASSWORD=pokemon -d -p 5432:5432 postgres
 
+# Database URL
+"""
+can include username, password, hostname, database name as well as optional keyword arguments for additional configuration.
+typical form: dialect+driver://username:password@host:port/database
+https://docs.sqlalchemy.org/en/14/core/engines.html#database-urls
+"""
 
-# SQL Lite
+# Local Connection
+# in-memory-only SQLite database
 # engine = create_engine('sqlite:///:memory:')
 
-# Postgres
+# Postgres: Currently Used
 # Driver :// user : password @ hostname(uri) : port / Database
 engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
 
-# print("HERE")
-# abbreviated_database = 'postgresql://postgres:pokemon@localhost:5432/Pokemon'
-# if not database_exists(engine.url):
-#     create_database(abbreviated_database)
-#     # conn = engine.connect()
-#     # conn.execute("commit")
-#     # conn.execute("create database Pokemon")
-#     # conn.close()
 
-# My SQL
+# My SQL Example
 # engine = create_engine('mysql+pymydsql://root@localhost/mydb')
 
 
+"""
+The Engine, when first returned by create_engine(), 
+has not actually tried to connect to the database yet; 
+that happens only the first time it is asked to perform a task against the database.
+"""
 base = declarative_base()
 
 
@@ -182,7 +186,12 @@ def createBaseStats(dexnum: int, base_stats_csv_dict: Dict) -> Base_Stats:
         speed=int(base_stats_dict[dexnum]['Speed']),
                       )
 
-
+"""
+The MetaData object contains all of the schema constructs we’ve associated with it. 
+It supports a few methods of accessing these table objects, 
+such as the sorted_tables accessor which returns a list of each Table object in order of foreign key dependency 
+(that is, each table is preceded by all tables which it references):
+"""
 metadata = MetaData()
 
 
@@ -195,10 +204,26 @@ except Exception as e:
     print(f"Failed to Drop all: One or More Tables doesn't exists")
 
 
-# # ERROR on first run
+"""
+The usual way to issue CREATE is to use create_all() on the MetaData object. 
+This method will issue queries that first check for the existence of each individual table, 
+and if not found will issue the CREATE statements:
+"""
 base.metadata.create_all(engine)
 
+
+"""
+The ORM’s “handle” to the database is the Session. 
+When we first set up the application, at the same level as our create_engine() statement, 
+we define a Session class which will serve as a factory for new Session objects:
+"""
 Session = sessionmaker(bind=engine)
+"""
+The below Session is associated with our SQLite-enabled Engine, 
+but it hasn’t opened any connections yet. When it’s first used, 
+it retrieves a connection from a pool of connections maintained by the Engine, 
+and holds onto it until we commit all changes and/or close the session object.
+"""
 session = Session()
 
 
