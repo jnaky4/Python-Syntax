@@ -144,31 +144,26 @@ python -m unittest discover
 """
 
 
-
-class Widget():
-    def __init__(self, name, size=(50, 50)):
-        self.size = size
+class Widget:
+    def __init__(self, name, w_size=(50, 50)):
+        self.widget_size = w_size
         self.name = name
-        # print(self.size == (50, 50))
 
-    def resize(self, tup: Tuple):
-        self.size = len(tup)
+    def size(self):
+        return self.widget_size
 
+    def resize(self, tup1: int, tup2: int):
+        self.widget_size = (tup1, tup2)
+        return self.widget_size
+
+    def dispose(self):
+        pass
 
 
 # To make your own test cases you must write subclasses of TestCase or use FunctionTestCase.
-# class DefaultWidgetSizeTestCase(unittest.TestCase):
-#     def runTest(self):
-#         widget = Widget('The widget')
-#         print(f"size: {widget.size}")
-#         self.assertEqual(widget.size(), (50, 50), 'incorrect default size')
-
-
-
 class SimpleWidgetTestCase(unittest.TestCase):
     def setUp(self):
         self.widget = Widget('The widget')
-        print(f"size: {self.widget.size}")
     """
     If the setUp() method raises an exception while the test is running, the framework will consider the test to have 
     suffered an error, and the runTest() method will not be executed.
@@ -179,13 +174,13 @@ class SimpleWidgetTestCase(unittest.TestCase):
         self.widget.dispose()
         self.widget = None
 
+
 class DefaultWidgetSizeTestCase(SimpleWidgetTestCase):
     def runTest(self):
-        self.assertEqual(self.widget.size(), (50,50),
-                         'incorrect default size')
+        self.assertEqual(self.widget.size(), (50, 50), 'incorrect default size')
+
 
 class WidgetResizeTestCase(SimpleWidgetTestCase):
     def runTest(self):
         self.widget.resize(100, 150)
-        self.assertEqual(self.widget.size(), (100,150),
-                         'wrong size after resize')
+        self.assertEqual(self.widget.size(), (100, 150), 'wrong size after resize')
