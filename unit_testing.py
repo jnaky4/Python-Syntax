@@ -145,14 +145,14 @@ python -m unittest discover
 
 
 class Widget:
-    def __init__(self, name, w_size=(50, 50)):
+    def __init__(self, name: str, w_size: Tuple =(50, 50)):
         self.widget_size = w_size
         self.name = name
 
     def size(self):
         return self.widget_size
 
-    def resize(self, tup1: int, tup2: int):
+    def resize(self, tup1: int, tup2: int) -> Tuple:
         self.widget_size = (tup1, tup2)
         return self.widget_size
 
