@@ -171,10 +171,27 @@ class SimpleWidgetTestCase(unittest.TestCase):
     Similarly, we can provide a tearDown() method that tidies up after the runTest() method has been run:
     """
     def tearDown(self):
+        # currently dispose does nothing inside widget class
         self.widget.dispose()
         self.widget = None
+    """
+    Referencing Above
+    If setUp() succeeded, the tearDown() method will be run whether runTest() succeeded or not.
 
+    Such a working environment for the testing code is called a fixture.
 
+    Often, many small test cases will use the same fixture. In this case, we would end up subclassing 
+    SimpleWidgetTestCase into many small one-method classes such as DefaultWidgetSizeTestCase. This is time-consuming 
+    and discouraging, so in the same vein as JUnit, unittest provides a simpler mechanism:
+    """
+
+    """
+    Referencing Below
+    Here we have not provided a runTest() method, but have instead provided two different test methods. Class instances 
+    will now each run one of the test_*() methods, with self.widget created and destroyed separately for each instance. 
+    When creating an instance we must specify the test method it is to run. We do this by passing the method name in 
+    the constructor:
+    """
 class DefaultWidgetSizeTestCase(SimpleWidgetTestCase):
     def runTest(self):
         self.assertEqual(self.widget.size(), (50, 50), 'incorrect default size')
