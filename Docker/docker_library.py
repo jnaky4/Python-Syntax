@@ -96,6 +96,7 @@ def image_exists(image_name: str) -> Optional[bool]:
         print(f"Image Doesn't Exists: Error Generated: {e}")
     except Exception as e:
         print(f"Exception: {e}")
+    finally:
         return False
 
 
@@ -141,6 +142,7 @@ def run_container(image_name: str, container_name: str):
     else:
         # image doesnt exist, pull from repo
         if not image_exists(image_name):
+            print(f"Pulling Image {image_name}, may take a minute")
             image_id = pull_image(image_name)
             if image_id is None:
                 print("Image does not exist as a repository to pull from, try another name")
