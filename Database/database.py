@@ -3,19 +3,13 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship, backref
 import pandas as pd
 from typing import Dict
-from Docker.docker_library import is_container_running, run_container
+from Docker.docker_library import auto_start_container
 import os
 
-
-run_container("postgres", "pokemon-postgres")
-# look at docker_library for explanation of Docker
-container_running = is_container_running('pokemon-postgres')
+# runs the image postgres and creates a container called pokemon-postgres
+auto_start_container("postgres", "pokemon-postgres")
 
 
-
-
-# if not container_running:
-#     pass
 
 
 # client.containers.run("postgres", detach=True, ports=[5432])
