@@ -1,9 +1,10 @@
-import docker
 from typing import Optional, Dict
 import os
 import platform
 import time
 from docker.errors import APIError, NotFound
+import docker
+import yaml
 
 
 # Docker Python SDK docs
@@ -104,7 +105,6 @@ def image_exists(image_name: str) -> Optional[bool]:
     return False
 
 
-
 def pull_image(image_name: str) -> Optional[str]:
     try:
         client = docker.from_env()
@@ -123,6 +123,8 @@ def save_container_state(container_name: Optional[str] = None, container_id: Opt
 
 
 def auto_start_container(image_name: str, container_name: str):
+    # How many seconds we are willing to wait for container to run
+    timeout = 10
 
     # does container exists on system
     container_already_exists = container_exists(container_name)
@@ -150,12 +152,51 @@ def auto_start_container(image_name: str, container_name: str):
                 print("Image does not exist as a repository to pull from, try another name")
                 return
         try:
-            create_postgres_container(10, container_name, image_name)
+            if image_name == "postgres":
+                create_postgres_container(container_name, image_name, timeout)
+            if image_name == "bitnami/kafka":
+                create_kafka_container(container_name, image_name, timeout)
         except Exception as e:
             print(f"Exception: {e}")
 
 
-def create_postgres_container(timeout: int, container_name: str, image_name: str):
+def create_kafka_container(container_name: str, image_name: str, timeout: int = 30):
+    client = docker.from_env()
+    compose_dict = {}
+    with open("docker-compose-bitnami-kafka.yml", "r") as stream:
+        try:
+            # print(yaml.safe_load(stream))
+            compose_dict = yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
+
+    print(compose_dict)
+
+    # TODO have compose_dict, now need to build from dict and run container
+
+
+    # container = client.containers.run(
+    #     image_name,
+    #     detach=True,
+    #     name=container_name,
+    #     ports={'5432/tcp': 5432},
+    #     # environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
+    # )
+    #
+    # current_time = 0
+    # exit_code = -2
+    # while exit_code != 0 and current_time != timeout:
+    #     returned = container.exec_run(f"pg_isready")
+    #     print(f"pg_isready: {returned}")
+    #     if len(returned) > 0:
+    #         exit_code = returned[0]
+    #     time.sleep(1)
+    #     current_time += 1
+    #
+    # print(f"Container {container} Ready")
+
+
+def create_postgres_container(container_name: str, image_name: str, timeout: int = 30):
     """
     image (str) – The image to run.
     name (str) – The name for this container.
@@ -258,9 +299,10 @@ def print_container_logs(container_name: Optional[str] = None, container_id: Opt
 
 
 if __name__ == "__main__":
-    name = "pokemon-postgres"
-    print(f"Container Exists: {container_exists(name)}")
-    print(f"Container Running: {is_container_running(name)}")
+    create_kafka_container("kafka", "bitnami/kafka")
+    # name = "pokemon-postgres"
+    # print(f"Container Exists: {container_exists(name)}")
+    # print(f"Container Running: {is_container_running(name)}")
 
     # run_container("hello", "hello")
 

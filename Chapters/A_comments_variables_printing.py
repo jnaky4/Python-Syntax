@@ -90,8 +90,9 @@ print(2)
 print("Hello")
 mylist = ["a", "list", "of", "words"] # literally print anything
 print(mylist)
+print(mylist, "this prints after")
 
-
+# fstring
 """
 f strings are a better solution to printing variables
 """
@@ -104,6 +105,7 @@ Triple Quotes are called a Docstring
 but you cant do it with single line prints"""
 print(im_going_to_print_this)
 
+# Docstring
 # whats cool about this is it will print it out as you see it in triple quotes with the proper tabs and format
 cool_print = """                                                                                                    
                                         /%@@@&#//...*/#&@@@#.                                       
@@ -138,6 +140,7 @@ cool_print = """
 
 print(cool_print)
 
+# fdocstring?
 insert = "This will print"
 insert2 = 2021
 fString = f"""
