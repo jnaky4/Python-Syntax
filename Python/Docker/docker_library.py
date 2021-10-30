@@ -4,7 +4,7 @@ import platform
 import time
 from docker.errors import APIError, NotFound
 import docker
-import yaml
+import Docker.read_yaml
 
 
 # Docker Python SDK docs
@@ -156,25 +156,57 @@ def auto_start_container(image_name: str, container_name: str):
                 create_postgres_container(container_name, image_name, timeout)
             if image_name == "bitnami/kafka":
                 create_kafka_container(container_name, image_name, timeout)
+            if image_name == "python":
+                create_python_container(container_name, image_name, timeout)
         except Exception as e:
             print(f"Exception: {e}")
 
 
-def create_kafka_container(container_name: str, image_name: str, timeout: int = 30):
+def create_python_container(container_name: str, image_name: str, timeout: int = 30):
     client = docker.from_env()
-    compose_dict = {}
-    with open("docker-compose-bitnami-kafka.yml", "r") as stream:
-        try:
-            # print(yaml.safe_load(stream))
-            compose_dict = yaml.safe_load(stream)
-        except yaml.YAMLError as exc:
-            print(exc)
+    container = client.containers.run(
+        image_name,
+        detach=True,
+        name=container_name,
+        ports={'5000/tcp': 5000}
+        # environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
+    )
+    print(f"Container {container} Ready")
+    """
+    Similar to the pg_isready command: https://www.postgresql.org/docs/9.3/app-pg-isready.html
+    waits until the server is accepting connections
+    """
 
-    print(compose_dict)
+    # current_time = 0
+    # exit_code = -2
+    # while exit_code != 0 and current_time != timeout:
+    #     returned = container.exec_run(f"pg_isready")
+    #     print(f"pg_isready: {returned}")
+    #     if len(returned) > 0:
+    #         exit_code = returned[0]
+    #     time.sleep(1)
+    #     current_time += 1
+    #
+    # print(f"Container {container} Ready")
+    # pass
+
+
+def create_kafka_container(container_name: str, image_name: str, timeout: int = 30):
+    pass
+    # client = docker.from_env()
+    # compose_dict = {}
+    # with open("docker-compose-bitnami-kafka.yml", "r") as stream:
+    #     try:
+    #         # print(yaml.safe_load(stream))
+    #         compose_dict = yaml.safe_load(stream)
+    #     except yaml.YAMLError as exc:
+    #         print(exc)
+    #
+    # print(compose_dict)
 
     # TODO have compose_dict, now need to build from dict and run container
 
-
+    # copy of postgres run container function
     # container = client.containers.run(
     #     image_name,
     #     detach=True,
@@ -182,7 +214,7 @@ def create_kafka_container(container_name: str, image_name: str, timeout: int = 
     #     ports={'5432/tcp': 5432},
     #     # environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
     # )
-    #
+    # TODO timeout from create postgres, needs to be changed to a kafka timeout
     # current_time = 0
     # exit_code = -2
     # while exit_code != 0 and current_time != timeout:
@@ -263,7 +295,14 @@ def start_container(container_name: str):
     print(f"Starting Container: {container_name}")
     client = docker.from_env()
     existing_container = client.containers.get(container_name)
-    existing_container.start()
+    # print(f"Existing Container {existing_container}")
+    try:
+        existing_container.start()
+
+    except APIError:
+        print(f"{container_name} failed")
+
+    print(f"Container {container_name} started")
 
 
 def stop_all_containers():
@@ -299,7 +338,11 @@ def print_container_logs(container_name: Optional[str] = None, container_id: Opt
 
 
 if __name__ == "__main__":
-    create_kafka_container("kafka", "bitnami/kafka")
+    # docker.from_env(environment={'myvariable': 'testing'})
+    docker.from_env()
+
+    auto_start_container("python", "pokemonflask")
+    # create_kafka_container("kafka", "bitnami/kafka")
     # name = "pokemon-postgres"
     # print(f"Container Exists: {container_exists(name)}")
     # print(f"Container Running: {is_container_running(name)}")
