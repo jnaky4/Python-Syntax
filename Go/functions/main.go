@@ -7,6 +7,12 @@ import (
 )
 
 func main() {
+	//anonymous self executing function
+	func() {
+		fmt.Println("I'm driving!")
+	}()
+
+
 	port := 3000
 	port, err := startWebServer(port, 2)
 	println(port, err)
@@ -24,7 +30,7 @@ func main() {
 }
 //if matching param types only need to specify one
 //returns int and error
-func startWebServer(port, retries int) (int, error) {
+func startWebServer(port int, retries int) (int, error) {
 	println("Starting server...")
 
 	println("Server started on port", port)

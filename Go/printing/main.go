@@ -40,6 +40,6 @@ func main() {
 	println(arrPadded)
 
 	//specify padding outside of function
-	s := -5
+	s := -15
 	fmt.Printf("%*s%s\n", s,"wow", "interesting")
 }

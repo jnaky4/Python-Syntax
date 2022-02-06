@@ -7,3 +7,15 @@ matplotlib~=3.4.3
 
 
 
+
+redis~=4.1.2
+Flask~=2.0.1
+PyYAML~=5.4.1
+kaggle~=1.5.12
+sklearn~=0.0
+scikit-learn~=1.0.2
+requests~=2.26.0
+numpy~=1.21.1
+bokeh~=2.4.2
+selenium~=3.141.0
+Pillow~=8.3.1

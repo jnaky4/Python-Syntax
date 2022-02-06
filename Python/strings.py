@@ -88,7 +88,7 @@ my_tokens = string.split()
 print(my_tokens)
 
 # join
-web_path = [ 'www.website.com', 'profile', 'settings' ]
+web_path = ['www.website.com', 'profile', 'settings']
 separator = '/'
 url = separator.join(web_path)
 print(url)

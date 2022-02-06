@@ -9,7 +9,6 @@ import os
 # runs the image postgres and creates a container called pokemon-postgres
 auto_start_container("postgres", "pokemon-postgres")
 
-
 # client.containers.run("postgres", detach=True, ports=[5432])
 
 
@@ -32,12 +31,8 @@ https://docs.sqlalchemy.org/en/14/core/engines.html#database-urls
 # Driver :// user : password @ hostname(uri) : port / Database
 engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
 
-
 # My SQL Example
 # engine = create_engine('mysql+pymydsql://root@localhost/mydb')
-
-
-
 
 
 # grabs route correctly independent of OS routing:
@@ -47,7 +42,6 @@ engine = create_engine('postgresql://postgres:pokemon@localhost:5432/Pokemon')
 cwd = os.getcwd()
 pokemon_csv = os.path.join(cwd, '..', 'CSV', "Pokemon.csv")
 base_stats_csv = os.path.join(cwd, '..', 'CSV', "Base_Stats.csv")
-
 
 # explanation of csv reader
 # https://www.delftstack.com/howto/python/python-csv-to-dictionary/
@@ -89,7 +83,8 @@ def createBaseStats(dexnum: int, base_stats_csv_dict: Dict) -> Base_Stats:
         special_attack=int(base_stats_dict[dexnum]['Sp. Atk']),
         special_defense=int(base_stats_dict[dexnum]['Sp. Def']),
         speed=int(base_stats_dict[dexnum]['Speed']),
-                      )
+    )
+
 
 """
 The MetaData object contains all of the schema constructs we’ve associated with it. 
@@ -99,7 +94,6 @@ such as the sorted_tables accessor which returns a list of each Table object in 
 """
 metadata = MetaData()
 
-
 try:
     print("Dropping all Tables on startup")
     Pokemon.__table__.drop(engine)
@@ -108,14 +102,12 @@ try:
 except Exception as e:
     print(f"Failed to Drop all: One or More Tables doesn't exists")
 
-
 """
 The usual way to issue CREATE is to use create_all() on the MetaData object. 
 This method will issue queries that first check for the existence of each individual table, 
 and if not found will issue the CREATE statements:
 """
 base.metadata.create_all(engine)
-
 
 """
 The ORM’s “handle” to the database is the Session. 
@@ -130,7 +122,6 @@ it retrieves a connection from a pool of connections maintained by the Engine,
 and holds onto it until we commit all changes and/or close the session object.
 """
 session = Session()
-
 
 for i in range(1, 152):
     created_pokemon = createPokemon(i, pokemon_csv_dict)
@@ -154,7 +145,6 @@ print(f"Pokemon Count Before Delete: {user_count}")
 
 base_count = session.query(Base_Stats).count()
 print(f"Base Stat Count Before Delete: {base_count}")
-
 
 # Id Of 1 no longer exists
 # session.delete(P1)

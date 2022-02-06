@@ -160,9 +160,6 @@ print_this = f"""
 print(print_this)
 
 
-
-
-
 """
     Printing is probably the most useful tool you have, if you dont know what is happening, print it out! or use the debugger..
 """
