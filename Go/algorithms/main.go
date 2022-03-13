@@ -4,6 +4,14 @@ import (
 	"Go/algorithms/a_star_search"
 	"fmt"
 )
+const(
+	h,w = 10,10
+	blockPercent = .3
+)
+
+//var visited [h][w]bool
+var adj map[a_star_search.Node][]*a_star_search.Node
+var traversalMap [][]rune
 
 func main(){
 	//defer time_completion.Timer()()
@@ -38,21 +46,19 @@ func main(){
 	//}
 
 	//todo new way
-	h,w := 10,10
 	g := a_star_search.Graph{}
-	traversalMap := a_star_search.GenerateMap(h,w, .2)
+	traversalMap = a_star_search.GenerateMap(h,w, blockPercent)
 	g.Nodes = a_star_search.MakeGraphFromTraversalMap(traversalMap)
 	g.MakeAdjacencyMapFromTraversalMap(h,w)
+	adj = g.Edges
 
-	d := g.Edges[*g.Nodes[22]]
-	fmt.Printf("%d,%d\n", g.Nodes[22].X, g.Nodes[22].Y)
-	for i := range d{
-		fmt.Printf("%d,%d\n", d[i].X, d[i].Y)
-	}
+	dfs(*g.Nodes[0])
 
-
-
-
+	//d := g.Edges[*g.Nodes[22]]
+	//fmt.Printf("%d,%d\n", g.Nodes[22].X, g.Nodes[22].Y)
+	//for i := range d{
+	//	fmt.Printf("%d,%d\n", d[i].X, d[i].Y)
+	//}
 
 
 	//for i := range g.Nodes{
@@ -85,6 +91,26 @@ func main(){
 	//adjMap := a_star_search.AdjacencyMap(arr)
 	//fmt.Printf("%v\n", mapp)
 	//fmt.Printf("should be here : %v\n", mapp[2][2])
+
+}
+
+func dfs(at a_star_search.Node){
+
+	if traversalMap[at.X][at.Y] == a_star_search.Path{
+		return
+	}
+	traversalMap[at.X][at.Y] = a_star_search.Path
+	neighbors := adj[at]
+	for i := range traversalMap{
+		fmt.Printf("%c\n", traversalMap[i])
+	}
+	fmt.Println()
+	for next := range neighbors{
+		if neighbors[next].Terrain != a_star_search.Blocker{
+			dfs(*neighbors[next])
+		}
+
+	}
 
 }
 
