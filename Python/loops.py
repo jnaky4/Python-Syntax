@@ -36,13 +36,25 @@ Every 2nd integer from 5 down to 1
 
 # start here
 # while loop: (condition true)
-# counter = 1
-# while counter < 6:
-#     print(counter)
-#     counter += 1
-# else:
-#     print("i is no longer less than 6")
-# print()
+counter = 1
+while counter < 6:
+    print(counter)
+    counter += 1
+else:
+    print("i is no longer less than 6")
+print()
+
+
+from datetime import datetime
+
+
+def test():
+    temp = datetime.now()
+    return temp.microsecond % 2 == 0
+
+# walrus operator
+while result := test():
+    print("result ", result)
 
 
 # range: count to range 10, 0-9
