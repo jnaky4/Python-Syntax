@@ -38,7 +38,6 @@ func (g *Graph) AddNode(n *Node){
 	g.Nodes = append(g.Nodes, n)
 }
 
-
 func (g *Graph) AddEdges(n1 *Node, n2 *Node){
 	g.lock.Lock()
 	defer g.lock.Unlock()
@@ -47,8 +46,6 @@ func (g *Graph) AddEdges(n1 *Node, n2 *Node){
 	if g.Edges == nil {
 		g.Edges = make(map[Node][]*Node)
 	}
-	//d := g.Edges[*n1]
-
 
 	var found1 bool
 	for _, n := range g.Edges[*n1]{

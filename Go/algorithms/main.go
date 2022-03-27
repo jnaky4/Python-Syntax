@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 const(
-	h,w = 10,10
-	blockPercent = .3
+	h,w = 200,200
+	blockPercent = .4
 )
 
 //var visited [h][w]bool
@@ -33,26 +33,23 @@ func main(){
 	//	fmt.Printf("%c\n", arr[i])
 	//}
 
-	//todo old way
-
-	//g := a_star_search.Graph{}
-	//g.GenerateGraph(h,w)
-	//
-	////Generate Blank map
-	//bmap := a_star_search.BlankMap(h,w)
-	////Set map indices to match graph
-	//for i := range g.Nodes{
-	//	bmap[g.Nodes[i].X][g.Nodes[i].Y] = g.Nodes[i].Terrain
-	//}
-
-	//todo new way
 	g := a_star_search.Graph{}
 	traversalMap = a_star_search.GenerateMap(h,w, blockPercent)
 	g.Nodes = a_star_search.MakeGraphFromTraversalMap(traversalMap)
 	g.MakeAdjacencyMapFromTraversalMap(h,w)
 	adj = g.Edges
 
-	dfs(*g.Nodes[0])
+	//for i := range traversalMap{
+	//	fmt.Printf("%c\n", traversalMap[i])
+	//}
+	//fmt.Println()
+
+	found := dfs(*g.Nodes[0])
+	for i := range traversalMap{
+		fmt.Printf("%c\n", traversalMap[i])
+	}
+	fmt.Println()
+	fmt.Printf("found finish %v \n", found)
 
 	//d := g.Edges[*g.Nodes[22]]
 	//fmt.Printf("%d,%d\n", g.Nodes[22].X, g.Nodes[22].Y)
@@ -94,23 +91,31 @@ func main(){
 
 }
 
-func dfs(at a_star_search.Node){
+func dfs(at a_star_search.Node) bool{
 
 	if traversalMap[at.X][at.Y] == a_star_search.Path{
-		return
+		return false
 	}
+	if traversalMap[at.X][at.Y] == a_star_search.Finish{
+		return true
+	}
+
 	traversalMap[at.X][at.Y] = a_star_search.Path
+
 	neighbors := adj[at]
-	for i := range traversalMap{
-		fmt.Printf("%c\n", traversalMap[i])
-	}
-	fmt.Println()
+
+
 	for next := range neighbors{
 		if neighbors[next].Terrain != a_star_search.Blocker{
-			dfs(*neighbors[next])
+
+
+			found := dfs(*neighbors[next])
+			if found{
+				return true
+			}
 		}
 
 	}
-
+	return false
 }
 
