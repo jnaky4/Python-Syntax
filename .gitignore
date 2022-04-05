@@ -1,5 +1,6 @@
 *.xml
 *.pyc
 *.iml
-.idea
+*.idea
 Python/venv/*
+Groovy/out/*
