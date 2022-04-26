@@ -86,11 +86,7 @@ class D_Lists {
         //todo example of object map
 
     }
-
-
-
-
-
+    
 
     static void sets(){
         def list = [2, 3, 12, 5, 12, 5345, 1, 354, 21, 3245, 6, 34, 2, 345, 234, 12, 24323, 5, 2, 23, 6, 3]

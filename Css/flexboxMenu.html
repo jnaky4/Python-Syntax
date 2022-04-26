@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            html, body{
+                height: 100%;
+            }
+            body, main, nav, article, aside, footer, header{
+                display: flex;
+                justify-content: center;
+            }
+            body{
+                margin: 0;
+                
+                color: white;
+                flex-direction: column;
+            }
+            header{
+                background-color: skyblue;
+            }
+            main{
+                align-items: stretch;
+                flex-grow: 1;
+            }
+            nav{
+                flex: 1;
+                background-color: cadetblue;
+            }
+            article{
+                flex: 4 2 12em;
+                background-color: mediumpurple;
+            }
+            aside{
+                flex: 1;
+                background-color: cornflowerblue;
+            }
+            footer{
+                background-color: orangered;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <main>
+            <nav onclick="hide()">
+                <h1>Navigation</h1>
+            </nav>
+            <article>
+                <h1>Main Content</h1>
+            </article>
+            <aside>
+                <h1>Sidebar</h1>
+            </aside>
+        </main>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </body>
+    <script>
+        function hide(){
+            // alert("clicked!");
+            let navbar = document.getElementsByTagName("nav")[0];
+            navbar.style.display = "none";            
+        }
+    </script>
+</html>

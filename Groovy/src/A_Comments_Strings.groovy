@@ -17,7 +17,7 @@ class A_Comments_Strings {
 
         /**@
          * A Groovy Doc String
-         * Text literals are represented in the form of chain of characters called strings.
+         * Text literals are represented in the form of a chain of characters called strings.
          * Groovy lets you instantiate java.lang.String objects, as well as GStrings (groovy.lang.GString)
          * which are also called interpolated strings in other programming languages.
          */
@@ -44,7 +44,7 @@ class A_Comments_Strings {
         def last = "doe"
         def list = [1,2,3,4]
         /*
-            Triple-single-quoted strings may span multiple lines. The content of the string can cross line boundaries
+            Triple-quoted strings may span multiple lines. The content of the string can cross line boundaries
             without the need to split the string in several pieces and without
             concatenation or newline escape characters:
             \ skips the new line created

@@ -20,7 +20,7 @@ class C_Operators {
             result = 'Not found'
         }
         // assignment = condition ? if True do : else do
-        result = (string!=null && string.length()>0) ? 'Found' : 'Not found'
+        result = (string != null && string.length() > 0 ) ? 'Found' : 'Not found'
         result = string ? 'Found' : 'Not found' // Using groovy truth
 
         //method pointer operator
