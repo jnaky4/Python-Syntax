@@ -46,7 +46,7 @@
             <h1>Header</h1>
         </header>
         <main>
-            <nav onclick="hide()">
+            <nav onclick="hide(this)">
                 <h1>Navigation</h1>
             </nav>
             <article>
@@ -61,10 +61,8 @@
         </footer>
     </body>
     <script>
-        function hide(){
-            // alert("clicked!");
-            let navbar = document.getElementsByTagName("nav")[0];
-            navbar.style.display = "none";            
+        function hide(elem){
+            elem.style.display = "none";            
         }
     </script>
 </html>
