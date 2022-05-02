@@ -26,8 +26,6 @@ class F_Closure {
         def concat1 = { String... it -> it.join('') }
         assert concat1('abc', 'def') == 'abcdef'
 
-
-
     }
 
 }
