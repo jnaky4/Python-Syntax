@@ -28,9 +28,11 @@ const square1 = (a) => {
     return a * a;
 };
 //useful for array functions
-[1,2,3,4].Map(a => a * a)
+const arr = [1,2,3,4];
 
-
+const mul = arr.map(a => a * a);
+const max = arr.reduce((a, b) => Math.max(a,b))
+ console.log(mul, max);
 
 
 
