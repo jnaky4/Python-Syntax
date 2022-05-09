@@ -18,4 +18,3 @@ const fetchData2 = async () => { //syntax to remove .then calls
     console.log(data);
 }
 fetchData2();
-
