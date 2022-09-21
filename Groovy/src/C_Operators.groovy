@@ -23,6 +23,10 @@ class C_Operators {
         result = (string != null && string.length() > 0 ) ? 'Found' : 'Not found'
         result = string ? 'Found' : 'Not found' // Using groovy truth
 
+        //short hand if
+        def t = true
+        t && print("will print")
+
         //method pointer operator
 
 
