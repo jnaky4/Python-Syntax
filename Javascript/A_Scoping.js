@@ -22,3 +22,7 @@ v
 function sum(a,b){ 
     var result = a+b //function scope, not reachable
 }
+
+
+const t = false
+!t && console.log("will print")
