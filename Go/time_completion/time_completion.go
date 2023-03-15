@@ -8,7 +8,7 @@ import(
 )
 
 //func main(){
-//	defer timer()()
+//	defer Timer()()
 //	test(20)
 //}
 //
@@ -28,6 +28,6 @@ func FunctionTimer(i interface{}) func(){
 	funcName := runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()
 	start := time.Now()
 	return func() {
-		fmt.Printf("%s function elapsed: %s\n", funcName,time.Since(start))
+		fmt.Printf("%s function elapsed: %s\n", funcName, time.Since(start))
 	}
 }
