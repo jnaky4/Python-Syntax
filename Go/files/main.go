@@ -1,16 +1,36 @@
-package main
-//
-//import (
-//	"bufio"
-//	"fmt"
-//	"os"
-//	"regexp"
-//	"strings"
-//)
-//
+package files
+
+import (
+	"os"
+	"path"
+)
+
+func ListDirFiles(filepath string)[]string{
+	var files []string
+	dir, err := os.ReadDir(filepath)
+	if err != nil {
+		return nil
+	}
+	for _, file := range dir {
+		//info, err := file.Info()
+		//if err != nil {
+		//	return nil
+		//}
+		//fmt.Printf("%+v\n", info)
+		files = append(files, path.Join(filepath, file.Name()))
+	}
+	return files
+}
+
+
 //func main(){
+//
+//
+//
+//
+//
 //	//initPlugin()
-//	readInit()
+//	//readInit()
 //
 //	//var funcMap = make(map[string]map[string]string)
 //	//funcMap["put"] = map[string]string{}

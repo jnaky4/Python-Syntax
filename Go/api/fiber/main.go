@@ -9,9 +9,6 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	_ "github.com/lib/pq"
 	"github.com/spf13/viper"
-	//"gorm.io/driver/postgres"
-	//"gorm.io/gorm"
-	//"gorm.io/gorm/schema"
 	"strconv"
 )
 
@@ -39,16 +36,6 @@ func main(){
 	if err != nil {
 		panic(err)
 	}
-	//dbg, err := gorm.Open(postgres.Open(viper.GetString(pgconfig.CONTEXT)), &gorm.Config{
-	//	NamingStrategy: schema.NamingStrategy{
-	//		SingularTable: true,
-	//	},
-	//})
-	//err = dbg.AutoMigrate(&pg.Pokemon{})
-	//if err != nil {
-	//	panic(err)
-	//}
-
 
 	defer db.Close()
 
@@ -64,13 +51,7 @@ func main(){
 		return c.SendString("Established a successful connection!")
 	})
 
-	app.Get("/pokemon/:dexnum", func(c *fiber.Ctx) error {
-
-		//var tables []string
-		//if err := dbg.Table("information_schema.tables").Where("table_schema = ?", "public").Pluck("table_name", &tables).Error; err != nil {
-		//	panic(err)
-		//}
-		//fmt.Printf("%+v\n", tables)
+	app.Get("/pokedex/:dexnum", func(c *fiber.Ctx) error {
 
 
 		atoi, err := strconv.Atoi(c.Params("dexnum"))
@@ -81,7 +62,6 @@ func main(){
 			return fiber.NewError(fiber.StatusNotFound, fmt.Sprintf("Dexnum %s is out of range\n", c.Params("dexnum")))
 		}
 
-		//pokemon, err := pg.GormAPokemon(atoi, dbg)
 		pokemon, err := pg.GetAPokemon(c.Params("dexnum"), db )
 		if err != nil {
 			println(err)
@@ -92,14 +72,7 @@ func main(){
 
 	})
 
-	app.Get("/pokemon", func(c *fiber.Ctx) error {
-		//pokemon, err := pg.GormAllPokemon(dbg)
-		//if err != nil {
-		//	println(err)
-		//	return c.SendString(err.Error())
-		//}
-		//
-		//return c.SendString(fmt.Sprintf("%+-10v\n\n", pokemon))
+	app.Get("/pokedex", func(c *fiber.Ctx) error {
 
 		allPokemon, err := pg.GetAllPokemon(db)
 		if err != nil {
