@@ -1,7 +1,6 @@
 package config
 
 const (
-	LOGLEVEL = "loglevel"
 	HOST = "db.host"
 	PORT = "db.port"
 	USER = "db.user"
@@ -9,3 +8,4 @@ const (
 	DBNAME = "db.dbname"
 	CONTEXT = ""
 )
+
