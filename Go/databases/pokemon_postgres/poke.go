@@ -1,95 +1,353 @@
-package pokemon_postgres
+package main
 
 import (
-	t "Go/time_completion"
-	"database/sql"
-	"strconv"
+	"context"
+	"fmt"
+	"io"
+	"io/ioutil"
+	"log"
+	"os"
+	"os/exec"
+	s "strings"
+	"time"
+
+	"github.com/docker/docker/api/types"
+	"github.com/docker/docker/api/types/container"
+	"github.com/docker/docker/api/types/filters"
+	"github.com/docker/docker/api/types/network"
+	"github.com/docker/docker/client"
+	_ "github.com/docker/docker/pkg/stdcopy"
+	_ "github.com/docker/go-connections/nat"
+	v1 "github.com/opencontainers/image-spec/specs-go/v1"
+	erp "github.com/pkg/errors"
 )
 
-type Pokemon struct {
-	//gorm.Model
-	dexnum int
-	name string
-	type1 string
-	type2 string
-	stage string
-	evolve_level int
-	gender_ratio string
-	height float32
-	weight float32
-	description string
-	category string
-	lvl_speed float32
-	base_exp int
-	catch_rate int
-}
-//func (Pokemon) TableName() string {
-//	return "Pokedex"
-//}
 
-//func GormAllPokemon(db *gorm.DB)(string, error){
-//	defer t.Timer()()
-//	var poke = Pokemon{}
-//	allPokemon := db.Find(&poke)
-//	if allPokemon.Error != nil {
-//		return "", allPokemon.Error
-//	}
-//	println(allPokemon.RowsAffected)
-//
-//	return fmt.Sprintf("%+v\n", allPokemon), nil
-//}
 
-//func GormAPokemon(dexnum int, db *gorm.DB)(string, error){
-//	defer t.Timer()()
-//	var poke = Pokemon{dexnum: dexnum}
-//
-//	resultPoke := db.First(&poke)
-//	if resultPoke.Error != nil {
-//		return "", resultPoke.Error
-//	}
-//
-//
-//	return fmt.Sprintf("%+v\n", poke), nil
-//}
+// var ctx context.Context
+// var cli client.Client
 
-func GetAllPokemon(db *sql.DB) ([]Pokemon, error) {
-	defer t.FunctionTimer(GetAllPokemon)()
-	rows, err := db.Query(`SELECT * FROM "Pokedex";`)
-	defer rows.Close()
+func main() {
+	err := startColima()
 	if err != nil {
-		println("Query Fail")
-		return nil, err
+		fmt.Printf("Colima Error: %s\n", erp.Cause(err).Error())
+		os.Exit(1)
 	}
-	var poke Pokemon
-	var allpoke []Pokemon
+	
+	ctx, cli, err := connect()
+	if err != nil{
+		fmt.Printf("Fatal Startup Error -> Cause: %s\n", erp.Cause(err).Error())
+		os.Exit(1)
+	}
+    defer cli.Close()
 
-	for rows.Next() {
-		//err := rows.Scan(&poke) splat operator?
-		err := rows.Scan(&poke.dexnum, &poke.name, &poke.type1, &poke.type2, &poke.stage, &poke.evolve_level, &poke.gender_ratio, &poke.height, &poke.weight, &poke.description, &poke.category, &poke.lvl_speed, &poke.base_exp, &poke.catch_rate)
+	// pull(cli, ctx, "postgres")
+	// listImages(cli, ctx)
+	// i, err := getImage(cli,ctx, "postgres")
+	// if err != nil{
+	// 	fmt.Printf("%+v\n", erp.Cause(err))
+	// }
+	// fmt.Printf("Image: %+v\n", i)
+
+
+	err = postgresContainer(cli, ctx)
+	if err != nil{
+		println("err: ", erp.Cause(err).Error())
+	}
+
+	println("Waiting 20s")
+	time.Sleep(time.Duration(time.Second) * 20)
+	postgres, err := getContainer(cli, ctx, "postgres")
+	if err != nil{
+		println("err: ", erp.Cause(err).Error())
+	}
+	err = deleteContainer(cli, ctx, postgres.ID)
+	if err != nil {
+		println("err: ", erp.Cause(err).Error())
+	}
+
+
+
+	// pruneContainer(cli, ctx)
+	// listContainers(cli,ctx, true)
+	// err = stop(cli, ctx, id)
+	// if err != nil{
+	// 	println("err: ", erp.Cause(err))
+	// }
+
+	// err = deleteContainer(cli, ctx, id)
+	// if err != nil{
+	// 	println("err: ", erp.Cause(err))
+	// }
+
+    // out, err := cli.ContainerLogs(ctx, resp.ID, types.ContainerLogsOptions{ShowStdout: true})
+    // if err != nil {
+    //     panic(err)
+    // }
+
+    // stdcopy.StdCopy(os.Stdout, os.Stderr, out)
+}
+
+func startColima() error{
+	err := exec.Command("colima", "status").Run()
+	if err != nil {
+		//println(erp.Cause(err).Error())
+		cmd := exec.Command("colima", "start")
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		err := cmd.Run()
 		if err != nil {
-			println("Scan fail")
-			return nil, err
+			return erp.Wrap(err, "Failed to start Colima\n")
 		}
-		allpoke = append(allpoke, poke)
 	}
-	return allpoke, nil
+	return nil
 }
 
-func GetAPokemon(dexnum string, db *sql.DB) (*Pokemon, error) {
-	defer t.FunctionTimer(GetAPokemon)()
-	atoi, err := strconv.Atoi(dexnum)
-	if err != nil || atoi < 1{
-		println("Invalid Dexnum")
-		return nil, err
-	}
-	var poke Pokemon
-	query := `SELECT * FROM "Pokedex" WHERE dexnum=` + dexnum
-	rows := db.QueryRow(query)
+func getUser() (string, error){
+	files, err := ioutil.ReadDir("/Users/")
+    if err != nil {
+        log.Fatal(err)
+    }
+ 
+    for _, f := range files {
+		if s.HasPrefix(f.Name(), "Z") && len(f.Name()) == 7 {
+			return f.Name(), nil
+		}
+    }
+	return "", erp.New("cannot find User zID folder in system")
+}
 
-	err = rows.Scan(&poke.dexnum, &poke.name, &poke.type1, &poke.type2, &poke.stage, &poke.evolve_level, &poke.gender_ratio, &poke.height, &poke.weight, &poke.description, &poke.category, &poke.lvl_speed, &poke.base_exp, &poke.catch_rate)
+func listContainers(cli *client.Client, ctx context.Context, all bool) error{
+	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{All: all})
 	if err != nil {
-		println("Scan fail")
-		return nil, err
+		return erp.Wrap(err, "failed to get containerList")
 	}
-	return &poke, nil
+
+	fmt.Printf("%-12s\t%-30s\t%-10s\t%s\n", "CONTAINER ID", "IMAGE", "STATUS", "PORTS")
+	for _, c := range containers {
+		fmt.Printf("%-12s\t%.30s\t%.10s\t%v\n", c.ID[:12], fmt.Sprintf("%-30s",c.Image), c.Status, c.Ports )
+	}
+	return nil
+}
+
+func getContainer(cli *client.Client, ctx context.Context, nameOrId string) (types.Container, error) {
+	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{All: true})
+	ct := types.Container{}
+	if err != nil {
+		return ct, erp.Wrap(err, "failed to get containerList")
+	}
+
+	for _, c := range containers {
+		if c.ID == nameOrId{
+			return c, nil
+		}
+		for _, name := range c.Names{
+			if s.Contains(name, nameOrId){
+				return c, nil
+			}
+		}
+	}
+	return ct, nil
+}
+
+func connect() (context.Context, *client.Client, error){
+	uID, err := getUser()
+	if err != nil{
+		log.Fatal(err)
+	}
+	sockPath := fmt.Sprintf("unix:///Users/%s/.colima/default/docker.sock", uID)
+	err = os.Setenv("DOCKER_HOST", sockPath)
+	if err != nil {
+		return nil, nil, erp.Wrap(err, fmt.Sprintf("Failed to find Docker Socket at path %s", sockPath))
+	}
+
+    ctx := context.Background()
+    cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
+    if err != nil {
+        return nil, nil, err
+    }
+	return ctx, cli, nil
+}
+
+func pull(cli *client.Client, ctx context.Context, image string)  error{
+
+	reader, err := cli.ImagePull(ctx, image, types.ImagePullOptions{})
+	defer reader.Close()
+    if err != nil {
+        return erp.Wrap(err, fmt.Sprintf("Failed to pull image %s", image))
+    }
+    io.Copy(os.Stdout, reader)
+	
+	return nil
+}
+
+func pruneContainer(cli *client.Client, ctx context.Context){
+	fil := filters.Args{}
+	cli.ContainersPrune(ctx, fil)
+}
+
+func deleteContainer(cli *client.Client, ctx context.Context, id string) error{
+	opts := types.ContainerRemoveOptions{RemoveVolumes: true, Force: true}
+	err := cli.ContainerRemove(ctx, id, opts)
+	if err != nil{
+		return erp.Wrap(err, fmt.Sprintf("Failed to deleteContainer container %s", id))
+	}
+	return nil
+}
+
+func stop(cli *client.Client, ctx context.Context, id string) error{
+	err := cli.ContainerStop(ctx, id, nil)
+	if err != nil{
+		return erp.Wrap(err, "Failed to stop container")
+	}
+	return nil
+}
+
+func start(cli *client.Client, ctx context.Context, id string) error{
+	opts := types.ContainerStartOptions{
+
+	}
+	err := cli.ContainerStart(ctx, id, opts)
+	if err != nil{
+		return erp.Wrap(err, "Failed to start container")
+	}
+
+	// statusCh, errCh := cli.ContainerWait(ctx, id, container.WaitConditionNotRunning)
+    // select {
+    // case err := <-errCh:
+    //     if err != nil {
+    //         panic(err)
+    //     }
+    // case <-statusCh:
+		
+    // }
+	// return nil
+	return nil
+}
+
+func listImages(cli *client.Client, ctx context.Context) error{
+	opts := types.ImageListOptions{
+		All: true,	
+	}
+	images, err := cli.ImageList(ctx, opts)
+	if err != nil {
+		return err
+	}
+
+	fmt.Printf("%-50s\t%-6s\t%-8s\t%-25s\t%s\n", "REPOSITORY", "TAG", "IMAGE ID", "CREATED", "SIZE")
+	for _, i := range images {
+		repotag := s.Split(i.RepoTags[0], ":")
+		id := s.Split(i.ID, ":")
+		created := time.Unix(i.Created, 0).Format("_2 Jan Mon 2006 03:04:05 PM")
+		fmt.Printf("%.50s\t%-6s\t%-8s\t%s\t%.2fMB\n", fmt.Sprintf("%-50sMB", repotag[0]), repotag[1], id[1][:5], created, float64(i.Size)/(1_000_000))
+		// fmt.Printf("%v\n", i.RepoTags[1:])
+	}
+	return nil
+}
+
+func getImage(cli *client.Client, ctx context.Context, nameOrId string) (types.ImageSummary,error){
+	opts := types.ImageListOptions{
+		All: true,	
+	}
+	images, err := cli.ImageList(ctx, opts)
+
+	t := types.ImageSummary{}
+
+	if err != nil {
+		return t, err
+	}
+	for _, i := range images {
+		if i.ID == nameOrId {
+			return i,nil
+		}
+		for _, name := range i.RepoTags{
+			if s.Contains(name, nameOrId){
+				return i, nil
+			}
+		}
+	}
+	return t, nil
+}
+
+func create(cli *client.Client, ctx context.Context, tainerConfig *container.Config, hostCon *container.HostConfig,
+	netConfig *network.NetworkingConfig, platform *v1.Platform, cName string) (string, error){
+    cont, err := cli.ContainerCreate(ctx, tainerConfig, hostCon, netConfig, platform, cName)
+    if err != nil {
+        return "", erp.Wrap(err, "Failed to create Container")
+    }
+	return cont.ID, nil
+}
+
+//func postgresContainer(cli *client.Client, ctx context.Context) (tainerConfig *container.Config, hostCon *container.HostConfig,
+//	netConfig *network.NetworkingConfig, platform *v1.Platform, cName string, err error){
+	// func postgresContainer(cli *client.Client, ctx context.Context) (*container.Config, *container.HostConfig,
+		// *network.NetworkingConfig, *v1.Platform, string, error){
+func postgresContainer(cli *client.Client, ctx context.Context) error{
+	// expPort := "5000"
+	cName := "postgres"
+	// container = client.containers.run(
+    //     image_name,
+    //     detach=True,
+    //     name=container_name,
+    //     ports={'5000/tcp': 5000}
+    //     # environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
+    // )
+	
+	// newport, err := nat.NewPort("tcp", expPort)
+	// if err != nil{
+	// 	erp.Wrap(err, fmt.Sprintf("Unable to create docker port: %s", newport.Port()))
+	// }
+
+	// exposedPorts := map[nat.Port]struct{}{
+	// 	newport: struct{}{},
+	// }
+
+	tainerConfig := container.Config{
+		Image: "postgres",
+		Env: []string{"POSTGRES_PASSWORD=password"},
+		// ExposedPorts: exposedPorts,//List of exposed ports
+
+		// AttachStdin: true, //Attach the standard input, makes possible user interaction
+
+		// Cmd:   []string{"echo", "hello world"},
+		// WorkingDir: "/",
+		}
+
+	// *hostCon = container.HostConfig{
+	// 	PortBindings: nat.PortMap{
+	// 		newport: []nat.PortBinding{
+	// 			{
+	// 				HostIP:   "0.0.0.0",
+	// 				HostPort: expPort,
+	// 			},
+	// 		},
+	// 	},
+	// 	RestartPolicy: container.RestartPolicy{
+	// 		Name: "always",
+	// 	},
+	// 	LogConfig: container.LogConfig{
+	// 		Type:   "json-file",
+	// 		Config: map[string]string{},
+	// 	},
+	// }
+
+	// *netConfig = network.NetworkingConfig{
+	// 	EndpointsConfig: map[string]*network.EndpointSettings{},
+	// }
+
+	// platform = &v1.Platform{}
+
+	// return &tainerConfig, nil, nil, nil, cName, nil
+
+	fmt.Printf("Creating Container %s\n", cName)
+	id, err := create(cli, ctx, &tainerConfig, nil, nil, nil, cName)
+	if err != nil{
+		return err
+	}
+	fmt.Printf("Starting Container %s, id: %s\n", cName, id[:5])
+	err = start(cli, ctx, id)
+	if err != nil{
+		return err
+	}
+	return nil
 }
