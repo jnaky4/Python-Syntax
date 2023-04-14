@@ -1,51 +1,60 @@
 package config
 
 import (
+	"database/sql"
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	_ "github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"os"
 )
 
-func LoadConfig(){
+func LoadConfig()(*sql.DB,error){
 	//LoadDefaultConfig()
-	LoadFileConfig()
-	SetLogging()
+	LoadFileConfig("./databases/pokemon_postgres/config","config.yml")
+	//SetLogging()
 	//LoadEnvironmentConfig()
 	//LoadFlagConfig()
 	//CheckRequiredConfig()
 	//ShowStartup()
-	GetDBContext()
-}
-
-func SetLogging(){
-	loglevel, err := log.ParseLevel(viper.GetString(LOGLEVEL))
+	viper.Set(CONTEXT, GetDBContext())
+	db, err := sql.Open("postgres", viper.GetString(CONTEXT))
 	if err != nil {
-		log.Fatalf("Invalid loglevel. %v", err)
+		return nil, err
 	}
-	log.SetLevel(loglevel)
+	return db, nil
 }
 
-func LoadFileConfig(){
-	if _, err := os.Stat("./config.yml"); os.IsNotExist(err) {
+//func SetLogging(){
+//	loglevel, err := log.ParseLevel(viper.GetString(LOGLEVEL))
+//	if err != nil {
+//		log.Fatalf("Invalid loglevel. %v", err)
+//	}
+//	log.SetLevel(loglevel)
+//}
+
+func LoadFileConfig(path string, cname string) error {
+	if _, err := os.Stat(cname); os.IsNotExist(err) {
+	//if _, err := os.Stat("./config.yml"); os.IsNotExist(err) {
 		viper.SetConfigName("config")
 		viper.AddConfigPath("/etc")
 	} else {
 		viper.SetConfigName("ConfigLocal")
 	}
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("./databases/pokemon_postgres/config")
+	//viper.AddConfigPath("./databases/pokemon_postgres/config")
+	viper.AddConfigPath(path)
 
 	err := viper.ReadInConfig()
 	if err != nil {
-		log.Warnf("No config file found. %v\n", err)
-	}
+		return err
+		//log.Warnf("No config file found. %v\n", err)
 
+	}
+	return nil
 }
 
-func GetDBContext() {
-	viper.Set(CONTEXT, fmt.Sprintf("host=%s port=%d user=%s "+
+func GetDBContext() string{
+	return fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
-		viper.GetString(HOST), viper.GetInt(PORT), viper.GetString(USER), viper.GetString(PASSWORD), viper.GetString(DBNAME)))
+		viper.GetString(HOST), viper.GetInt(PORT), viper.GetString(USER), viper.GetString(PASSWORD), viper.GetString(DBNAME))
 }
