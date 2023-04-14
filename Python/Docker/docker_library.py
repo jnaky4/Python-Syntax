@@ -33,7 +33,6 @@ def is_container_running(container_name: str) -> Optional[bool]:
         To talk to a Docker daemon, you first need to instantiate a client.
         You can use from_env() to connect using the default socket or the configuration in your environment:
         """
-        docker_client = docker.client.from_env()
         # Grab the container by name
 
         docker_container = docker_client.containers.get(container_name)
@@ -59,7 +58,6 @@ def container_exists(container_name: Optional[str] = None, container_id: Optiona
         return False
 
     exists = False
-    docker_client = docker.client.from_env()
 
     identification = container_name if container_id is None else container_id
     try:
@@ -75,7 +73,6 @@ def container_exists(container_name: Optional[str] = None, container_id: Optiona
 
 
 def image_exists(image_name: str) -> Optional[bool]:
-    docker_client = docker.client.from_env()
     try:
         """
         get(name)
@@ -107,8 +104,7 @@ def image_exists(image_name: str) -> Optional[bool]:
 
 def pull_image(image_name: str) -> Optional[str]:
     try:
-        client = docker.from_env()
-        image = client.images.pull(image_name)
+        image = docker_client.images.pull(image_name)
         print(f"Pulled Image {image_name}, id:{image.id}")
         return image.id
     except Exception as e:
@@ -163,8 +159,7 @@ def auto_start_container(image_name: str, container_name: str):
 
 
 def create_python_container(container_name: str, image_name: str, timeout: int = 30):
-    client = docker.from_env()
-    container = client.containers.run(
+    container = docker_client.containers.run(
         image_name,
         detach=True,
         name=container_name,
@@ -264,8 +259,7 @@ def create_postgres_container(container_name: str, image_name: str, timeout: int
         empty or undefined. This environment variable sets the superuser password for PostgreSQL.
         The default superuser is defined by the POSTGRES_USER environment variable.
     """
-    client = docker.from_env()
-    container = client.containers.run(
+    container = docker_client.containers.run(
         image_name,
         detach=True,
         name=container_name,
@@ -293,8 +287,7 @@ def create_postgres_container(container_name: str, image_name: str, timeout: int
 
 def start_container(container_name: str):
     print(f"Starting Container: {container_name}")
-    client = docker.from_env()
-    existing_container = client.containers.get(container_name)
+    existing_container = docker_client.containers.get(container_name)
     # print(f"Existing Container {existing_container}")
     try:
         existing_container.start()
@@ -306,16 +299,14 @@ def start_container(container_name: str):
 
 
 def stop_all_containers():
-    client = docker.from_env()
-    for container in client.containers.list():
+    for container in docker_client.containers.list():
         container.stop()
 
 
 def stop_specific_containers(*container_ids):
-    client = docker.from_env()
     try:
         for ids in container_ids:
-            container = client.containers.get(ids)
+            container = docker_client.containers.get(ids)
             container.stop()
     except Exception as e:
         print(f"Exception: {e}")
@@ -323,8 +314,7 @@ def stop_specific_containers(*container_ids):
 
 def list_all_containers() -> Dict:
     all_containers = {}
-    client = docker.from_env()
-    for container in client.containers.list():
+    for container in docker_client.containers.list():
         all_containers[container.id] = container
         print(container.id)
     return all_containers
@@ -332,14 +322,18 @@ def list_all_containers() -> Dict:
 
 def print_container_logs(container_name: Optional[str] = None, container_id: Optional[str] = None):
     identification = container_name if container_id is None else container_id
-    client = docker.from_env()
-    container = client.containers.get(identification)
+    container = docker_client.containers.get(identification)
     print(container.logs())
 
 
+
+docker_client = docker.DockerClient('unix:///Users/Z004X7X/.colima/default/docker.sock')
+
 if __name__ == "__main__":
+
+    print(image_exists("postgres"))
     # docker.from_env(environment={'myvariable': 'testing'})
-    docker.from_env()
+    # docker.from_env()
 
     auto_start_container("python", "pokemonflask")
     # create_kafka_container("kafka", "bitnami/kafka")
