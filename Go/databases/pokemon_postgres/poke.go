@@ -53,7 +53,7 @@ type Pokemon struct {
 //}
 
 func GetAllPokemon(db *sql.DB) ([]Pokemon, error) {
-	defer t.Timer()()
+	defer t.FunctionTimer(GetAllPokemon)()
 	rows, err := db.Query(`SELECT * FROM "Pokedex";`)
 	defer rows.Close()
 	if err != nil {
@@ -76,7 +76,7 @@ func GetAllPokemon(db *sql.DB) ([]Pokemon, error) {
 }
 
 func GetAPokemon(dexnum string, db *sql.DB) (*Pokemon, error) {
-	defer t.Timer()()
+	defer t.FunctionTimer(GetAPokemon)()
 	atoi, err := strconv.Atoi(dexnum)
 	if err != nil || atoi < 1{
 		println("Invalid Dexnum")
