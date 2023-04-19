@@ -8,7 +8,10 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	_ "github.com/lib/pq"
+	"github.com/minio/minio-go/v7"
+	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/spf13/viper"
+	"golang.org/x/net/context"
 	"strconv"
 )
 
@@ -28,11 +31,26 @@ import (
 	raise threads?
 	front end
 
+<<<<<<< Updated upstream
  */
 
 func main(){
+<<<<<<< Updated upstream
 	pgconfig.LoadConfig()
 	db, err := sql.Open("postgres", viper.GetString(pgconfig.CONTEXT))
+=======
+	//todo separate config for logger in logger directory
+	viper.Set("loglevel", "debug")
+	db, err := pgconfig.LoadConfig()
+	lg := log.NewLogger()
+=======
+*/
+
+func main() {
+	pgconfig.LoadConfig()
+	db, err := sql.Open("postgres", viper.GetString(pgconfig.CONTEXT))
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 	if err != nil {
 		panic(err)
 	}
@@ -40,6 +58,23 @@ func main(){
 	defer db.Close()
 
 	err = db.Ping()
+	if err != nil {
+		panic(err)
+	}
+
+	//minio := minio.Client{
+	//	endpointURL: "localhost:9000",
+	//	secure:      false,
+	//}
+	endpoint := "localhost:9000"
+	accessKeyID := "poke"
+	secretAccessKey := "pokemon123"
+	useSSL := false
+
+	minioClient, err := minio.New(endpoint, &minio.Options{
+		Creds:  credentials.NewStaticV4(accessKeyID, secretAccessKey, ""),
+		Secure: useSSL,
+	})
 	if err != nil {
 		panic(err)
 	}
@@ -52,17 +87,32 @@ func main(){
 	})
 
 	app.Get("/pokedex/:dexnum", func(c *fiber.Ctx) error {
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< Updated upstream
+		defer time_completion.LogTimer(&lg, fmt.Sprintf("Get %s", c.Path()))()
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 		atoi, err := strconv.Atoi(c.Params("dexnum"))
 		if err != nil {
 			return fiber.NewError(fiber.StatusBadRequest, fmt.Sprintf("Dexnum %s is not an Int\n", c.Params("dexnum")))
 		}
+<<<<<<< Updated upstream
 		if atoi < 1 || atoi > 151{
+<<<<<<< Updated upstream
+=======
+			lg.Error().Msgf("pokedex number out of range %s", c.Params("dexnum"))
+=======
+		if atoi < 1 || atoi > 151 {
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			return fiber.NewError(fiber.StatusNotFound, fmt.Sprintf("Dexnum %s is out of range\n", c.Params("dexnum")))
 		}
 
-		pokemon, err := pg.GetAPokemon(c.Params("dexnum"), db )
+		pokemon, err := pg.GetAPokemon(c.Params("dexnum"), db)
 		if err != nil {
 			println(err)
 			return err
@@ -78,7 +128,7 @@ func main(){
 		if err != nil {
 			println(err)
 			return c.SendString(err.Error())
-		} else{
+		} else {
 			rstr := ""
 			//todo return json
 			for k := range allPokemon {
@@ -88,6 +138,23 @@ func main(){
 		}
 	})
 
+	app.Get("/image:dexnum", func(c *fiber.Ctx) error {
+		atoi, err := strconv.Atoi(c.Params("dexnum"))
+		if err != nil {
+			return fiber.NewError(fiber.StatusBadRequest, fmt.Sprintf("Dexnum %s is not an Int\n", c.Params("dexnum")))
+		}
+		if atoi < 1 || atoi > 151 {
+			return fiber.NewError(fiber.StatusNotFound, fmt.Sprintf("Dexnum %s is out of range\n", c.Params("dexnum")))
+		}
+		pokemon, err := pg.GetAPokemon(c.Params("dexnum"), db)
+		filePath := fmt.Sprintf("%03d%s.png", pokemon.Dexnum, pokemon.Name)
+		bucket := "pokemon"
+
+		//todo check if file already exists
+		err = minioClient.FGetObject(context.Background(), bucket, "pokemon\\"+filePath, filePath, minio.GetObjectOptions{})
+
+		return c.SendFile(filePath, true)
+	})
 	err = app.Listen(":3000")
 	if err != nil {
 		return
