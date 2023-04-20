@@ -3,6 +3,8 @@ package main
 import (
 	pg "Go/databases/pokemon_postgres"
 	pgconfig "Go/databases/pokemon_postgres/config"
+	log "Go/logging"
+	"Go/time_completion"
 	"database/sql"
 	"fmt"
 	"github.com/gofiber/fiber/v2"
@@ -30,27 +32,15 @@ import (
 	ssl
 	raise threads?
 	front end
-
-<<<<<<< Updated upstream
- */
-
-func main(){
-<<<<<<< Updated upstream
-	pgconfig.LoadConfig()
-	db, err := sql.Open("postgres", viper.GetString(pgconfig.CONTEXT))
-=======
-	//todo separate config for logger in logger directory
-	viper.Set("loglevel", "debug")
-	db, err := pgconfig.LoadConfig()
-	lg := log.NewLogger()
-=======
 */
 
 func main() {
 	pgconfig.LoadConfig()
 	db, err := sql.Open("postgres", viper.GetString(pgconfig.CONTEXT))
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+	//todo separate config for logger in logger directory
+	viper.Set("loglevel", "debug")
+	lg := log.NewLogger()
+
 	if err != nil {
 		panic(err)
 	}
@@ -87,28 +77,17 @@ func main() {
 	})
 
 	app.Get("/pokedex/:dexnum", func(c *fiber.Ctx) error {
-<<<<<<< Updated upstream
 
-=======
-<<<<<<< Updated upstream
 		defer time_completion.LogTimer(&lg, fmt.Sprintf("Get %s", c.Path()))()
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
 		atoi, err := strconv.Atoi(c.Params("dexnum"))
 		if err != nil {
 			return fiber.NewError(fiber.StatusBadRequest, fmt.Sprintf("Dexnum %s is not an Int\n", c.Params("dexnum")))
 		}
-<<<<<<< Updated upstream
-		if atoi < 1 || atoi > 151{
-<<<<<<< Updated upstream
-=======
-			lg.Error().Msgf("pokedex number out of range %s", c.Params("dexnum"))
-=======
 		if atoi < 1 || atoi > 151 {
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+			lg.Error().Msgf("pokedex number out of range %s", c.Params("dexnum"))
+		}
+		if atoi < 1 || atoi > 151 {
 			return fiber.NewError(fiber.StatusNotFound, fmt.Sprintf("Dexnum %s is out of range\n", c.Params("dexnum")))
 		}
 
@@ -155,8 +134,9 @@ func main() {
 
 		return c.SendFile(filePath, true)
 	})
+
 	err = app.Listen(":3000")
 	if err != nil {
-		return
+		panic(err)
 	}
 }

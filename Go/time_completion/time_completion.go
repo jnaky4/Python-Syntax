@@ -1,7 +1,8 @@
 package time_completion
 
-import(
+import (
 	"fmt"
+	"github.com/rs/zerolog"
 	"reflect"
 	"runtime"
 	"time"
@@ -18,16 +19,24 @@ import(
 //	}
 //}
 
-func Timer() func(){
+func Timer() func() {
 	start := time.Now()
 	return func() {
 		fmt.Printf("elapsed: %s\n", time.Since(start))
 	}
 }
-func FunctionTimer(i interface{}) func(){
+func FunctionTimer(i interface{}) func() {
 	funcName := runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()
 	start := time.Now()
 	return func() {
 		fmt.Printf("%s function elapsed: %s\n", funcName, time.Since(start))
+	}
+}
+func LogTimer(log *zerolog.Logger, funcInfo string) func() {
+	//funcName := runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()
+	start := time.Now()
+	return func() {
+		//log.Info().Msgf("%s time elapes: %s", funcName, time.Since(start))
+		log.Info().Msgf("%s time elapsed: %s", funcInfo, time.Since(start))
 	}
 }
