@@ -120,21 +120,28 @@ func main() {
 		}
 	})
 
-	app.Get("/image:dexnum", func(c *fiber.Ctx) error {
+	app.Get("/image/:dexnum", func(c *fiber.Ctx) error {
 		atoi, err := strconv.Atoi(c.Params("dexnum"))
 		if err != nil {
 			return fiber.NewError(fiber.StatusBadRequest, fmt.Sprintf("Dexnum %s is not an Int\n", c.Params("dexnum")))
 		}
+		println(atoi)
 		if atoi < 1 || atoi > 151 {
 			return fiber.NewError(fiber.StatusNotFound, fmt.Sprintf("Dexnum %s is out of range\n", c.Params("dexnum")))
 		}
 		pokemon, err := pg.GetAPokemon(c.Params("dexnum"), db)
+		fmt.Printf("%+v\n", pokemon)
 		filePath := fmt.Sprintf("%03d%s.png", pokemon.Dexnum, pokemon.Name)
 		bucket := "pokemon"
 
+		println(filePath)
+		//todo cache the file
 		//todo check if file already exists
-		err = minioClient.FGetObject(context.Background(), bucket, "pokemon\\"+filePath, filePath, minio.GetObjectOptions{})
-
+		err = minioClient.FGetObject(context.Background(), bucket, "pokemon\\"+filePath, "./"+filePath, minio.GetObjectOptions{})
+		if err != nil{
+			println(err.Error())
+		}
+		println("sending file")
 		return c.SendFile(filePath, true)
 	})
 
@@ -143,4 +150,5 @@ func main() {
 		println(err.Error())
 		os.Exit(-1)
 	}
+
 }
