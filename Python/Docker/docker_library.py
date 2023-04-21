@@ -172,18 +172,18 @@ def create_python_container(container_name: str, image_name: str, timeout: int =
     waits until the server is accepting connections
     """
 
-    # current_time = 0
-    # exit_code = -2
-    # while exit_code != 0 and current_time != timeout:
-    #     returned = container.exec_run(f"pg_isready")
-    #     print(f"pg_isready: {returned}")
-    #     if len(returned) > 0:
-    #         exit_code = returned[0]
-    #     time.sleep(1)
-    #     current_time += 1
-    #
-    # print(f"Container {container} Ready")
-    # pass
+    current_time = 0
+    exit_code = -2
+    while exit_code != 0 and current_time != timeout:
+        returned = container.exec_run(f"pg_isready")
+        print(f"pg_isready: {returned}")
+        if len(returned) > 0:
+            exit_code = returned[0]
+        time.sleep(1)
+        current_time += 1
+
+    print(f"Container {container} Ready")
+    pass
 
 
 def create_kafka_container(container_name: str, image_name: str, timeout: int = 30):

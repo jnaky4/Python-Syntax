@@ -1,8 +1,10 @@
 package docker
 
 import (
+	"bytes"
 	"context"
 	"fmt"
+	"github.com/docker/docker/pkg/stdcopy"
 	"io"
 	"io/ioutil"
 	"log"
@@ -348,4 +350,144 @@ func PostgresContainer(cli *client.Client, ctx context.Context) error {
 		return err
 	}
 	return nil
+}
+//type ExecResult struct {
+//	StdOut string
+//	StdErr string
+//	ExitCode int
+//}
+
+//func PostgresReady(cli *client.Client, ctx context.Context, cID string) (ExecResult,error) {
+//	var execResult ExecResult
+//	//ecfg := types.ExecConfig{
+//	//	AttachStderr: true,
+//	//	AttachStdout: true,
+//	//	Cmd: []string{"pg_isready"},
+//	//}
+//	//create, err := cli.ContainerExecCreate(ctx, cID, ecfg)
+//	//if err != nil {
+//	//	return execResult, err
+//	//}
+//	//err = cli.ContainerExecStart(ctx, create.ID, types.ExecStartCheck{})
+//	//if err != nil {
+//	//	return ExecResult{}, err
+//	//}
+//
+//	//return execResult, nil
+//
+//	resp, err := cli.ContainerExecAttach(ctx, cID, types.ExecStartCheck{})
+//	if err != nil {
+//		return execResult, err
+//	}
+//	defer resp.Close()
+//
+//	//read the output
+//	var outBuf, errBuf bytes.Buffer
+//	outputDone := make(chan error)
+//
+//	go func() {
+//		// StdCopy demultiplexes the stream into two buffers
+//		_, err = stdcopy.StdCopy(&outBuf, &errBuf, resp.Reader)
+//		outputDone <- err
+//	}()
+//
+//	select {
+//	case err := <-outputDone:
+//		if err != nil {
+//			return execResult, err
+//		}
+//		break
+//
+//	case <-ctx.Done():
+//		return execResult, ctx.Err()
+//	}
+//
+//	stdout, err := io.ReadAll(&outBuf)
+//	if err != nil {
+//		return execResult, err
+//	}
+//	stderr, err := io.ReadAll(&errBuf)
+//	if err != nil {
+//		return execResult, err
+//	}
+//
+//	res, err := cli.ContainerExecInspect(ctx, cID)
+//	if err != nil {
+//		return execResult, err
+//	}
+//
+//	execResult.ExitCode = res.ExitCode
+//	execResult.StdOut = string(stdout)
+//	execResult.StdErr = string(stderr)
+//	return execResult, nil
+//
+//}
+type ExecResult struct {
+	ExitCode  int
+	outBuffer *bytes.Buffer
+	errBuffer *bytes.Buffer
+}
+
+func Exec(ctx context.Context, cli client.APIClient, id string, cmd []string) (ExecResult, error) {
+	// prepare exec
+	execConfig := types.ExecConfig{
+		AttachStdout: true,
+		AttachStderr: true,
+		Cmd:          cmd,
+	}
+	cresp, err := cli.ContainerExecCreate(ctx, id, execConfig)
+	if err != nil {
+		return ExecResult{}, err
+	}
+	execID := cresp.ID
+
+	// run it, with stdout/stderr attached
+	aresp, err := cli.ContainerExecAttach(ctx, execID, types.ExecStartCheck{})
+	if err != nil {
+		return ExecResult{}, err
+	}
+	defer aresp.Close()
+
+	// read the output
+	var outBuf, errBuf bytes.Buffer
+	outputDone := make(chan error)
+
+	go func() {
+		// StdCopy demultiplexes the stream into two buffers
+		_, err = stdcopy.StdCopy(&outBuf, &errBuf, aresp.Reader)
+		outputDone <- err
+	}()
+
+	select {
+	case err := <-outputDone:
+		if err != nil {
+			return ExecResult{}, err
+		}
+		break
+
+	case <-ctx.Done():
+		return ExecResult{}, ctx.Err()
+	}
+
+	// get the exit code
+	iresp, err := cli.ContainerExecInspect(ctx, execID)
+	if err != nil {
+		return ExecResult{}, err
+	}
+
+	return ExecResult{ExitCode: iresp.ExitCode, outBuffer: &outBuf, errBuffer: &errBuf}, nil
+}
+// Stdout returns stdout output of a command run by Exec()
+func (res *ExecResult) Stdout() string {
+	return res.outBuffer.String()
+}
+
+// Stderr returns stderr output of a command run by Exec()
+func (res *ExecResult) Stderr() string {
+	return res.errBuffer.String()
+}
+
+// Combined returns combined stdout and stderr output of a command run by Exec()
+func (res *ExecResult) Combined() string {
+	return res.outBuffer.String() + res.errBuffer.String()
 }

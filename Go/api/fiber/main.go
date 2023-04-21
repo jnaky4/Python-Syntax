@@ -14,6 +14,7 @@ import (
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/spf13/viper"
 	"golang.org/x/net/context"
+	"os"
 	"strconv"
 )
 
@@ -42,14 +43,15 @@ func main() {
 	lg := log.NewLogger()
 
 	if err != nil {
-		panic(err)
+		println(err.Error())
+		os.Exit(-1)
 	}
 
 	defer db.Close()
 
 	err = db.Ping()
 	if err != nil {
-		panic(err)
+		os.Exit(-1)
 	}
 
 	//minio := minio.Client{
@@ -66,7 +68,8 @@ func main() {
 		Secure: useSSL,
 	})
 	if err != nil {
-		panic(err)
+		println(err.Error())
+		os.Exit(-1)
 	}
 
 	app := fiber.New()
@@ -137,6 +140,7 @@ func main() {
 
 	err = app.Listen(":3000")
 	if err != nil {
-		panic(err)
+		println(err.Error())
+		os.Exit(-1)
 	}
 }
