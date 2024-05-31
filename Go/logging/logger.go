@@ -21,13 +21,13 @@ const (
 //	NoLevel		6
 //	Disabled	7
 
-func NewLogger() zerolog.Logger {
+func NewZeroLogger() zerolog.Logger {
 	var level zerolog.Level
 	var err error
 	if viper.IsSet(LOGLEVEL) {
 		if level, err = zerolog.ParseLevel(viper.GetString(LOGLEVEL)); err != nil {
 			log.Warn().Msgf("error creating logger: %s", err.Error())
-			level = zerolog.WarnLevel
+			level = zerolog.ErrorLevel
 		}
 	}
 
@@ -45,3 +45,10 @@ func NewLogger() zerolog.Logger {
 	lg.Debug().Msgf("loglevel set to %v", lg.GetLevel())
 	return lg
 }
+
+//func NewSLOGLogger()*slog.Logger{
+//	log := slog.New(os.Stdout)
+//	log.SetFlags(slog.Ldate | slog.Ltime | slog.Lmicroseconds | slog.Llongfile)
+//	return log
+//}
+

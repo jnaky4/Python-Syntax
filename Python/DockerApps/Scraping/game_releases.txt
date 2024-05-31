@@ -1,0 +1,1939 @@
+Game: Momodora: Moonlit Farewell, Release Date: 2024-01-11T12:00:00Z
+Game: Crystal Story: Dawn of Dusk, Release Date: 2024-01-12T12:00:00Z
+Game: Legend of Grimrock, Release Date: 2024-01-15T12:00:00Z
+Game: The Walking Dead: Saints & Sinners, Release Date: 2020-10-13T12:00:00Z
+Game: Art of Rally, Release Date: 2020-09-23T12:00:00Z
+Game: Bulletstorm VR, Release Date: 2024-01-18T12:00:00Z
+Game: Choo-Choo Charles, Release Date: 2022-12-09T12:00:00Z
+Game: Prince of Persia: The Lost Crown, Release Date: 2024-01-18T12:00:00Z
+Game: Turnip Boy Robs A Bank, Release Date: 2024-01-18T12:00:00Z
+Game: Another Code: Recollection, Release Date: 2024-01-19T12:00:00Z
+Game: The Last of Us Part II Remastered, Release Date: 2024-01-19T12:00:00Z
+Game: Graven, Release Date: 2024-01-23T12:00:00Z
+Game: Howl, Release Date: 2023-11-14T12:00:00Z
+Game: Immortality, Release Date: 2022-11-16T12:00:00Z
+Game: Apollo Justice: Ace Attorney Trilogy, Release Date: 2024-01-25T12:00:00Z
+Game: Grime, Release Date: 2021-08-02T12:00:00Z
+Game: Hidden Through Time 2: Myths & Magic, Release Date: 2023-10-05T12:00:00Z
+Game: Hitman: Blood Money - Reprisal, Release Date: 2023-11-30T12:00:00Z
+Game: Phantom Abyss, Release Date: 2024-01-25T12:00:00Z
+Game: Like A Dragon: Infinite Wealth, Release Date: 2024-01-26T12:00:00Z
+Game: Tekken 8, Release Date: 2024-01-26T12:00:00Z
+Game: Death Stranding Director's Cut, Release Date: 2021-09-24T12:00:00Z
+Game: Insurgency: Sandstorm, Release Date: 2021-09-29T12:00:00Z
+Game: BlazBlue Entropy Effect, Release Date: 2024-01-31T12:00:00Z
+Game: Silent Hill: The Short Message, Release Date: 2024-01-31T12:00:00Z
+Game: Song of Nunu: A League of Legends Story, Release Date: 2023-11-01T12:00:00Z
+Game: Granblue Fantasy: Relink, Release Date: 2024-02-01T12:00:00Z
+Game: Moonbreaker, Release Date: 2024-02-01T12:00:00Z
+Game: One Punch Man: World, Release Date: 2024-02-01T12:00:00Z
+Game: Jujutsu Kaisen Cursed Clash, Release Date: 2024-02-02T12:00:00Z
+Game: Persona 3 Reload, Release Date: 2024-02-02T12:00:00Z
+Game: Suicide Squad: Kill The Justice League, Release Date: 2024-02-02T12:00:00Z
+Game: Vampire: The Masquerade - Justice, Release Date: 2023-11-02T12:00:00Z
+Game: Foamstars, Release Date: 2024-02-06T12:00:00Z
+Game: Helldivers 2, Release Date: 2024-02-08T12:00:00Z
+Game: Wytchwood, Release Date: 2021-12-09T12:00:00Z
+Game: Resident Evil 4 Gold Edition, Release Date: 2024-02-09T12:00:00Z
+Game: Banishers: Ghosts of New Eden, Release Date: 2024-02-13T12:00:00Z
+Game: Dragon Quest Builders, Release Date: 2022-05-26T12:00:00Z
+Game: Islands of Insight, Release Date: 2024-02-13T12:00:00Z
+Game: Lysfanga: The Time Shift Warrior, Release Date: 2024-02-13T12:00:00Z
+Game: Ultros, Release Date: 2024-02-13T12:00:00Z
+Game: Arzette: The Jewel of Faramore, Release Date: 2024-02-14T12:00:00Z
+Game: Tomb Raider I-III Remastered, Release Date: 2024-02-14T12:00:00Z
+Game: A Little to the Left, Release Date: 2022-11-09T12:00:00Z
+Game: Lake, Release Date: 2021-09-01T12:00:00Z
+Game: PlateUp!, Release Date: 2022-08-04T12:00:00Z
+Game: Mario Vs. Donkey Kong, Release Date: 2024-02-16T12:00:00Z
+Game: Skull and Bones, Release Date: 2024-02-16T12:00:00Z
+Game: Balatro, Release Date: 2024-02-20T12:00:00Z
+Game: qomp2, Release Date: 2024-02-20T12:00:00Z
+Game: Warframe, Release Date: 2020-11-26T12:00:00Z
+Game: Bandle Tale: A League of Legends Story, Release Date: 2024-02-21T12:00:00Z
+Game: Last Epoch, Release Date: 2024-02-21T12:00:00Z
+Game: Penny's Big Breakaway, Release Date: 2024-02-21T12:00:00Z
+Game: Pocket Card Jockey: Ride On!, Release Date: 2023-01-20T12:00:00Z
+Game: Slave Zero X, Release Date: 2024-04-11T12:00:00Z
+Game: Terminator: Dark Fate – Defiance, Release Date: 2024-02-21T12:00:00Z
+Game: Inkulinati, Release Date: 2024-02-22T12:00:00Z
+Game: Pacific Drive, Release Date: 2024-02-22T12:00:00Z
+Game: Pentiment, Release Date: 2022-11-15T12:00:00Z
+Game: Sons of the Forest, Release Date: 2024-02-22T12:00:00Z
+Game: Splatoon 3: Expansion Pass – Side Order, Release Date: 2024-02-22T12:00:00Z
+Game: Brothers: A Tale of Two Sons Remake, Release Date: 2024-02-28T12:00:00Z
+Game: Cook, Release Date: Serve, Delicious! 3?!, 2020-10-14T12:00:00Z
+Game: Star Wars: Dark Forces Remaster, Release Date: 2024-02-28T12:00:00Z
+Game: Dragon Ball FighterZ, Release Date: 2024-02-29T12:00:00Z
+Game: Final Fantasy VII Rebirth, Release Date: 2024-02-29T12:00:00Z
+Game: Heavenly Bodies, Release Date: 2021-12-07T12:00:00Z
+Game: Ufouria: The Saga 2, Release Date: 2024-03-01T12:00:00Z
+Game: Expeditions: A MudRunner Game, Release Date: 2024-03-05T12:00:00Z
+Game: Quilts and Cats of Calico, Release Date: 2024-03-05T12:00:00Z
+Game: The Outlast Trials, Release Date: 2024-03-05T12:00:00Z
+Game: S.T.A.L.K.E.R.: Legends of the Zone Trilogy, Release Date: 2024-03-06T12:00:00Z
+Game: As Dusk Falls, Release Date: 2022-07-19T12:00:00Z
+Game: Snufkin: Melody of Moominvalley, Release Date: 2024-03-07T12:00:00Z
+Game: The Pirate Queen: A Forgotten Legend, Release Date: 2024-03-07T12:00:00Z
+Game: Akka Arrh, Release Date: 2023-02-21T12:00:00Z
+Game: Unicorn Overlord, Release Date: 2024-03-08T12:00:00Z
+Game: WWE 2K24, Release Date: 2024-03-08T12:00:00Z
+Game: Contra: Operation Galuga, Release Date: 2024-03-12T12:00:00Z
+Game: Melatonin, Release Date: 2022-12-22T12:00:00Z
+Game: Passing By - A Tailwind Journey, Release Date: 2024-03-12T12:00:00Z
+Game: Llamasoft: The Jeff Minter Story, Release Date: 2024-03-13T12:00:00Z
+Game: Cartel Tycoon, Release Date: 2021-03-18T12:00:00Z
+Game: Gylt, Release Date: 2023-07-06T12:00:00Z
+Game: Highwater, Release Date: 2023-03-14T12:00:00Z
+Game: Ib, Release Date: 2022-04-11T12:00:00Z
+Game: Lawn Mowing Simulator, Release Date: 2021-08-10T12:00:00Z
+Game: Star Wars: Battlefront Classic Collection, Release Date: 2024-03-14T12:00:00Z
+Game: The Vale: Shadow of the Crown, Release Date: 2021-08-19T12:00:00Z
+Game: What the Golf?, Release Date: 2020-05-21T12:00:00Z
+Game: Kingdom Come: Deliverance - Royal Edition, Release Date: 2024-03-15T12:00:00Z
+Game: Outcast: A New Beginning, Release Date: 2024-03-15T12:00:00Z
+Game: Hades, Release Date: 2020-09-17T12:00:00Z
+Game: Hi-Fi Rush, Release Date: 2023-01-25T12:00:00Z
+Game: MLB The Show 24, Release Date: 2024-03-19T12:00:00Z
+Game: Alone in the Dark (2024), Release Date: 2024-03-20T12:00:00Z
+Game: Call of Duty: Warzone Mobile, Release Date: 2024-03-21T12:00:00Z
+Game: Final Fantasy XIV: A Realm Reborn, Release Date: 2021-05-25T12:00:00Z
+Game: Final Fantasy XIV: Endwalker, Release Date: 2021-12-07T12:00:00Z
+Game: Final Fantasy XIV: Heavensward, Release Date: 2024-03-21T12:00:00Z
+Game: Final Fantasy XIV: Shadowbringers, Release Date: 2024-03-21T12:00:00Z
+Game: Final Fantasy XIV: Stormblood, Release Date: 2024-03-21T12:00:00Z
+Game: Horizon Forbidden West, Release Date: 2022-02-18T12:00:00Z
+Game: Midnight Ghost Hunt, Release Date: 2024-03-21T12:00:00Z
+Game: Dragon's Dogma 2, Release Date: 2024-03-22T12:00:00Z
+Game: Princess Peach: Showtime, Release Date: 2024-03-22T12:00:00Z
+Game: Rise of the Rōnin, Release Date: 2024-03-22T12:00:00Z
+Game: Acolyte of the Altar, Release Date: 2024-03-25T12:00:00Z
+Game: Bulwark: Falconeer Chronicles, Release Date: 2024-03-26T12:00:00Z
+Game: Grandia HD Collection, Release Date: 2024-03-26T12:00:00Z
+Game: Planet Zoo: Console Edition, Release Date: 2024-03-26T12:00:00Z
+Game: South Park: Snow Day!, Release Date: 2024-03-26T12:00:00Z
+Game: Ghost Trick: Phantom Detective, Release Date: 2023-06-30T12:00:00Z
+Game: Open Roads, Release Date: 2024-03-28T12:00:00Z
+Game: Outward, Release Date: 2020-11-30T12:00:00Z
+Game: Pepper Grinder, Release Date: 2024-03-28T12:00:00Z
+Game: Madison, Release Date: 2022-07-08T12:00:00Z
+Game: Deceit 2, Release Date: 2023-09-14T12:00:00Z
+Game: Freedom Planet 2, Release Date: 2022-09-13T12:00:00Z
+Game: Turbo Golf Racing, Release Date: 2024-04-04T12:00:00Z
+Game: Botany Manor, Release Date: 2024-04-09T12:00:00Z
+Game: Children of the Sun, Release Date: 2024-04-09T12:00:00Z
+Game: Gigantic: Rampage Edition, Release Date: 2024-04-09T12:00:00Z
+Game: Inkbound, Release Date: 2024-04-09T12:00:00Z
+Game: House Flipper 2, Release Date: 2023-12-14T12:00:00Z
+Game: Let's! Revolution!, Release Date: 2023-07-19T12:00:00Z
+Game: Grounded, Release Date: 2022-09-27T12:00:00Z
+Game: Harold Halibut, Release Date: 2024-04-16T12:00:00Z
+Game: Planet of Lana, Release Date: 2023-05-23T12:00:00Z
+Game: Rose & Camellia Collection, Release Date: 2024-04-16T12:00:00Z
+Game: Final Fantasy XVI: The Rising Tide, Release Date: 2024-04-18T12:00:00Z
+Game: Eiyuden Chronicle: Hundred Heroes, Release Date: 2024-04-23T12:00:00Z
+Game: Lunar Lander: Beyond, Release Date: 2024-04-23T12:00:00Z
+Game: Phantom Fury, Release Date: 2024-04-23T12:00:00Z
+Game: Tales of Kenzera: Zau, Release Date: 2024-04-23T12:00:00Z
+Game: Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants, Release Date: 2024-04-23T12:00:00Z
+Game: Another Crab's Treasure, Release Date: 2024-04-25T12:00:00Z
+Game: SaGa Emerald Beyond, Release Date: 2024-04-25T12:00:00Z
+Game: Demon Slayer - Kimestsu no Yaiba - Sweep the Board!, Release Date: 2024-04-26T12:00:00Z
+Game: Sand Land, Release Date: 2024-04-26T12:00:00Z
+Game: Stellar Blade, Release Date: 2024-04-26T12:00:00Z
+Game: TopSpin 2K25, Release Date: 2024-04-26T12:00:00Z
+Game: El Shaddai: Ascension of the Metatron HD Remaster, Release Date: 2021-09-01T12:00:00Z
+Game: Braid: Anniversary Edition, Release Date: 2024-04-30T12:00:00Z
+Game: Front Mission 2: Remake, Release Date: 2023-10-05T12:00:00Z
+Game: Sea of Thieves, Release Date: 2020-11-10T12:00:00Z
+Game: Endless Ocean Luminous, Release Date: 2024-05-02T12:00:00Z
+Game: Prison Architect 2, Release Date: 2024-05-07T12:00:00Z
+Game: Seed of Life, Release Date: 2021-08-11T12:00:00Z
+Game: Indika, Release Date: 2024-05-08T12:00:00Z
+Game: V Rising, Release Date: 2024-05-08T12:00:00Z
+Game: Animal Well, Release Date: 2024-05-09T12:00:00Z
+Game: Crow Country, Release Date: 2024-05-09T12:00:00Z
+Game: Homeworld 3, Release Date: 2024-05-13T12:00:00Z
+Game: Biomutant, Release Date: 2021-05-25T12:00:00Z
+Game: Ghost of Tsushima Director's Cut, Release Date: 2021-08-20T12:00:00Z
+Game: Read Only Memories: Neurodiver, Release Date: 2024-05-16T12:00:00Z
+Game: Paper Trail, Release Date: 2024-05-21T12:00:00Z
+Game: Senua's Saga: Hellblade II, Release Date: 2024-05-21T12:00:00Z
+Game: System Shock, Release Date: 2023-05-30T12:00:00Z
+Game: Hauntii, Release Date: 2024-05-23T12:00:00Z
+Game: Paper Mario: The Thousand-Year Door, Release Date: 2024-05-23T12:00:00Z
+Game: World of Goo 2, Release Date: 2024-05-23T12:00:00Z
+Game: MultiVersus, Release Date: 2024-05-28T12:00:00Z
+Game: Nine Sols, Release Date: 2024-05-29T12:00:00Z
+Game: F1 24, Release Date: 2024-05-31T12:00:00Z
+Game: Destiny 2: The Final Shape, Release Date: 2024-06-04T12:00:00Z
+Game: Killer Klowns From Outer Space: The Game, Release Date: 2024-06-04T12:00:00Z
+Game: Monster Hunter Stories, Release Date: 2024-06-14T12:00:00Z
+Game: Monster Hunter Stories 2: Wings Of Ruin, Release Date: 2021-07-09T12:00:00Z
+Game: #BLUD, Release Date: 2024-06-18T12:00:00Z
+Game: Still Wakes the Deep, Release Date: 2024-06-18T12:00:00Z
+Game: Elden Ring Shadow of the Erdtree, Release Date: 2024-06-21T12:00:00Z
+Game: Shin Megami Tensei V: Vengeance, Release Date: 2024-06-21T12:00:00Z
+Game: Super Monkey Ball Banana Rumble, Release Date: 2024-06-25T12:00:00Z
+Game: Luigi's Mansion 2 HD, Release Date: 2024-06-27T12:00:00Z
+Game: Spy x Anya: Operation Memories, Release Date: 2024-06-28T12:00:00Z
+Game: Final Fantasy XIV: Dawntrail, Release Date: 2024-07-02T12:00:00Z
+Game: The Legend of Heroes: Trails Through Daybreak, Release Date: 2024-07-05T12:00:00Z
+Game: Ace Combat 7: Skies Unknown, Release Date: 2024-07-11T12:00:00Z
+Game: Cataclismo, Release Date: 2024-07-16T12:00:00Z
+Game: Bō: Path of the Teal Lotus, Release Date: 2024-07-18T12:00:00Z
+Game: Frostpunk 2, Release Date: 2024-07-25T12:00:00Z
+Game: Black Myth: Wukong, Release Date: 2024-08-20T12:00:00Z
+Game: Dustborn, Release Date: 2024-08-20T12:00:00Z
+Game: Enotria: The Last Song, Release Date: 2024-08-21T12:00:00Z
+Game: S.T.A.L.K.E.R. 2: Heart of Chornobyl, Release Date: 2024-09-05T12:00:00Z
+Game: Warhammer 40,000: Space Marine 2, Release Date: 2024-09-09T12:00:00Z
+Game: Slender: The Arrival, Release Date: 2021-10-13T12:00:00Z
+Game: Earth Defense Force: World Brothers 2, Release Date: 2024-09-26T12:00:00Z
+Game: Fantasy Life i: The Girl Who Steals Time, Release Date: 2024-10-10T12:00:00Z
+Game: Toy Soldiers HD, Release Date: 2021-10-20T12:00:00Z
+Game: We Are The Caretakers, Release Date: 2023-01-06T12:00:00Z
+Game: Children of Silentown, Release Date: 2023-01-11T12:00:00Z
+Game: KartRider: Drift, Release Date: 2023-01-11T12:00:00Z
+Game: Lone Ruin, Release Date: 2023-01-12T12:00:00Z
+Game: Vengeful Guardian: Moonrider, Release Date: 2023-01-12T12:00:00Z
+Game: Dragon Ball Z: Kakarot, Release Date: 2020-01-17T12:00:00Z
+Game: One Piece Odyssey, Release Date: 2023-01-13T12:00:00Z
+Game: Osiris: New Dawn, Release Date: 2023-01-18T12:00:00Z
+Game: A Space for the Unbound, Release Date: 2023-01-19T12:00:00Z
+Game: Colossal Cave, Release Date: 2023-11-14T12:00:00Z
+Game: Persona 4 Golden, Release Date: 2020-06-13T12:00:00Z
+Game: Shin Megami Tensei: Persona 3 Portable, Release Date: 2023-01-19T12:00:00Z
+Game: Fire Emblem Engage, Release Date: 2023-01-20T12:00:00Z
+Game: Monster Hunter Rise, Release Date: 2021-03-26T12:00:00Z
+Game: The House of the Dead: Remake, Release Date: 2022-04-28T12:00:00Z
+Game: Forspoken, Release Date: 2023-01-24T12:00:00Z
+Game: Kingdom Rush, Release Date: 2020-07-30T12:00:00Z
+Game: Risen, Release Date: 2023-01-24T12:00:00Z
+Game: World War Z, Release Date: 2021-11-02T12:00:00Z
+Game: Devolver Tumble Time, Release Date: 2023-01-26T12:00:00Z
+Game: Hitman World of Assassination, Release Date: 2023-01-26T12:00:00Z
+Game: Dead Space (Remake), Release Date: 2023-01-27T12:00:00Z
+Game: GoldenEye 007, Release Date: 2023-01-27T12:00:00Z
+Game: Powerwash Simulator, Release Date: 2022-07-14T12:00:00Z
+Game: Trek to Yomi, Release Date: 2022-05-05T12:00:00Z
+Game: Age of Empires II: Definitive Edition, Release Date: 2023-01-31T12:00:00Z
+Game: Industries of Titan, Release Date: 2023-01-31T12:00:00Z
+Game: Season: A Letter to the Future, Release Date: 2023-01-31T12:00:00Z
+Game: SpongeBob SquarePants: The Cosmic Shake, Release Date: 2023-12-12T12:00:00Z
+Game: Valiant Hearts: Coming Home, Release Date: 2023-01-31T12:00:00Z
+Game: We Were Here Forever, Release Date: 2022-05-10T12:00:00Z
+Game: Football Manager 2023, Release Date: 2022-11-08T12:00:00Z
+Game: Chef Life: A Restaurant Simulator, Release Date: 2023-02-02T12:00:00Z
+Game: Deliver Us Mars, Release Date: 2023-02-02T12:00:00Z
+Game: Life Is Strange 2, Release Date: 2023-02-02T12:00:00Z
+Game: Tails: The Backbone Preludes, Release Date: 2023-02-02T12:00:00Z
+Game: The Pathless, Release Date: 2020-11-12T12:00:00Z
+Game: Dicey Dungeons, Release Date: 2020-12-15T12:00:00Z
+Game: Endling – Extinction is Forever, Release Date: 2022-11-03T12:00:00Z
+Game: Metroid Prime Remastered, Release Date: 2023-02-08T12:00:00Z
+Game: Hogwarts Legacy, Release Date: 2023-11-14T12:00:00Z
+Game: Blanc, Release Date: 2023-02-14T12:00:00Z
+Game: Boyfriend Dungeon, Release Date: 2021-08-11T12:00:00Z
+Game: Journey to the Savage Planet, Release Date: 2020-05-21T12:00:00Z
+Game: Souls of Chronos, Release Date: 2023-02-14T12:00:00Z
+Game: Tomb Raider Reloaded, Release Date: 2023-02-14T12:00:00Z
+Game: Wanted: Dead, Release Date: 2023-02-14T12:00:00Z
+Game: Pharaoh: A New Era, Release Date: 2023-02-15T12:00:00Z
+Game: Returnal, Release Date: 2021-04-30T12:00:00Z
+Game: Dust & Neon, Release Date: 2023-02-16T12:00:00Z
+Game: Shadow Warrior 3, Release Date: 2022-03-01T12:00:00Z
+Game: Theatrhythm Final Bar Line, Release Date: 2023-02-16T12:00:00Z
+Game: Gigantosaurus: Dino Kart, Release Date: 2023-02-17T12:00:00Z
+Game: Tales Of Symphonia Remastered, Release Date: 2023-02-17T12:00:00Z
+Game: The Settlers: New Allies, Release Date: 2023-02-17T12:00:00Z
+Game: Wild Hearts, Release Date: 2023-02-17T12:00:00Z
+Game: Atomic Heart, Release Date: 2023-02-21T12:00:00Z
+Game: Like A Dragon: Ishin!, Release Date: 2023-02-21T12:00:00Z
+Game: After the Fall, Release Date: 2021-12-09T12:00:00Z
+Game: Altair Breaker, Release Date: 2022-08-18T12:00:00Z
+Game: Cities: VR - Enhanced Edition, Release Date: 2023-02-22T12:00:00Z
+Game: Cosmonious High, Release Date: 2023-03-31T12:00:00Z
+Game: Demeo, Release Date: 2021-05-06T12:00:00Z
+Game: Digimon World: Next Order, Release Date: 2023-02-22T12:00:00Z
+Game: Drums Rock, Release Date: 2022-02-17T12:00:00Z
+Game: Dyschronia: Chronos Alternate, Release Date: 2022-09-22T12:00:00Z
+Game: FantaVision, Release Date: 2023-02-22T12:00:00Z
+Game: Gran Turismo 7, Release Date: 2022-03-04T12:00:00Z
+Game: Horizon Call of the Mountain, Release Date: 2023-02-22T12:00:00Z
+Game: Job Simulator: The 2050 Archives, Release Date: 2023-02-22T12:00:00Z
+Game: Jurassic World Aftermath Collection, Release Date: 2022-11-10T12:00:00Z
+Game: Kayak VR: Mirage, Release Date: 2022-07-12T12:00:00Z
+Game: Kizuna AI - Touch the Beat, Release Date: 2020-10-12T12:00:00Z
+Game: Moss and Moss: Book II Bundle, Release Date: 2023-02-22T12:00:00Z
+Game: NFL Pro Era, Release Date: 2022-09-27T12:00:00Z
+Game: No Man's Sky, Release Date: 2020-11-12T12:00:00Z
+Game: Pavlov VR, Release Date: 2023-02-22T12:00:00Z
+Game: Pistol Whip, Release Date: 2020-07-28T12:00:00Z
+Game: PlayStation VR2, Release Date: 2023-02-22T12:00:00Z
+Game: Puzzling Places, Release Date: 2021-09-02T12:00:00Z
+Game: Resident Evil Village, Release Date: 2021-05-07T12:00:00Z
+Game: Rez Infinite, Release Date: 2020-10-12T12:00:00Z
+Game: Runner, Release Date: 2023-02-22T12:00:00Z
+Game: Song in the Smoke, Release Date: 2021-10-07T12:00:00Z
+Game: Star Wars: Tales from the Galaxy's Edge, Release Date: 2020-11-19T12:00:00Z
+Game: Synth Riders, Release Date: 2021-08-09T12:00:00Z
+Game: Tentacular, Release Date: 2022-03-24T12:00:00Z
+Game: Tetris Effect: Connected, Release Date: 2020-11-10T12:00:00Z
+Game: The Last Clockwinder, Release Date: 2022-06-02T12:00:00Z
+Game: The Light Brigade, Release Date: 2023-02-22T12:00:00Z
+Game: The Tale of Onogoro, Release Date: 2022-12-25T12:00:00Z
+Game: Thumper, Release Date: 2023-02-22T12:00:00Z
+Game: Townsmen VR, Release Date: 2023-02-22T12:00:00Z
+Game: Vacation Simulator, Release Date: 2023-02-22T12:00:00Z
+Game: What the Bat?, Release Date: 2022-11-17T12:00:00Z
+Game: Zenith: The Last City, Release Date: 2022-01-27T12:00:00Z
+Game: Zombieland: Headshot Fever Reloaded, Release Date: 2021-07-16T12:00:00Z
+Game: Blood Bowl 3, Release Date: 2023-02-23T12:00:00Z
+Game: Company of Heroes 3, Release Date: 2023-05-30T12:00:00Z
+Game: Gal Guardians: Demon Purge, Release Date: 2023-02-23T12:00:00Z
+Game: Clive 'N' Wrench, Release Date: 2023-02-24T12:00:00Z
+Game: Kirby's Return To Dream Land Deluxe, Release Date: 2023-02-24T12:00:00Z
+Game: Octopath Traveler II, Release Date: 2023-02-24T12:00:00Z
+Game: Destiny 2: Lightfall, Release Date: 2023-02-28T12:00:00Z
+Game: Dungeons of Aether, Release Date: 2023-02-28T12:00:00Z
+Game: Rytmos, Release Date: 2023-08-01T12:00:00Z
+Game: Scars Above, Release Date: 2023-02-28T12:00:00Z
+Game: Street Fighter: Duel, Release Date: 2023-02-28T12:00:00Z
+Game: Leap, Release Date: 2023-03-01T12:00:00Z
+Game: Ruined King: A League of Legends Story, Release Date: 2021-11-16T12:00:00Z
+Game: Wo Long: Fallen Dynasty, Release Date: 2023-03-03T12:00:00Z
+Game: Dead Cells: Return To Castlevania, Release Date: 2023-03-06T12:00:00Z
+Game: Outlanders, Release Date: 2023-03-07T12:00:00Z
+Game: Pronty, Release Date: 2021-11-18T12:00:00Z
+Game: Clash: Artifacts of Chaos, Release Date: 2023-03-09T12:00:00Z
+Game: Fatal Frame: Mask of the Lunar Eclipse, Release Date: 2023-03-09T12:00:00Z
+Game: Know By Heart, Release Date: 2022-02-10T12:00:00Z
+Game: Monster Energy Supercross 6, Release Date: 2023-03-09T12:00:00Z
+Game: Oni: Road to be the Mightiest Oni, Release Date: 2023-03-09T12:00:00Z
+Game: Session: Skate Sim, Release Date: 2022-09-22T12:00:00Z
+Game: Before Your Eyes, Release Date: 2021-09-28T12:00:00Z
+Game: DC's Justice League: Cosmic Chaos, Release Date: 2023-03-10T12:00:00Z
+Game: The Forest Cathedral, Release Date: 2023-11-07T12:00:00Z
+Game: The Legend of Heroes: Trails to Azure, Release Date: 2023-03-14T12:00:00Z
+Game: The Wreck, Release Date: 2023-03-14T12:00:00Z
+Game: Wolcen: Lords of Mayhem, Release Date: 2020-02-13T12:00:00Z
+Game: Anno 1800, Release Date: 2023-03-16T12:00:00Z
+Game: The Dark Pictures: Switchback VR, Release Date: 2023-03-16T12:00:00Z
+Game: Bayonetta Origins: Cereza and the Lost Demon, Release Date: 2023-03-17T12:00:00Z
+Game: WWE 2K23, Release Date: 2023-03-17T12:00:00Z
+Game: Remnant: From The Ashes, Release Date: 2023-03-21T12:00:00Z
+Game: Tchia, Release Date: 2023-03-21T12:00:00Z
+Game: The Walking Dead: Saints & Sinners - Chapter 2: Retribution, Release Date: 2022-12-01T12:00:00Z
+Game: Have a Nice Death, Release Date: 2023-12-05T12:00:00Z
+Game: Atelier Ryza 3: Alchemist of the End & the Secret Key, Release Date: 2023-03-23T12:00:00Z
+Game: Storyteller, Release Date: 2023-03-23T12:00:00Z
+Game: Resident Evil 4 (Remake), Release Date: 2023-12-20T12:00:00Z
+Game: 9 Years of Shadows, Release Date: 2023-11-09T12:00:00Z
+Game: Crime Boss: Rockay City, Release Date: 2023-06-15T12:00:00Z
+Game: MLB The Show 23, Release Date: 2023-03-28T12:00:00Z
+Game: Sifu, Release Date: 2022-11-08T12:00:00Z
+Game: Terra Nil, Release Date: 2023-12-18T12:00:00Z
+Game: The Last of Us Part I, Release Date: 2022-09-02T12:00:00Z
+Game: Dredge, Release Date: 2023-03-30T12:00:00Z
+Game: The Last Worker, Release Date: 2023-03-30T12:00:00Z
+Game: Citizen Sleeper, Release Date: 2022-05-05T12:00:00Z
+Game: The Murder of Sonic the Hedgehog, Release Date: 2023-03-31T12:00:00Z
+Game: Creed: Rise to Glory – Championship Edition, Release Date: 2023-04-04T12:00:00Z
+Game: GrimGrimoire OnceMore, Release Date: 2023-04-04T12:00:00Z
+Game: Meet Your Maker, Release Date: 2023-04-04T12:00:00Z
+Game: Road 96: Mile 0, Release Date: 2023-04-04T12:00:00Z
+Game: Batora: Lost Haven, Release Date: 2022-10-20T12:00:00Z
+Game: Curse of the Sea Rats, Release Date: 2023-04-06T12:00:00Z
+Game: Everspace 2, Release Date: 2023-08-15T12:00:00Z
+Game: Pupperazzi, Release Date: 2022-01-20T12:00:00Z
+Game: EA Sports PGA Tour, Release Date: 2023-04-07T12:00:00Z
+Game: Sherlock Holmes: The Awakened (Remake), Release Date: 2023-04-11T12:00:00Z
+Game: Tron: Identity, Release Date: 2023-04-11T12:00:00Z
+Game: Ghostwire: Tokyo, Release Date: 2022-03-25T12:00:00Z
+Game: Mega Man Battle Network Legacy Collection, Release Date: 2023-04-14T12:00:00Z
+Game: Disney Speedstorm, Release Date: 2023-04-18T12:00:00Z
+Game: God of Rock, Release Date: 2023-04-18T12:00:00Z
+Game: Minecraft Legends, Release Date: 2023-04-18T12:00:00Z
+Game: Puzzle Quest 3, Release Date: 2022-03-01T12:00:00Z
+Game: The Mageseeker: A League of Legends Story, Release Date: 2023-04-18T12:00:00Z
+Game: Final Fantasy Pixel Remaster Series, Release Date: 2021-07-29T12:00:00Z
+Game: Five Nights at Freddy's: Security Breach, Release Date: 2021-12-16T12:00:00Z
+Game: Horizon Forbidden West: Burning Shores, Release Date: 2023-04-19T12:00:00Z
+Game: Teslagrad 2, Release Date: 2023-04-19T12:00:00Z
+Game: Teslagrad Remastered, Release Date: 2023-04-19T12:00:00Z
+Game: Coffee Talk Episode 2: Hibiscus & Butterfly, Release Date: 2023-04-20T12:00:00Z
+Game: Lost Epic, Release Date: 2022-07-28T12:00:00Z
+Game: Outer Terror, Release Date: 2023-04-20T12:00:00Z
+Game: Super Meat Boy Forever, Release Date: 2020-12-23T12:00:00Z
+Game: Advance Wars 1+2: Re-Boot Camp, Release Date: 2023-04-21T12:00:00Z
+Game: Dead Island 2, Release Date: 2023-04-21T12:00:00Z
+Game: Afterimage, Release Date: 2023-04-25T12:00:00Z
+Game: Strayed Lights, Release Date: 2023-04-25T12:00:00Z
+Game: Desta: The Memories Between, Release Date: 2022-09-26T12:00:00Z
+Game: Honkai: Star Rail, Release Date: 2023-10-10T12:00:00Z
+Game: The Centennial Case: A Shijima Story, Release Date: 2022-05-12T12:00:00Z
+Game: Bramble: The Mountain King, Release Date: 2023-04-27T12:00:00Z
+Game: Lego Bricktales, Release Date: 2022-10-12T12:00:00Z
+Game: Live A Live, Release Date: 2022-07-22T12:00:00Z
+Game: Omega Strikers, Release Date: 2023-04-27T12:00:00Z
+Game: The Last Case of Benedict Fox, Release Date: 2023-04-27T12:00:00Z
+Game: Monster Hunter Rise: Sunbreak, Release Date: 2022-06-30T12:00:00Z
+Game: Star Wars Jedi: Survivor, Release Date: 2023-04-28T12:00:00Z
+Game: Age of Wonders 4, Release Date: 2023-05-02T12:00:00Z
+Game: Redfall, Release Date: 2023-05-02T12:00:00Z
+Game: Grindstone, Release Date: 2020-12-15T12:00:00Z
+Game: Super Dungeon Maker, Release Date: 2023-05-03T12:00:00Z
+Game: Ravenlok, Release Date: 2023-05-04T12:00:00Z
+Game: The Dark Pictures Anthology: Man Of Medan, Release Date: 2022-09-27T12:00:00Z
+Game: What The Car?, Release Date: 2023-05-04T12:00:00Z
+Game: Darkest Dungeon II, Release Date: 2023-05-08T12:00:00Z
+Game: Weird West, Release Date: 2022-03-31T12:00:00Z
+Game: Ys IX: Monstrum Nox, Release Date: 2021-07-06T12:00:00Z
+Game: The Lord of the Rings: Heroes of Middle-Earth, Release Date: 2023-05-10T12:00:00Z
+Game: Death or Treat, Release Date: 2023-07-12T12:00:00Z
+Game: Marvel's Midnight Suns, Release Date: 2022-12-02T12:00:00Z
+Game: The Legend of Zelda: Tears of the Kingdom, Release Date: 2023-05-12T12:00:00Z
+Game: Trackmania, Release Date: 2020-07-01T12:00:00Z
+Game: Humanity, Release Date: 2023-05-16T12:00:00Z
+Game: Firmament, Release Date: 2023-05-18T12:00:00Z
+Game: Lego 2K Drive, Release Date: 2023-05-19T12:00:00Z
+Game: After Us, Release Date: 2023-05-23T12:00:00Z
+Game: Bread & Fred, Release Date: 2023-05-23T12:00:00Z
+Game: Convergence: A League of Legends Story, Release Date: 2023-05-23T12:00:00Z
+Game: Farming Simulator 23, Release Date: 2023-05-23T12:00:00Z
+Game: Miasma Chronicles, Release Date: 2023-05-23T12:00:00Z
+Game: Star Trek: Resurgence, Release Date: 2023-05-23T12:00:00Z
+Game: Fights In Tight Spaces, Release Date: 2021-12-02T12:00:00Z
+Game: Hello Neighbor: Search and Rescue, Release Date: 2023-05-25T12:00:00Z
+Game: Maquette, Release Date: 2021-03-02T12:00:00Z
+Game: The Case of the Golden Idol, Release Date: 2022-10-22T12:00:00Z
+Game: The Lord of the Rings: Gollum, Release Date: 2023-05-25T12:00:00Z
+Game: Protodroid DeLTA, Release Date: 2023-05-26T12:00:00Z
+Game: Chicory: A Colorful Tale, Release Date: 2021-12-15T12:00:00Z
+Game: Friends vs Friends, Release Date: 2023-05-30T12:00:00Z
+Game: Away: The Survival Series, Release Date: 2021-09-28T12:00:00Z
+Game: Etrian Odyssey Origins Collection, Release Date: 2023-06-01T12:00:00Z
+Game: Killer Frequency, Release Date: 2023-06-01T12:00:00Z
+Game: SkateBIRD, Release Date: 2021-09-16T12:00:00Z
+Game: Street Fighter 6, Release Date: 2023-06-02T12:00:00Z
+Game: Super Mega Baseball 4, Release Date: 2023-06-02T12:00:00Z
+Game: We Love Katamari Reroll  + Royal Reverie, Release Date: 2023-06-02T12:00:00Z
+Game: Amnesia: The Bunker, Release Date: 2023-06-06T12:00:00Z
+Game: Diablo IV, Release Date: 2023-06-06T12:00:00Z
+Game: Harmony: The Fall of Reverie, Release Date: 2023-06-22T12:00:00Z
+Game: MotoGP 23, Release Date: 2023-06-08T12:00:00Z
+Game: Dordogne, Release Date: 2023-06-13T12:00:00Z
+Game: BattleBit Remastered, Release Date: 2023-06-15T12:00:00Z
+Game: Jack Jeanne, Release Date: 2023-06-15T12:00:00Z
+Game: Layers of Fear (2023), Release Date: 2023-06-15T12:00:00Z
+Game: ProtoCorgi, Release Date: 2023-06-15T12:00:00Z
+Game: F1 23, Release Date: 2023-06-16T12:00:00Z
+Game: Park Beyond, Release Date: 2023-06-16T12:00:00Z
+Game: Aliens: Dark Descent, Release Date: 2023-06-20T12:00:00Z
+Game: Crash Team Rumble, Release Date: 2023-06-20T12:00:00Z
+Game: Rogue Legacy 2, Release Date: 2022-11-09T12:00:00Z
+Game: Soulstice, Release Date: 2022-09-20T12:00:00Z
+Game: Pikmin 1+2, Release Date: 2023-06-21T12:00:00Z
+Game: Dr. Fetus' Mean Meat Machine, Release Date: 2023-06-22T12:00:00Z
+Game: Final Fantasy XVI, Release Date: 2023-06-22T12:00:00Z
+Game: Sonic Origins Plus, Release Date: 2023-06-23T12:00:00Z
+Game: Destroy All Humans 2 - Reprobed: Single Player, Release Date: 2023-06-27T12:00:00Z
+Game: Story of Seasons: A Wonderful Life, Release Date: 2023-06-27T12:00:00Z
+Game: Dave The Diver, Release Date: 2023-10-26T12:00:00Z
+Game: AEW: Fight Forever, Release Date: 2023-06-29T12:00:00Z
+Game: Dead Cells, Release Date: 2020-06-03T12:00:00Z
+Game: Mundaun, Release Date: 2021-03-16T12:00:00Z
+Game: The Lara Croft Collection, Release Date: 2023-06-29T12:00:00Z
+Game: Crime O'Clock, Release Date: 2023-06-30T12:00:00Z
+Game: Everybody 1-2-Switch, Release Date: 2023-06-30T12:00:00Z
+Game: Front Mission 1st: Remake, Release Date: 2022-11-30T12:00:00Z
+Game: Goodbye World, Release Date: 2022-11-17T12:00:00Z
+Game: Master Detective Archives: Rain Code, Release Date: 2023-06-30T12:00:00Z
+Game: Garbage Pail Kids: Mad Mike And The Quest For Stale Gum, Release Date: 2022-10-25T12:00:00Z
+Game: The Legend of Heroes: Trails into Reverie, Release Date: 2023-07-07T12:00:00Z
+Game: Bugsnax, Release Date: 2020-11-12T12:00:00Z
+Game: Lost in Play, Release Date: 2022-08-10T12:00:00Z
+Game: Mordhau, Release Date: 2023-07-12T12:00:00Z
+Game: Oxenfree II: Lost Signals, Release Date: 2023-07-12T12:00:00Z
+Game: Gravity Circuit, Release Date: 2023-07-13T12:00:00Z
+Game: Dragon Quest Treasures, Release Date: 2022-12-09T12:00:00Z
+Game: Exoprimal, Release Date: 2023-07-14T12:00:00Z
+Game: Naraka: Bladepoint, Release Date: 2021-08-12T12:00:00Z
+Game: Pokémon Go Plus +, Release Date: 2023-07-14T12:00:00Z
+Game: Toem, Release Date: 2021-09-17T12:00:00Z
+Game: Viewfinder, Release Date: 2023-12-12T12:00:00Z
+Game: Might & Magic: Clash of Heroes - Definitive Edition, Release Date: 2023-07-20T12:00:00Z
+Game: Pikmin 4, Release Date: 2023-07-21T12:00:00Z
+Game: Mr. Run And Jump, Release Date: 2023-07-25T12:00:00Z
+Game: Remnant II, Release Date: 2023-07-25T12:00:00Z
+Game: Ratchet & Clank: Rift Apart, Release Date: 2021-06-11T12:00:00Z
+Game: Double Dragon Gaiden: Rise of the Dragons, Release Date: 2023-07-27T12:00:00Z
+Game: Return to Monkey Island, Release Date: 2022-11-08T12:00:00Z
+Game: Roblox, Release Date: 2023-10-10T12:00:00Z
+Game: The Entropy Centre, Release Date: 2022-11-03T12:00:00Z
+Game: The Expanse: A Telltale Series, Release Date: 2023-07-27T12:00:00Z
+Game: The Room VR: A Dark Matter, Release Date: 2020-03-26T12:00:00Z
+Game: Disney Illusion Island, Release Date: 2023-07-28T12:00:00Z
+Game: F1 Manager 2023, Release Date: 2023-07-31T12:00:00Z
+Game: Venba, Release Date: 2023-07-31T12:00:00Z
+Game: Baldur's Gate 3, Release Date: 2023-12-07T12:00:00Z
+Game: Gord, Release Date: 2023-08-08T12:00:00Z
+Game: Tower of Fantasy, Release Date: 2022-10-20T12:00:00Z
+Game: 30XX, Release Date: 2023-09-01T12:00:00Z
+Game: Atlas Fallen, Release Date: 2023-08-10T12:00:00Z
+Game: Stray, Release Date: 2022-07-19T12:00:00Z
+Game: Stray Gods: The Roleplaying Musical, Release Date: 2023-08-10T12:00:00Z
+Game: House Flipper, Release Date: 2020-08-31T12:00:00Z
+Game: Hammerwatch II, Release Date: 2023-12-12T12:00:00Z
+Game: Moving Out 2, Release Date: 2023-08-15T12:00:00Z
+Game: Wayfinder, Release Date: 2023-08-15T12:00:00Z
+Game: Red Dead Redemption, Release Date: 2023-08-17T12:00:00Z
+Game: Red Dead Redemption: Undead Nightmare, Release Date: 2023-08-17T12:00:00Z
+Game: Shadow Gambit: The Cursed Crew, Release Date: 2023-08-17T12:00:00Z
+Game: Vampire Survivors, Release Date: 2022-12-08T12:00:00Z
+Game: Bomb Rush Cyberfunk, Release Date: 2023-09-01T12:00:00Z
+Game: Madden NFL 24, Release Date: 2023-08-18T12:00:00Z
+Game: The Texas Chain Saw Massacre, Release Date: 2023-08-18T12:00:00Z
+Game: Age of Empires IV, Release Date: 2021-10-28T12:00:00Z
+Game: Fort Solis, Release Date: 2023-08-22T12:00:00Z
+Game: Immortals of Aveum, Release Date: 2023-08-22T12:00:00Z
+Game: Marvel Snap, Release Date: 2022-10-18T12:00:00Z
+Game: Smurfs Kart, Release Date: 2022-11-15T12:00:00Z
+Game: WrestleQuest, Release Date: 2023-08-22T12:00:00Z
+Game: Blasphemous 2, Release Date: 2023-11-02T12:00:00Z
+Game: Curse Crackers: For Whom The Belle Toils, Release Date: 2023-08-24T12:00:00Z
+Game: Firewall Ultra, Release Date: 2023-08-24T12:00:00Z
+Game: Humankind, Release Date: 2021-08-17T12:00:00Z
+Game: Unpacking, Release Date: 2021-11-02T12:00:00Z
+Game: Armored Core VI Fires of Rubicon, Release Date: 2023-08-25T12:00:00Z
+Game: Crossfire: Sierra Squad, Release Date: 2023-11-01T12:00:00Z
+Game: Goodbye Volcano High, Release Date: 2023-08-29T12:00:00Z
+Game: Rhapsody: Marl Kingdom Chronicles, Release Date: 2023-08-29T12:00:00Z
+Game: Samba de Amigo: Party Central, Release Date: 2023-08-29T12:00:00Z
+Game: Sea of Stars, Release Date: 2023-08-29T12:00:00Z
+Game: Under the Waves, Release Date: 2023-08-29T12:00:00Z
+Game: Somerville, Release Date: 2022-11-14T12:00:00Z
+Game: The Big Con, Release Date: 2021-08-31T12:00:00Z
+Game: The Medium, Release Date: 2021-09-03T12:00:00Z
+Game: Trine 5: A Clockwork Conspiracy, Release Date: 2023-08-31T12:00:00Z
+Game: Chants of Sennaar, Release Date: 2023-09-05T12:00:00Z
+Game: Rune Factory 3 Special, Release Date: 2023-09-05T12:00:00Z
+Game: Starfield, Release Date: 2023-09-06T12:00:00Z
+Game: Final Fantasy VII Ever Crisis, Release Date: 2023-12-06T12:00:00Z
+Game: King's Bounty II, Release Date: 2021-08-24T12:00:00Z
+Game: Fae Farm, Release Date: 2023-09-08T12:00:00Z
+Game: NBA 2K24, Release Date: 2023-09-08T12:00:00Z
+Game: Synced, Release Date: 2023-09-08T12:00:00Z
+Game: Eternights, Release Date: 2023-09-12T12:00:00Z
+Game: MythForce, Release Date: 2023-09-12T12:00:00Z
+Game: Nour: Play With Your Food, Release Date: 2023-09-12T12:00:00Z
+Game: Super Bomberman R 2, Release Date: 2023-09-12T12:00:00Z
+Game: Gunbrella, Release Date: 2023-09-13T12:00:00Z
+Game: Pokémon Scarlet And Violet: The Hidden Treasure Of Area Zero – The Teal Mask, Release Date: 2023-09-13T12:00:00Z
+Game: Ad Infinitum, Release Date: 2023-09-14T12:00:00Z
+Game: AK-Xolotl, Release Date: 2023-09-14T12:00:00Z
+Game: Dune: Spice Wars, Release Date: 2023-11-28T12:00:00Z
+Game: F-Zero 99, Release Date: 2023-09-14T12:00:00Z
+Game: Monster Hunter Now, Release Date: 2023-09-14T12:00:00Z
+Game: Solar Ash, Release Date: 2021-12-02T12:00:00Z
+Game: The Crew Motorfest, Release Date: 2023-09-14T12:00:00Z
+Game: Thunder Ray, Release Date: 2023-09-14T12:00:00Z
+Game: Trombone Champ, Release Date: 2022-09-15T12:00:00Z
+Game: Baten Kaitos I & II HD Remaster, Release Date: 2023-09-15T12:00:00Z
+Game: Gloomhaven, Release Date: 2023-09-18T12:00:00Z
+Game: Lies of P, Release Date: 2023-09-19T12:00:00Z
+Game: Mortal Kombat 1, Release Date: 2023-09-19T12:00:00Z
+Game: You Suck At Parking, Release Date: 2022-09-14T12:00:00Z
+Game: Moonstone Island, Release Date: 2023-09-20T12:00:00Z
+Game: Party Animals, Release Date: 2023-09-20T12:00:00Z
+Game: Days Of Doom, Release Date: 2023-09-21T12:00:00Z
+Game: Payday 3, Release Date: 2023-09-21T12:00:00Z
+Game: Resident Evil 4 Separate Ways DLC, Release Date: 2023-09-21T12:00:00Z
+Game: Tangle Tower, Release Date: 2021-10-06T12:00:00Z
+Game: Cyberpunk 2077: Phantom Liberty, Release Date: 2023-09-26T12:00:00Z
+Game: El Paso, Release Date: Elsewhere, 2023-09-26T12:00:00Z
+Game: Mineko's Night Market, Release Date: 2023-10-26T12:00:00Z
+Game: Paleo Pines, Release Date: 2023-09-26T12:00:00Z
+Game: Counter-Strike 2, Release Date: 2023-09-27T12:00:00Z
+Game: Paper Beast, Release Date: 2020-07-24T12:00:00Z
+Game: Infinity Strash: Dragon Quest The Adventure of Dai, Release Date: 2023-09-28T12:00:00Z
+Game: Sonic Frontiers: The Final Horizon, Release Date: 2023-09-28T12:00:00Z
+Game: Cocoon, Release Date: 2023-09-29T12:00:00Z
+Game: Cypher 007, Release Date: 2023-09-29T12:00:00Z
+Game: EA Sports FC 24, Release Date: 2023-09-29T12:00:00Z
+Game: Bilkins' Folly, Release Date: 2023-10-02T12:00:00Z
+Game: Disgaea 7: Vows of the Virtueless, Release Date: 2023-10-03T12:00:00Z
+Game: Scorn, Release Date: 2022-10-14T12:00:00Z
+Game: Silent Hope, Release Date: 2023-10-03T12:00:00Z
+Game: Blossom Tales II: The Minotaur Prince, Release Date: 2022-08-16T12:00:00Z
+Game: Assassin's Creed Mirage, Release Date: 2023-10-05T12:00:00Z
+Game: My Little Universe, Release Date: 2023-10-05T12:00:00Z
+Game: The Dark Pictures Anthology: Little Hope, Release Date: 2020-10-30T12:00:00Z
+Game: Wargroove 2, Release Date: 2023-10-05T12:00:00Z
+Game: Borderlands 3, Release Date: 2020-11-12T12:00:00Z
+Game: Detective Pikachu Returns, Release Date: 2023-10-06T12:00:00Z
+Game: NHL 24, Release Date: 2023-10-06T12:00:00Z
+Game: Forza Motorsport, Release Date: 2023-10-10T12:00:00Z
+Game: Lil Gator Game, Release Date: 2022-12-14T12:00:00Z
+Game: Wild Card Football, Release Date: 2023-10-10T12:00:00Z
+Game: Total War: Pharaoh, Release Date: 2023-10-11T12:00:00Z
+Game: Saltsea Chronicles, Release Date: 2023-10-12T12:00:00Z
+Game: Lords of the Fallen (2023), Release Date: 2023-10-13T12:00:00Z
+Game: Wizard With a Gun, Release Date: 2023-10-17T12:00:00Z
+Game: Cyber Knights: Flashpoint, Release Date: 2023-10-17T12:00:00Z
+Game: Mortal Kombat: Onslaught, Release Date: 2023-10-17T12:00:00Z
+Game: Skull Island: Rise of Kong, Release Date: 2023-10-17T12:00:00Z
+Game: Sonic Superstars, Release Date: 2023-10-17T12:00:00Z
+Game: Mike Mignola's Hellboy Web of Wyrd, Release Date: 2023-10-18T12:00:00Z
+Game: Endless Dungeon, Release Date: 2023-10-19T12:00:00Z
+Game: Galactic Civilizations IV: Supernova, Release Date: 2023-10-19T12:00:00Z
+Game: Gargoyles Remastered, Release Date: 2023-10-19T12:00:00Z
+Game: Ghostbusters: Spirits Unleashed, Release Date: 2022-10-18T12:00:00Z
+Game: Hot Wheels Unleashed 2: Turbocharged, Release Date: 2023-10-19T12:00:00Z
+Game: Overpass 2, Release Date: 2023-10-19T12:00:00Z
+Game: The 7th Guest VR, Release Date: 2023-10-19T12:00:00Z
+Game: The Gap, Release Date: 2023-10-19T12:00:00Z
+Game: The Jackbox Party Pack 10, Release Date: 2023-10-19T12:00:00Z
+Game: World of Horror, Release Date: 2023-10-26T12:00:00Z
+Game: Marvel's Spider-Man 2, Release Date: 2023-10-20T12:00:00Z
+Game: Suika Game, Release Date: 2023-10-20T12:00:00Z
+Game: Super Mario Bros. Wonder, Release Date: 2023-10-20T12:00:00Z
+Game: Cities: Skylines II, Release Date: 2023-10-24T12:00:00Z
+Game: Just Dance 2024, Release Date: 2023-10-24T12:00:00Z
+Game: Metal Gear Solid: Master Collection Volume 1, Release Date: 2023-10-24T12:00:00Z
+Game: The Lord of the Rings: Return to Moria, Release Date: 2023-12-05T12:00:00Z
+Game: Stray Souls, Release Date: 2023-10-25T12:00:00Z
+Game: BattleCakes, Release Date: 2023-10-26T12:00:00Z
+Game: Frog Detective: The Entire Mystery, Release Date: 2023-10-26T12:00:00Z
+Game: Ghostbusters: Rise of the Ghost Lord, Release Date: 2023-10-26T12:00:00Z
+Game: Ghostrunner 2, Release Date: 2023-10-26T12:00:00Z
+Game: Alan Wake 2, Release Date: 2023-10-27T12:00:00Z
+Game: EA Sports UFC 5, Release Date: 2023-10-27T12:00:00Z
+Game: Resident Evil Village: Winters' Expansion, Release Date: 2022-12-02T12:00:00Z
+Game: Dusk, Release Date: 2021-10-28T12:00:00Z
+Game: Jusant, Release Date: 2023-10-31T12:00:00Z
+Game: Silent Hill: Ascension, Release Date: 2023-10-31T12:00:00Z
+Game: Alien Hominid Invasion, Release Date: 2023-11-01T12:00:00Z
+Game: For The King II, Release Date: 2023-11-02T12:00:00Z
+Game: My Time At Sandrock, Release Date: 2023-11-02T12:00:00Z
+Game: RoboCop: Rogue City, Release Date: 2023-11-02T12:00:00Z
+Game: Star Ocean: The Second Story R, Release Date: 2023-11-02T12:00:00Z
+Game: The Smurfs 2: The Prisoner of the Green Stone, Release Date: 2023-11-02T12:00:00Z
+Game: The Talos Principle II, Release Date: 2023-11-02T12:00:00Z
+Game: Thirsty Suitors, Release Date: 2023-11-02T12:00:00Z
+Game: Fashion Dreamer, Release Date: 2023-11-03T12:00:00Z
+Game: WarioWare: Move It!, Release Date: 2023-11-03T12:00:00Z
+Game: The Invincible, Release Date: 2023-11-06T12:00:00Z
+Game: Nickelodeon All-Star Brawl 2, Release Date: 2023-11-07T12:00:00Z
+Game: Salt and Sacrifice, Release Date: 2022-05-10T12:00:00Z
+Game: Risk of Rain Returns, Release Date: 2023-11-08T12:00:00Z
+Game: Berzerk: Recharged, Release Date: 2023-11-09T12:00:00Z
+Game: Like A Dragon Gaiden: The Man Who Erased His Name, Release Date: 2023-11-09T12:00:00Z
+Game: Call of Duty: Modern Warfare III, Release Date: 2023-11-10T12:00:00Z
+Game: Invincible Presents: Atom Eve, Release Date: 2023-11-14T12:00:00Z
+Game: American Arcadia, Release Date: 2023-11-15T12:00:00Z
+Game: Teardown, Release Date: 2022-04-21T12:00:00Z
+Game: The Last Faith, Release Date: 2023-11-15T12:00:00Z
+Game: Assassin's Creed Nexus VR, Release Date: 2023-11-16T12:00:00Z
+Game: Flashback 2, Release Date: 2023-11-16T12:00:00Z
+Game: Naruto X Boruto Ultimate Ninja Storm Connections, Release Date: 2023-11-17T12:00:00Z
+Game: Persona 5 Tactica, Release Date: 2023-11-17T12:00:00Z
+Game: Super Mario RPG, Release Date: 2023-11-17T12:00:00Z
+Game: Ark: Survival Ascended, Release Date: 2023-11-30T12:00:00Z
+Game: Jurassic Park Classic Games Collection, Release Date: 2023-11-22T12:00:00Z
+Game: SnowRunner, Release Date: 2020-04-28T12:00:00Z
+Game: Calico, Release Date: 2020-12-15T12:00:00Z
+Game: Rollerdrome, Release Date: 2022-08-16T12:00:00Z
+Game: Gangs of Sherwood, Release Date: 2023-11-30T12:00:00Z
+Game: Turok 3: Shadow of Oblivion Remastered, Release Date: 2023-11-30T12:00:00Z
+Game: Batman: Arkham Trilogy, Release Date: 2023-12-01T12:00:00Z
+Game: Dragon Quest Monsters: The Dark Prince, Release Date: 2023-12-01T12:00:00Z
+Game: SteamWorld Build, Release Date: 2023-12-01T12:00:00Z
+Game: A Highland Song, Release Date: 2023-12-05T12:00:00Z
+Game: Disney Dreamlight Valley, Release Date: 2023-12-05T12:00:00Z
+Game: Skater XL, Release Date: 2020-07-28T12:00:00Z
+Game: Sonic Dream Team, Release Date: 2023-12-05T12:00:00Z
+Game: The Anacrusis, Release Date: 2023-12-05T12:00:00Z
+Game: Vampire: The Masquerade - Swansong, Release Date: 2022-05-19T12:00:00Z
+Game: Avatar: Frontiers of Pandora, Release Date: 2023-12-07T12:00:00Z
+Game: Outer Wilds, Release Date: 2022-09-15T12:00:00Z
+Game: The Finals, Release Date: 2023-12-07T12:00:00Z
+Game: Plumbers Don't Wear Ties: Definitive Edition, Release Date: 2023-12-08T12:00:00Z
+Game: Bear and Breakfast, Release Date: 2022-09-15T12:00:00Z
+Game: Little Nightmares, Release Date: 2020-06-01T12:00:00Z
+Game: Potion Craft, Release Date: 2022-12-19T12:00:00Z
+Game: Granblue Fantasy Versus: Rising, Release Date: 2023-12-14T12:00:00Z
+Game: Grand Theft Auto: The Trilogy - The Definitive Edition, Release Date: 2021-11-11T12:00:00Z
+Game: Palia, Release Date: 2023-12-14T12:00:00Z
+Game: Pokémon Scarlet And Violet: The Hidden Treasure Of Area Zero – The Indigo Disk, Release Date: 2023-12-14T12:00:00Z
+Game: Asgard's Wrath 2, Release Date: 2023-12-15T12:00:00Z
+Game: Loot River, Release Date: 2022-05-03T12:00:00Z
+Game: Deep Rock Galactic, Release Date: 2020-05-13T12:00:00Z
+Game: Spelunky 2, Release Date: 2020-09-29T12:00:00Z
+Game: Astroneer, Release Date: 2022-01-13T12:00:00Z
+Game: Shadow Man Remastered, Release Date: 2021-04-15T12:00:00Z
+Game: God Of War, Release Date: 2022-01-14T12:00:00Z
+Game: Nobody Saves the World, Release Date: 2022-04-14T12:00:00Z
+Game: River City Girls, Release Date: 2022-01-18T12:00:00Z
+Game: Yu-Gi-Oh! Master Duel, Release Date: 2022-02-03T12:00:00Z
+Game: Expeditions: Rome, Release Date: 2022-01-20T12:00:00Z
+Game: Rainbow Six Extraction, Release Date: 2022-01-20T12:00:00Z
+Game: Windjammers 2, Release Date: 2022-01-20T12:00:00Z
+Game: Baby Storm, Release Date: 2022-01-21T12:00:00Z
+Game: MouseCraft, Release Date: 2022-01-21T12:00:00Z
+Game: Cannibal Cuisine, Release Date: 2020-05-20T12:00:00Z
+Game: El Hijo - A Wild West Tale, Release Date: 2020-12-03T12:00:00Z
+Game: The Artful Escape, Release Date: 2021-09-09T12:00:00Z
+Game: Circuit Superstars, Release Date: 2021-10-12T12:00:00Z
+Game: Daemon X Machina, Release Date: 2022-01-27T12:00:00Z
+Game: Monster Harvest, Release Date: 2021-07-20T12:00:00Z
+Game: Rugby 22, Release Date: 2022-01-27T12:00:00Z
+Game: The Longest Road on Earth, Release Date: 2021-05-27T12:00:00Z
+Game: Pokémon Legends: Arceus, Release Date: 2022-01-28T12:00:00Z
+Game: Uncharted: Legacy of Thieves Collection, Release Date: 2022-10-19T12:00:00Z
+Game: Life is Strange Remastered Collection, Release Date: 2022-09-27T12:00:00Z
+Game: The Waylanders, Release Date: 2022-02-02T12:00:00Z
+Game: Dreamscaper, Release Date: 2021-08-05T12:00:00Z
+Game: Sherlock Holmes: Crimes And Punishments, Release Date: 2022-02-03T12:00:00Z
+Game: Dying Light 2 Stay Human, Release Date: 2022-02-04T12:00:00Z
+Game: OlliOlli World, Release Date: 2022-02-08T12:00:00Z
+Game: Action Arcade Wrestling, Release Date: 2021-08-10T12:00:00Z
+Game: Backbone, Release Date: 2021-10-28T12:00:00Z
+Game: GetsuFumaDen: Undying Moon, Release Date: 2022-02-16T12:00:00Z
+Game: CrossfireX, Release Date: 2022-02-10T12:00:00Z
+Game: Edge of Eternity, Release Date: 2021-06-08T12:00:00Z
+Game: Kardboard Kings, Release Date: 2022-02-10T12:00:00Z
+Game: Kingdom Hearts 2.8 Final Chapter Prologue, Release Date: 2020-02-18T12:00:00Z
+Game: Kingdom Hearts HD 1.5 + 2.5 Remix, Release Date: 2020-02-18T12:00:00Z
+Game: Kingdom Hearts III, Release Date: 2021-03-30T12:00:00Z
+Game: Retro Bowl, Release Date: 2020-01-17T12:00:00Z
+Game: Lost Ark, Release Date: 2022-02-11T12:00:00Z
+Game: Oddworld: Stranger's Wrath HD, Release Date: 2020-01-23T12:00:00Z
+Game: Infernax, Release Date: 2022-02-14T12:00:00Z
+Game: Cyberpunk 2077, Release Date: 2020-12-10T12:00:00Z
+Game: Dynasty Warriors 9 Empires, Release Date: 2022-02-15T12:00:00Z
+Game: Assassin's Creed: The Ezio Collection, Release Date: 2022-02-17T12:00:00Z
+Game: The King of Fighters XV, Release Date: 2022-02-17T12:00:00Z
+Game: Total War: Warhammer III, Release Date: 2022-02-17T12:00:00Z
+Game: Destiny 2: The Witch Queen, Release Date: 2022-02-22T12:00:00Z
+Game: Monark, Release Date: 2022-02-22T12:00:00Z
+Game: Monster Crown, Release Date: 2021-10-12T12:00:00Z
+Game: Sol Cresta, Release Date: 2022-02-22T12:00:00Z
+Game: Martha Is Dead, Release Date: 2022-02-24T12:00:00Z
+Game: Never Alone, Release Date: 2022-02-24T12:00:00Z
+Game: Roguebook, Release Date: 2021-06-24T12:00:00Z
+Game: Atelier Sophie 2: The Alchemist of the Mysterious Dream, Release Date: 2022-02-25T12:00:00Z
+Game: Elden Ring, Release Date: 2022-02-25T12:00:00Z
+Game: Grid Legends, Release Date: 2022-02-25T12:00:00Z
+Game: The Dark Prophecy, Release Date: 2022-09-16T12:00:00Z
+Game: Aperture Desk Job, Release Date: 2022-03-01T12:00:00Z
+Game: Elex II, Release Date: 2022-03-01T12:00:00Z
+Game: Far: Changing Tides, Release Date: 2022-03-01T12:00:00Z
+Game: Babylon's Fall, Release Date: 2022-03-03T12:00:00Z
+Game: Triangle Strategy, Release Date: 2022-10-13T12:00:00Z
+Game: RPG Time: The Legend of Wright, Release Date: 2022-08-18T12:00:00Z
+Game: Ashwalkers, Release Date: 2021-04-15T12:00:00Z
+Game: Aztech Forgotten Gods, Release Date: 2022-03-10T12:00:00Z
+Game: Chocobo GP, Release Date: 2022-03-10T12:00:00Z
+Game: Submerged: Hidden Depths, Release Date: 2020-12-03T12:00:00Z
+Game: Workshop Simulator, Release Date: 2022-03-10T12:00:00Z
+Game: Young Souls, Release Date: 2021-08-17T12:00:00Z
+Game: WWE 2K22, Release Date: 2022-03-11T12:00:00Z
+Game: Dawn of the Monsters, Release Date: 2022-03-15T12:00:00Z
+Game: Grand Theft Auto V, Release Date: 2022-03-15T12:00:00Z
+Game: Phantom Breaker: Omnia, Release Date: 2022-03-15T12:00:00Z
+Game: The Cruel King and the Great Hero, Release Date: 2022-03-15T12:00:00Z
+Game: Paradise Killer, Release Date: 2020-09-04T12:00:00Z
+Game: Tunic, Release Date: 2022-09-27T12:00:00Z
+Game: Anno: Mutationem, Release Date: 2022-03-17T12:00:00Z
+Game: Monster Energy Supercross 5, Release Date: 2022-03-17T12:00:00Z
+Game: Persona 4 Arena Ultimax, Release Date: 2022-03-17T12:00:00Z
+Game: Shredders, Release Date: 2022-03-17T12:00:00Z
+Game: Stranger Of Paradise: Final Fantasy Origin, Release Date: 2022-03-18T12:00:00Z
+Game: Kraken Academy, Release Date: 2021-09-10T12:00:00Z
+Game: Rune Factory 5, Release Date: 2022-07-15T12:00:00Z
+Game: A Memoir Blue, Release Date: 2022-03-24T12:00:00Z
+Game: Norco, Release Date: 2022-11-17T12:00:00Z
+Game: The Ascent, Release Date: 2021-07-29T12:00:00Z
+Game: Kirby and the Forgotten Land, Release Date: 2022-03-25T12:00:00Z
+Game: Tiny Tina's Wonderlands, Release Date: 2022-03-25T12:00:00Z
+Game: Crusader Kings III, Release Date: 2020-09-01T12:00:00Z
+Game: WRC 10, Release Date: 2021-09-02T12:00:00Z
+Game: Aerial_Knight's Never Yield, Release Date: 2021-05-19T12:00:00Z
+Game: Coromon, Release Date: 2022-07-21T12:00:00Z
+Game: Moss: Book II, Release Date: 2022-07-21T12:00:00Z
+Game: Tropico 6, Release Date: 2020-11-06T12:00:00Z
+Game: Before We Leave, Release Date: 2021-11-22T12:00:00Z
+Game: LEGO Star Wars: The Skywalker Saga, Release Date: 2022-04-05T12:00:00Z
+Game: MLB The Show 22, Release Date: 2022-04-05T12:00:00Z
+Game: Chinatown Detective Agency, Release Date: 2022-04-07T12:00:00Z
+Game: Chrono Cross: The Radical Dreamers Edition, Release Date: 2022-04-07T12:00:00Z
+Game: Godfall: Ultimate Edition, Release Date: 2022-04-07T12:00:00Z
+Game: Lucky's Tale, Release Date: 2021-12-09T12:00:00Z
+Game: Sherlock Holmes: The Devil's Daughter, Release Date: 2022-04-07T12:00:00Z
+Game: Slipstream, Release Date: 2022-04-07T12:00:00Z
+Game: 13 Sentinels: Aegis Rim, Release Date: 2020-09-22T12:00:00Z
+Game: Don't Starve Together, Release Date: 2022-04-12T12:00:00Z
+Game: Cat Cafe Manager, Release Date: 2022-04-14T12:00:00Z
+Game: eFootball 2022, Release Date: 2022-04-14T12:00:00Z
+Game: Road 96, Release Date: 2021-08-16T12:00:00Z
+Game: Turnip Boy Commits Tax Evasion, Release Date: 2021-04-22T12:00:00Z
+Game: Lego Builder's Journey, Release Date: 2021-11-25T12:00:00Z
+Game: Star Wars: The Force Unleashed, Release Date: 2022-04-20T12:00:00Z
+Game: Chernobylite, Release Date: 2021-09-28T12:00:00Z
+Game: Zombie Army 4: Dead War, Release Date: 2020-05-01T12:00:00Z
+Game: The Stanley Parable: Ultra Deluxe, Release Date: 2022-04-27T12:00:00Z
+Game: Vampire: The Masquerade - Bloodhunt, Release Date: 2022-04-27T12:00:00Z
+Game: Arise: A Simple Story, Release Date: 2022-04-28T12:00:00Z
+Game: Dorfromantik, Release Date: 2022-09-29T12:00:00Z
+Game: Kaiju Wars, Release Date: 2022-12-20T12:00:00Z
+Game: Rogue Lords, Release Date: 2021-09-30T12:00:00Z
+Game: Sherlock Holmes: Chapter One, Release Date: 2021-11-16T12:00:00Z
+Game: Unsouled, Release Date: 2022-04-28T12:00:00Z
+Game: Nintendo Switch Sports, Release Date: 2022-04-29T12:00:00Z
+Game: Ravenous Devils, Release Date: 2022-04-29T12:00:00Z
+Game: Sifu: Vengeance Edition, Release Date: 2022-05-02T12:00:00Z
+Game: Dungeon Defenders: Awakened, Release Date: 2020-05-28T12:00:00Z
+Game: Overcooked: All You Can Eat, Release Date: 2020-11-12T12:00:00Z
+Game: Among Us: Ejected Edition, Release Date: 2022-05-06T12:00:00Z
+Game: Eiyuden Chronicle: Rising, Release Date: 2022-05-10T12:00:00Z
+Game: This War of Mine: Final Cut, Release Date: 2022-05-10T12:00:00Z
+Game: Mini Motorways, Release Date: 2021-07-20T12:00:00Z
+Game: Evil Dead: The Game, Release Date: 2022-05-13T12:00:00Z
+Game: Cities: Skylines, Release Date: 2022-05-17T12:00:00Z
+Game: Umurangi Generation, Release Date: 2020-05-19T12:00:00Z
+Game: Dolmen, Release Date: 2022-05-20T12:00:00Z
+Game: Hardspace: Shipbreaker, Release Date: 2022-09-20T12:00:00Z
+Game: Ni no Kuni: Cross Worlds, Release Date: 2022-05-25T12:00:00Z
+Game: Roller Champions, Release Date: 2022-05-25T12:00:00Z
+Game: Sniper Elite 5, Release Date: 2022-05-26T12:00:00Z
+Game: Arcade Spirits: The New Challengers, Release Date: 2022-05-27T12:00:00Z
+Game: Kao the Kangaroo, Release Date: 2022-05-27T12:00:00Z
+Game: Microsoft Flight Simulator: Top Gun Maverick DLC, Release Date: 2022-05-27T12:00:00Z
+Game: My Little Pony: A Maretime Bay Adventure, Release Date: 2022-09-30T12:00:00Z
+Game: Pac-Man Museum+, Release Date: 2022-05-27T12:00:00Z
+Game: Silt, Release Date: 2022-06-01T12:00:00Z
+Game: Card Shark, Release Date: 2022-06-02T12:00:00Z
+Game: Diablo Immortal, Release Date: 2022-06-02T12:00:00Z
+Game: Gigapocalypse, Release Date: 2021-11-12T12:00:00Z
+Game: Souldiers, Release Date: 2022-06-02T12:00:00Z
+Game: Unexplored 2: The Wayfarer's Legacy, Release Date: 2022-06-02T12:00:00Z
+Game: SpellForce III Reforced, Release Date: 2021-12-06T12:00:00Z
+Game: Star Wars: Knights of the Old Republic II – The Sith Lords, Release Date: 2020-12-18T12:00:00Z
+Game: Industria, Release Date: 2022-06-09T12:00:00Z
+Game: Pro Cycling Manager 2022, Release Date: 2022-06-09T12:00:00Z
+Game: Tour de France 2022, Release Date: 2022-06-09T12:00:00Z
+Game: Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles, Release Date: 2021-10-15T12:00:00Z
+Game: Mario Strikers: Battle League, Release Date: 2022-06-10T12:00:00Z
+Game: The Quarry, Release Date: 2022-06-10T12:00:00Z
+Game: LumbearJack, Release Date: 2022-06-14T12:00:00Z
+Game: Resident Evil 2, Release Date: 2022-11-11T12:00:00Z
+Game: Resident Evil 3, Release Date: 2020-04-03T12:00:00Z
+Game: Resident Evil 7: Biohazard, Release Date: 2021-04-21T12:00:00Z
+Game: Neon White, Release Date: 2022-12-13T12:00:00Z
+Game: Redout 2, Release Date: 2022-07-20T12:00:00Z
+Game: Starship Troopers - Terran Command, Release Date: 2022-06-16T12:00:00Z
+Game: Teenage Mutant Ninja Turtles: Shredder's Revenge, Release Date: 2022-11-15T12:00:00Z
+Game: The Looker, Release Date: 2022-06-17T12:00:00Z
+Game: Fall Guys, Release Date: 2020-08-04T12:00:00Z
+Game: Shadowrun Returns, Release Date: 2022-06-21T12:00:00Z
+Game: Shadowrun Trilogy, Release Date: 2022-06-21T12:00:00Z
+Game: Shadowrun: Dragonfall, Release Date: 2022-06-21T12:00:00Z
+Game: Shadowrun: Hong Kong, Release Date: 2022-06-21T12:00:00Z
+Game: Wreckfest, Release Date: 2021-12-01T12:00:00Z
+Game: Last Days of Lazarus, Release Date: 2022-11-29T12:00:00Z
+Game: Deliver Us The Moon, Release Date: 2020-08-14T12:00:00Z
+Game: Sonic Origins, Release Date: 2022-06-23T12:00:00Z
+Game: AI: THE SOMNIUM FILES Nirvana Initiative, Release Date: 2022-06-24T12:00:00Z
+Game: Capcom Fighting Collection, Release Date: 2022-06-24T12:00:00Z
+Game: Fire Emblem Warriors: Three Hopes, Release Date: 2022-06-24T12:00:00Z
+Game: Disgaea 6 Complete, Release Date: 2022-06-28T12:00:00Z
+Game: DNF Duel, Release Date: 2022-06-28T12:00:00Z
+Game: Fobia - St. Dinfna Hotel, Release Date: 2022-06-28T12:00:00Z
+Game: Little Noah: Scion of Paradise, Release Date: 2022-06-28T12:00:00Z
+Game: MX vs ATV Legends, Release Date: 2022-06-28T12:00:00Z
+Game: Portal: Companion Collection, Release Date: 2022-06-28T12:00:00Z
+Game: Azure Striker Gunvolt, Release Date: 2020-04-23T12:00:00Z
+Game: Cuphead: The Delicious Last Course, Release Date: 2022-06-30T12:00:00Z
+Game: Outriders Worldslayer, Release Date: 2022-06-30T12:00:00Z
+Game: F1 22, Release Date: 2022-07-01T12:00:00Z
+Game: Phoenix Wright: Ace Attorney Trilogy, Release Date: 2022-07-01T12:00:00Z
+Game: Arcadegeddon, Release Date: 2022-07-05T12:00:00Z
+Game: Gwent: Rogue Mage, Release Date: 2022-07-07T12:00:00Z
+Game: Matchpoint, Release Date: 2022-07-07T12:00:00Z
+Game: Klonoa Phantasy Reverie Series, Release Date: 2022-07-08T12:00:00Z
+Game: Garden Story, Release Date: 2021-08-11T12:00:00Z
+Game: Hellpoint, Release Date: 2020-07-30T12:00:00Z
+Game: Time on Frog Island, Release Date: 2022-07-12T12:00:00Z
+Game: Loopmancer, Release Date: 2022-07-13T12:00:00Z
+Game: Azure Striker Gunvolt 2, Release Date: 2020-06-22T12:00:00Z
+Game: Escape Academy, Release Date: 2022-07-14T12:00:00Z
+Game: Eyes in the Dark: The Curious Case of One Victoria Bloom, Release Date: 2022-07-14T12:00:00Z
+Game: Spidersaurs, Release Date: 2022-07-14T12:00:00Z
+Game: Fallen Angel, Release Date: 2020-10-22T12:00:00Z
+Game: Forza Horizon 5: Hot Wheels, Release Date: 2022-07-19T12:00:00Z
+Game: Into The Breach, Release Date: 2022-07-19T12:00:00Z
+Game: Bright Memory: Infinite, Release Date: 2021-11-11T12:00:00Z
+Game: Story of Seasons: Pioneers of Olive Town, Release Date: 2021-09-15T12:00:00Z
+Game: Octopath Traveler: Champions of the Continent, Release Date: 2022-07-27T12:00:00Z
+Game: Azure Striker Gunvolt 3, Release Date: 2022-12-15T12:00:00Z
+Game: Hohokum, Release Date: 2022-07-28T12:00:00Z
+Game: What Remains of Edith Finch, Release Date: 2021-08-16T12:00:00Z
+Game: Digimon Survive, Release Date: 2022-07-29T12:00:00Z
+Game: Xenoblade Chronicles 3, Release Date: 2022-07-29T12:00:00Z
+Game: South of the Circle, Release Date: 2020-10-30T12:00:00Z
+Game: Hindsight, Release Date: 2022-08-04T12:00:00Z
+Game: Papers, Release Date: Please, 2022-08-05T12:00:00Z
+Game: Recipe For Disaster, Release Date: 2022-08-05T12:00:00Z
+Game: Two Point Campus, Release Date: 2022-08-09T12:00:00Z
+Game: Cult of the Lamb, Release Date: 2022-08-11T12:00:00Z
+Game: Rumbleverse, Release Date: 2022-08-11T12:00:00Z
+Game: Marvel's Spider-Man, Release Date: 2020-11-12T12:00:00Z
+Game: Kirby's Dream Buffet, Release Date: 2022-08-17T12:00:00Z
+Game: Cursed to Golf, Release Date: 2022-08-18T12:00:00Z
+Game: Thymesia, Release Date: 2022-08-18T12:00:00Z
+Game: We Are OFK, Release Date: 2022-08-18T12:00:00Z
+Game: Madden NFL 23, Release Date: 2022-08-19T12:00:00Z
+Game: Midnight Fight Express, Release Date: 2022-09-20T12:00:00Z
+Game: Saints Row, Release Date: 2022-08-23T12:00:00Z
+Game: F1 Manager 2022, Release Date: 2022-08-25T12:00:00Z
+Game: Mixolumia, Release Date: 2020-08-08T12:00:00Z
+Game: SD Gundam Battle Alliance, Release Date: 2022-08-25T12:00:00Z
+Game: Pac-Man World Re-Pac, Release Date: 2022-08-26T12:00:00Z
+Game: Soul Hackers 2, Release Date: 2022-08-26T12:00:00Z
+Game: Destroy All Humans 2: Reprobed, Release Date: 2022-08-30T12:00:00Z
+Game: Inscryption, Release Date: 2021-10-19T12:00:00Z
+Game: Rhapsody: A Musical Adventure, Release Date: 2022-08-30T12:00:00Z
+Game: Teenage Mutant Ninja Turtles: The Cowabunga Collection, Release Date: 2022-08-30T12:00:00Z
+Game: Tinykin, Release Date: 2022-08-30T12:00:00Z
+Game: Ooblets, Release Date: 2022-09-01T12:00:00Z
+Game: JoJo's Bizarre Adventure: All Star Battle R, Release Date: 2022-09-02T12:00:00Z
+Game: LEGO Brawls, Release Date: 2022-09-02T12:00:00Z
+Game: Made in Abyss: Binary Star Falling into Darkness, Release Date: 2022-09-02T12:00:00Z
+Game: Temtem, Release Date: 2022-09-06T12:00:00Z
+Game: The Tomorrow Children: Phoenix Edition, Release Date: 2022-09-06T12:00:00Z
+Game: Jack Move, Release Date: 2022-09-20T12:00:00Z
+Game: Steelrising, Release Date: 2022-09-08T12:00:00Z
+Game: NBA 2K23, Release Date: 2022-09-09T12:00:00Z
+Game: Splatoon 3, Release Date: 2022-09-09T12:00:00Z
+Game: Little Orpheus, Release Date: 2020-06-12T12:00:00Z
+Game: ScourgeBringer, Release Date: 2020-10-21T12:00:00Z
+Game: Various Daylife, Release Date: 2022-09-16T12:00:00Z
+Game: XIII, Release Date: 2020-11-10T12:00:00Z
+Game: Judgment, Release Date: 2021-04-23T12:00:00Z
+Game: Lost Judgment, Release Date: 2021-09-24T12:00:00Z
+Game: Metal: Hellsinger, Release Date: 2022-12-08T12:00:00Z
+Game: Splitgate, Release Date: 2022-09-15T12:00:00Z
+Game: Wayward Strand, Release Date: 2022-09-15T12:00:00Z
+Game: Deathloop, Release Date: 2021-09-14T12:00:00Z
+Game: Gundam Evolution, Release Date: 2022-11-30T12:00:00Z
+Game: No Place For Bravery, Release Date: 2022-09-22T12:00:00Z
+Game: Potion Permit, Release Date: 2022-09-22T12:00:00Z
+Game: Serial Cleaners, Release Date: 2022-09-22T12:00:00Z
+Game: The DioField Chronicle, Release Date: 2022-09-22T12:00:00Z
+Game: DreamWorks Dragons: Legends of The Nine Realms, Release Date: 2022-09-23T12:00:00Z
+Game: Shovel Knight Dig, Release Date: 2022-09-23T12:00:00Z
+Game: Taiko no Tatsujin: Rhythm Festival, Release Date: 2022-09-23T12:00:00Z
+Game: Hokko Life, Release Date: 2022-09-27T12:00:00Z
+Game: The Fridge is Red, Release Date: 2022-09-27T12:00:00Z
+Game: The Legend of Heroes: Trails from Zero, Release Date: 2022-09-27T12:00:00Z
+Game: Deathverse: Let It Die, Release Date: 2022-10-05T12:00:00Z
+Game: Brewmaster, Release Date: 2022-09-29T12:00:00Z
+Game: Dropsy, Release Date: 2022-09-29T12:00:00Z
+Game: Let's Build a Zoo, Release Date: 2021-11-05T12:00:00Z
+Game: Pathfinder: Wrath of the Righteous, Release Date: 2021-09-02T12:00:00Z
+Game: Picross S8, Release Date: 2022-09-29T12:00:00Z
+Game: Railgrade, Release Date: 2022-09-29T12:00:00Z
+Game: Valkyrie Elysium, Release Date: 2022-11-11T12:00:00Z
+Game: FIFA 23, Release Date: 2022-09-30T12:00:00Z
+Game: Witchy Life Story, Release Date: 2022-09-30T12:00:00Z
+Game: Dakar Desert Rally, Release Date: 2022-10-04T12:00:00Z
+Game: Overwatch 2, Release Date: 2022-10-04T12:00:00Z
+Game: Medieval Dynasty, Release Date: 2021-09-23T12:00:00Z
+Game: Nier: Automata, Release Date: 2022-10-06T12:00:00Z
+Game: Townscaper, Release Date: 2020-06-30T12:00:00Z
+Game: Asterigos: Curse of the Stars, Release Date: 2022-10-11T12:00:00Z
+Game: Eville, Release Date: 2022-11-15T12:00:00Z
+Game: In Sound Mind, Release Date: 2021-09-28T12:00:00Z
+Game: No More Heroes 3, Release Date: 2021-08-27T12:00:00Z
+Game: Fueled Up, Release Date: 2022-10-13T12:00:00Z
+Game: The Eternal Cylinder, Release Date: 2021-09-30T12:00:00Z
+Game: The Last Oricru, Release Date: 2022-10-13T12:00:00Z
+Game: Dragon Ball: The Breakers, Release Date: 2022-10-14T12:00:00Z
+Game: NHL 23, Release Date: 2022-10-14T12:00:00Z
+Game: Nickelodeon Kart Racers 3: Slime Speedway, Release Date: 2022-10-14T12:00:00Z
+Game: PGA Tour 2K23, Release Date: 2022-10-14T12:00:00Z
+Game: A Plague Tale: Requiem, Release Date: 2022-10-18T12:00:00Z
+Game: Them's Fightin' Herds, Release Date: 2020-04-30T12:00:00Z
+Game: Alan Wake Remastered, Release Date: 2021-10-05T12:00:00Z
+Game: Amnesia: Rebirth, Release Date: 2020-10-20T12:00:00Z
+Game: Mario + Rabbids Sparks of Hope, Release Date: 2022-10-20T12:00:00Z
+Game: Second Extinction, Release Date: 2022-10-20T12:00:00Z
+Game: The Jackbox Party Pack 9, Release Date: 2022-10-20T12:00:00Z
+Game: Gotham Knights, Release Date: 2022-10-21T12:00:00Z
+Game: New Tales From The Borderlands, Release Date: 2022-10-21T12:00:00Z
+Game: Persona 5 Royal, Release Date: 2020-03-31T12:00:00Z
+Game: Monster Train, Release Date: 2020-12-17T12:00:00Z
+Game: Sackboy: A Big Adventure, Release Date: 2020-11-12T12:00:00Z
+Game: Saturnalia, Release Date: 2022-10-27T12:00:00Z
+Game: Signalis, Release Date: 2022-10-27T12:00:00Z
+Game: Star Ocean The Divine Force, Release Date: 2022-10-27T12:00:00Z
+Game: Bayonetta 3, Release Date: 2022-10-28T12:00:00Z
+Game: Call of Duty: Modern Warfare II, Release Date: 2022-10-28T12:00:00Z
+Game: Resident Evil Re:Verse, Release Date: 2022-10-28T12:00:00Z
+Game: Resident Evil Village - Shadows of Rose, Release Date: 2022-10-28T12:00:00Z
+Game: Ghost Song, Release Date: 2022-11-03T12:00:00Z
+Game: How to Say Goodbye, Release Date: 2022-11-03T12:00:00Z
+Game: The Chant, Release Date: 2022-11-03T12:00:00Z
+Game: WRC Generations, Release Date: 2022-12-01T12:00:00Z
+Game: Demon Throttle, Release Date: 2022-11-04T12:00:00Z
+Game: Harvestella, Release Date: 2022-11-04T12:00:00Z
+Game: It Takes Two, Release Date: 2021-03-26T12:00:00Z
+Game: Oddworld: Soulstorm, Release Date: 2021-11-29T12:00:00Z
+Game: Sonic Frontiers, Release Date: 2022-11-08T12:00:00Z
+Game: God of War Ragnarök, Release Date: 2022-11-09T12:00:00Z
+Game: Once Upon a Jester, Release Date: 2022-11-09T12:00:00Z
+Game: Atari 50: The Anniversary Celebration, Release Date: 2022-11-11T12:00:00Z
+Game: Save Room, Release Date: 2022-11-11T12:00:00Z
+Game: Tactics Ogre: Reborn, Release Date: 2022-11-11T12:00:00Z
+Game: Floodland, Release Date: 2022-11-15T12:00:00Z
+Game: Ys VIII: Lacrimosa of Dana, Release Date: 2021-04-01T12:00:00Z
+Game: Call of Duty: Warzone 2.0, Release Date: 2022-11-16T12:00:00Z
+Game: Pokémon Trading Card Game Live, Release Date: 2022-11-16T12:00:00Z
+Game: Goat Simulator 3, Release Date: 2022-11-17T12:00:00Z
+Game: Marvel's Spider-Man: Miles Morales, Release Date: 2020-11-12T12:00:00Z
+Game: Pid, Release Date: 2022-11-18T12:00:00Z
+Game: Pokémon Scarlet, Release Date: 2022-11-18T12:00:00Z
+Game: Pokémon Violet, Release Date: 2022-11-18T12:00:00Z
+Game: The Dark Pictures Anthology: The Devil in Me, Release Date: 2022-11-18T12:00:00Z
+Game: Evil West, Release Date: 2022-11-22T12:00:00Z
+Game: Gungrave G.O.R.E., Release Date: 2022-11-22T12:00:00Z
+Game: Just Dance 2023, Release Date: 2022-11-22T12:00:00Z
+Game: Ship of Fools, Release Date: 2022-11-22T12:00:00Z
+Game: New Joe & Mac: Caveman Ninja, Release Date: 2022-12-01T12:00:00Z
+Game: Retro Goal, Release Date: 2021-07-09T12:00:00Z
+Game: Sable, Release Date: 2021-09-23T12:00:00Z
+Game: Soccer Story, Release Date: 2022-11-29T12:00:00Z
+Game: The Knight Witch, Release Date: 2022-11-29T12:00:00Z
+Game: Warhammer 40,000: Darktide, Release Date: 2022-11-30T12:00:00Z
+Game: Eastward, Release Date: 2021-09-16T12:00:00Z
+Game: Need For Speed Unbound, Release Date: 2022-12-02T12:00:00Z
+Game: Super Kiwi 64, Release Date: 2022-12-02T12:00:00Z
+Game: The Callisto Protocol, Release Date: 2022-12-02T12:00:00Z
+Game: Divine Knockout, Release Date: 2022-12-06T12:00:00Z
+Game: Hello Neighbor 2, Release Date: 2022-12-06T12:00:00Z
+Game: Sky: Children Of The Light, Release Date: 2020-04-07T12:00:00Z
+Game: Chained Echoes, Release Date: 2022-12-08T12:00:00Z
+Game: Crossfire: Legion, Release Date: 2022-12-08T12:00:00Z
+Game: Wavetale, Release Date: 2022-12-12T12:00:00Z
+Game: Crisis Core: Final Fantasy VII Reunion, Release Date: 2022-12-13T12:00:00Z
+Game: Gris, Release Date: 2020-04-01T12:00:00Z
+Game: High On Life, Release Date: 2022-12-13T12:00:00Z
+Game: Night In The Woods, Release Date: 2021-09-09T12:00:00Z
+Game: Overland, Release Date: 2022-12-13T12:00:00Z
+Game: The Witcher 3: Wild Hunt, Release Date: 2022-12-14T12:00:00Z
+Game: The Witcher 3: Wild Hunt - Complete Edition, Release Date: 2022-12-14T12:00:00Z
+Game: Aka, Release Date: 2022-12-15T12:00:00Z
+Game: Blacktail, Release Date: 2022-12-15T12:00:00Z
+Game: River City Girls 2, Release Date: 2022-12-15T12:00:00Z
+Game: Coffee Shop Tycoon, Release Date: 2022-12-19T12:00:00Z
+Game: Mortal Shell, Release Date: 2020-08-18T12:00:00Z
+Game: Valkyrie Profile: Lenneth, Release Date: 2022-12-22T12:00:00Z
+Game: Sports Story, Release Date: 2022-12-23T12:00:00Z
+Game: Cobra Kai: The Karate Kid Saga Continues, Release Date: 2020-10-27T12:00:00Z
+Game: Iron Conflict, Release Date: 2021-01-07T12:00:00Z
+Game: MXGP 2020, Release Date: 2020-12-16T12:00:00Z
+Game: Scott Pilgrim vs. The World: The Game - Complete Edition, Release Date: 2021-01-14T12:00:00Z
+Game: Hitman 3, Release Date: 2021-01-20T12:00:00Z
+Game: Skul: The Hero Slayer, Release Date: 2021-10-21T12:00:00Z
+Game: Teratopia, Release Date: 2021-01-20T12:00:00Z
+Game: Dyson Sphere Program, Release Date: 2021-01-21T12:00:00Z
+Game: Ride 4, Release Date: 2020-10-08T12:00:00Z
+Game: Shing, Release Date: 2020-08-28T12:00:00Z
+Game: Gravity Heroes, Release Date: 2021-01-22T12:00:00Z
+Game: Nuts, Release Date: 2021-01-22T12:00:00Z
+Game: Cyber Shadow, Release Date: 2021-01-26T12:00:00Z
+Game: Main Assembly, Release Date: 2021-01-26T12:00:00Z
+Game: Stronghold: Warlords, Release Date: 2021-01-26T12:00:00Z
+Game: The Sims 4: Paranormal Stuff Pack, Release Date: 2021-01-26T12:00:00Z
+Game: Ryte - The Eye of Atlantis, Release Date: 2021-01-27T12:00:00Z
+Game: The Dark Eye: Chains of Satinav, Release Date: 2021-01-27T12:00:00Z
+Game: The Dark Eye: Memoria, Release Date: 2021-01-27T12:00:00Z
+Game: Disjunction, Release Date: 2021-01-28T12:00:00Z
+Game: Heaven's Vault, Release Date: 2021-01-28T12:00:00Z
+Game: Madden NFL 21, Release Date: 2020-12-04T12:00:00Z
+Game: Olija, Release Date: 2021-01-28T12:00:00Z
+Game: Sword of the Necromancer, Release Date: 2021-01-28T12:00:00Z
+Game: The Yakuza Remastered Collection, Release Date: 2021-01-28T12:00:00Z
+Game: TOHU, Release Date: 2021-01-28T12:00:00Z
+Game: Bonkies, Release Date: 2021-01-29T12:00:00Z
+Game: Gods Will Fall, Release Date: 2021-01-29T12:00:00Z
+Game: Re:ZERO -Starting Life in Another World- The Prophecy of the Throne, Release Date: 2021-01-29T12:00:00Z
+Game: Turrican Flashback, Release Date: 2021-01-29T12:00:00Z
+Game: Control, Release Date: 2020-10-28T12:00:00Z
+Game: Destruction AllStars, Release Date: 2021-02-02T12:00:00Z
+Game: Slay The Spire, Release Date: 2020-06-13T12:00:00Z
+Game: Blue Fire, Release Date: 2021-07-23T12:00:00Z
+Game: Haven, Release Date: 2020-12-10T12:00:00Z
+Game: Werewolf: The Apocalypse - Earthblood, Release Date: 2021-02-04T12:00:00Z
+Game: Kinetic Edge, Release Date: 2021-02-05T12:00:00Z
+Game: Nioh 2 Remastered - The Complete Edition, Release Date: 2021-02-05T12:00:00Z
+Game: Nioh Remastered - The Complete Edition, Release Date: 2021-02-05T12:00:00Z
+Game: The Nioh Collection, Release Date: 2021-02-05T12:00:00Z
+Game: Ori: The Collection, Release Date: 2021-10-12T12:00:00Z
+Game: Little Nightmares II, Release Date: 2021-02-11T12:00:00Z
+Game: Super Mario 3D World + Bowser's Fury, Release Date: 2021-02-12T12:00:00Z
+Game: Fallen Legion Revenants, Release Date: 2021-02-16T12:00:00Z
+Game: The Sinking City, Release Date: 2021-04-28T12:00:00Z
+Game: Killer Queen Black, Release Date: 2021-03-30T12:00:00Z
+Game: Curse of the Dead Gods, Release Date: 2021-02-23T12:00:00Z
+Game: Horned Knight, Release Date: 2021-02-26T12:00:00Z
+Game: Inked: A Tale of Love, Release Date: 2021-09-10T12:00:00Z
+Game: Persona 5 Strikers, Release Date: 2021-02-23T12:00:00Z
+Game: Rogue Heroes: Ruins of Tasos, Release Date: 2021-02-23T12:00:00Z
+Game: We Were Here (Series), Release Date: 2021-02-23T12:00:00Z
+Game: Cotton Reboot, Release Date: 2021-02-25T12:00:00Z
+Game: Darius Cozmic Revelation, Release Date: 2021-02-25T12:00:00Z
+Game: Forward to the Sky, Release Date: 2021-02-25T12:00:00Z
+Game: Ghosts 'n Goblins: Resurrection, Release Date: 2021-06-01T12:00:00Z
+Game: Wrath: Aeon of Ruin, Release Date: 2021-02-25T12:00:00Z
+Game: Bravely Default II, Release Date: 2021-09-02T12:00:00Z
+Game: RetroMania Wrestling, Release Date: 2021-04-30T12:00:00Z
+Game: Harvest Moon: One World, Release Date: 2021-09-28T12:00:00Z
+Game: Neptunia Virtual Stars, Release Date: 2021-03-29T12:00:00Z
+Game: Yakuza: Like A Dragon, Release Date: 2020-11-10T12:00:00Z
+Game: Puyo Puyo Tetris 2, Release Date: 2020-12-08T12:00:00Z
+Game: Ar Nosurge DX, Release Date: 2021-03-04T12:00:00Z
+Game: Ciel Nosurge DX, Release Date: 2021-03-04T12:00:00Z
+Game: Loop Hero, Release Date: 2021-12-09T12:00:00Z
+Game: Sea of Solitude: Director's Cut, Release Date: 2021-03-04T12:00:00Z
+Game: Two Point Hospital: Jumbo Edition, Release Date: 2021-03-05T12:00:00Z
+Game: Apex Legends, Release Date: 2021-03-09T12:00:00Z
+Game: Gensou Skydrift, Release Date: 2021-03-09T12:00:00Z
+Game: Crayta, Release Date: 2020-07-01T12:00:00Z
+Game: Crash Bandicoot 4: It's About Time, Release Date: 2020-10-02T12:00:00Z
+Game: Core, Release Date: 2021-03-16T12:00:00Z
+Game: Kingdoms Of Amalur: Re-Reckoning, Release Date: 2020-09-08T12:00:00Z
+Game: Monster Energy Supercross: The Official Videogame 4, Release Date: 2021-03-16T12:00:00Z
+Game: R.B.I. Baseball 21, Release Date: 2021-03-16T12:00:00Z
+Game: Samurai Shodown, Release Date: 2020-06-11T12:00:00Z
+Game: Saviors of Sapphire Wings & Stranger of Sword City Revisited, Release Date: 2021-03-16T12:00:00Z
+Game: Stubbs the Zombie in Rebel Without a Pulse, Release Date: 2021-03-16T12:00:00Z
+Game: Adios, Release Date: 2021-03-17T12:00:00Z
+Game: Red Ronin, Release Date: 2021-10-14T12:00:00Z
+Game: Signs Of The Sojourner, Release Date: 2020-05-14T12:00:00Z
+Game: DARQ: Complete Edition, Release Date: 2020-12-04T12:00:00Z
+Game: Maglam Lord, Release Date: 2021-03-18T12:00:00Z
+Game: Marvel's Avengers, Release Date: 2020-09-04T12:00:00Z
+Game: Marvel's Avengers – Operation: Future Imperfect, Release Date: 2021-03-18T12:00:00Z
+Game: Can't Drive This, Release Date: 2021-03-19T12:00:00Z
+Game: Plants vs. Zombies: Battle for Neighborville, Release Date: 2021-03-19T12:00:00Z
+Game: Root Film, Release Date: 2021-03-19T12:00:00Z
+Game: Dirt 5, Release Date: 2020-11-12T12:00:00Z
+Game: Love Live! School Idol Festival: After School Wai-Wai! Home Meeting!!, Release Date: 2021-03-24T12:00:00Z
+Game: Paradise Lost, Release Date: 2021-03-24T12:00:00Z
+Game: Black Legend, Release Date: 2021-03-25T12:00:00Z
+Game: Crash Bandicoot: On the Run, Release Date: 2021-03-25T12:00:00Z
+Game: Dandy Ace, Release Date: 2021-03-25T12:00:00Z
+Game: Octopath Traveler, Release Date: 2020-04-28T12:00:00Z
+Game: Yakuza 6: The Song of Life, Release Date: 2021-03-25T12:00:00Z
+Game: Balan Wonderworld, Release Date: 2021-03-26T12:00:00Z
+Game: Genesis Noir, Release Date: 2021-03-26T12:00:00Z
+Game: Tony Hawk's Pro Skater 1 And 2, Release Date: 2020-09-04T12:00:00Z
+Game: Auto Chess, Release Date: 2020-10-31T12:00:00Z
+Game: Disco Elysium: The Final Cut, Release Date: 2021-10-12T12:00:00Z
+Game: Evil Genius 2: World Domination, Release Date: 2021-11-30T12:00:00Z
+Game: Kingdom Hearts HD 1.5 Remix, Release Date: 2020-02-18T12:00:00Z
+Game: Kingdom Hearts HD 2.5 Remix, Release Date: 2020-02-18T12:00:00Z
+Game: Kingdom Hearts III Re Mind, Release Date: 2020-02-25T12:00:00Z
+Game: Kingdom Hearts Melody of Memory, Release Date: 2020-11-13T12:00:00Z
+Game: Narita Boy, Release Date: 2021-03-30T12:00:00Z
+Game: Tennis World Tour 2, Release Date: 2020-09-24T12:00:00Z
+Game: Trine 4: The Nightmare Prince, Release Date: 2021-03-30T12:00:00Z
+Game: Drive Buy, Release Date: 2021-03-31T12:00:00Z
+Game: The Binding Of Isaac: Repentance, Release Date: 2021-11-04T12:00:00Z
+Game: Outriders, Release Date: 2021-04-01T12:00:00Z
+Game: What Comes After, Release Date: 2020-11-05T12:00:00Z
+Game: World of Demons, Release Date: 2021-04-02T12:00:00Z
+Game: Lost Words: Beyond the Page, Release Date: 2020-03-27T12:00:00Z
+Game: Star Wars: Republic Commando, Release Date: 2021-04-06T12:00:00Z
+Game: Pac-Man 99, Release Date: 2021-04-07T12:00:00Z
+Game: Borderlands 3: Director's Cut DLC, Release Date: 2021-04-08T12:00:00Z
+Game: Cozy Grove, Release Date: 2021-04-08T12:00:00Z
+Game: Scarlet Hood and the Wicked Wood, Release Date: 2021-04-08T12:00:00Z
+Game: What The Dub?!, Release Date: 2021-04-08T12:00:00Z
+Game: The Legend of Heroes: Trails of Cold Steel IV, Release Date: 2020-10-27T12:00:00Z
+Game: The Walking Dead: Survivors, Release Date: 2021-04-12T12:00:00Z
+Game: Poison Control, Release Date: 2021-04-13T12:00:00Z
+Game: Fez, Release Date: 2021-04-14T12:00:00Z
+Game: Drifters Loot the Galaxy, Release Date: 2021-04-15T12:00:00Z
+Game: SaGa Frontier Remastered, Release Date: 2021-04-15T12:00:00Z
+Game: Tribal Pass, Release Date: 2021-04-16T12:00:00Z
+Game: MLB The Show 21, Release Date: 2021-04-20T12:00:00Z
+Game: Atelier Mysterious Trilogy Deluxe Pack, Release Date: 2021-04-22T12:00:00Z
+Game: Buildings Have Feelings Too!, Release Date: 2021-04-22T12:00:00Z
+Game: Immortals Fenyx Rising: The Lost Gods DLC, Release Date: 2021-04-22T12:00:00Z
+Game: Nier Replicant ver. 1.22474487139, Release Date: 2021-04-23T12:00:00Z
+Game: Death end re; Quest, Release Date: 2021-04-27T12:00:00Z
+Game: Genshin Impact, Release Date: 2020-09-28T12:00:00Z
+Game: Total War: Rome Remastered, Release Date: 2021-04-29T12:00:00Z
+Game: New Pokémon Snap, Release Date: 2021-04-30T12:00:00Z
+Game: R-Type Final 2, Release Date: 2021-04-30T12:00:00Z
+Game: Terminator Resistance: Enhanced, Release Date: 2021-04-30T12:00:00Z
+Game: Sayri: The Beginning, Release Date: 2021-05-04T12:00:00Z
+Game: The Colonists, Release Date: 2021-05-04T12:00:00Z
+Game: Skate City, Release Date: 2021-05-06T12:00:00Z
+Game: Baldur's Gate: Dark Alliance, Release Date: 2021-12-17T12:00:00Z
+Game: Hood: Outlaws And Legends, Release Date: 2021-05-10T12:00:00Z
+Game: Call of the Sea, Release Date: 2020-12-08T12:00:00Z
+Game: Destiny 2: Season of the Splicer, Release Date: 2021-05-11T12:00:00Z
+Game: Assassin's Creed Valhalla: Wrath of the Druids DLC, Release Date: 2021-05-13T12:00:00Z
+Game: Famicom Detective Club: The Girl Who Stands Behind, Release Date: 2021-05-14T12:00:00Z
+Game: Famicom Detective Club: The Missing Heir, Release Date: 2021-05-14T12:00:00Z
+Game: Mass Effect Legendary Edition, Release Date: 2021-05-14T12:00:00Z
+Game: Subnautica, Release Date: 2021-05-14T12:00:00Z
+Game: Subnautica: Below Zero, Release Date: 2021-05-14T12:00:00Z
+Game: Days Gone, Release Date: 2021-05-18T12:00:00Z
+Game: Divinity: Original Sin 2, Release Date: 2021-05-18T12:00:00Z
+Game: Elite Dangerous: Odyssey, Release Date: 2021-05-19T12:00:00Z
+Game: Lacuna, Release Date: 2021-12-28T12:00:00Z
+Game: Layers of Fear 2, Release Date: 2021-05-20T12:00:00Z
+Game: Manifold Garden, Release Date: 2020-11-10T12:00:00Z
+Game: The Wild At Heart, Release Date: 2021-11-16T12:00:00Z
+Game: Knockout City, Release Date: 2021-05-21T12:00:00Z
+Game: Miitopia, Release Date: 2021-05-21T12:00:00Z
+Game: Rust, Release Date: 2021-05-21T12:00:00Z
+Game: Moonlighter, Release Date: 2020-11-19T12:00:00Z
+Game: Final Fantasy XIV, Release Date: 2021-05-25T12:00:00Z
+Game: King of Seas, Release Date: 2021-05-25T12:00:00Z
+Game: Maneater, Release Date: 2020-11-12T12:00:00Z
+Game: Shin Megami Tensei III Nocturne HD Remaster, Release Date: 2021-05-25T12:00:00Z
+Game: Maid Of Sker, Release Date: 2020-11-26T12:00:00Z
+Game: Earth Defense Force: World Brothers, Release Date: 2021-05-27T12:00:00Z
+Game: MechWarrior 5: Mercenaries, Release Date: 2021-09-23T12:00:00Z
+Game: Oddworld: Collection, Release Date: 2021-05-27T12:00:00Z
+Game: The Idolmaster: Starlit Season, Release Date: 2021-05-27T12:00:00Z
+Game: Port Royale 4, Release Date: 2020-09-25T12:00:00Z
+Game: Song of Horror Complete Edition, Release Date: 2020-05-28T12:00:00Z
+Game: Wonder Boy: Asha in Monster World, Release Date: 2021-05-28T12:00:00Z
+Game: World's End Club, Release Date: 2021-05-28T12:00:00Z
+Game: Operation: Tango, Release Date: 2021-07-01T12:00:00Z
+Game: Stonefly, Release Date: 2021-06-01T12:00:00Z
+Game: The Elder Scrolls Online: Gates of Oblivion, Release Date: 2021-06-08T12:00:00Z
+Game: World of Warcraft: Burning Crusade Classic, Release Date: 2021-06-01T12:00:00Z
+Game: Pro Cycling Manager 2021, Release Date: 2021-06-03T12:00:00Z
+Game: Tour De France 2021, Release Date: 2021-06-03T12:00:00Z
+Game: Evergate, Release Date: 2020-11-10T12:00:00Z
+Game: Sniper Ghost Warrior Contracts 2, Release Date: 2021-08-24T12:00:00Z
+Game: The Last Kids on Earth and the Staff of Doom, Release Date: 2021-06-04T12:00:00Z
+Game: The Persistence, Release Date: 2020-05-21T12:00:00Z
+Game: Mighty Goose, Release Date: 2021-06-05T12:00:00Z
+Game: Chivalry 2, Release Date: 2021-06-08T12:00:00Z
+Game: Crypt of the Necrodancer, Release Date: 2021-06-08T12:00:00Z
+Game: The Elder Scrolls Online, Release Date: 2020-06-16T12:00:00Z
+Game: Alba: A Wildlife Adventure, Release Date: 2020-12-11T12:00:00Z
+Game: No More Heroes, Release Date: 2020-10-28T12:00:00Z
+Game: No More Heroes 2: Desperate Struggle, Release Date: 2020-10-28T12:00:00Z
+Game: Phantasy Star Online 2: New Genesis, Release Date: 2021-06-09T12:00:00Z
+Game: Final Fantasy VII Remake Intergrade, Release Date: 2021-12-16T12:00:00Z
+Game: Ninja Gaiden: Master Collection, Release Date: 2021-06-10T12:00:00Z
+Game: Game Builder Garage, Release Date: 2021-06-11T12:00:00Z
+Game: Guilty Gear -Strive-, Release Date: 2021-06-11T12:00:00Z
+Game: Star Wars Jedi: Fallen Order, Release Date: 2021-06-11T12:00:00Z
+Game: The Solitaire Conspiracy, Release Date: 2020-10-06T12:00:00Z
+Game: Wave Break, Release Date: 2020-06-23T12:00:00Z
+Game: Strange Brigade, Release Date: 2021-06-15T12:00:00Z
+Game: Heliborne, Release Date: 2020-08-20T12:00:00Z
+Game: Wingspan, Release Date: 2020-12-29T12:00:00Z
+Game: Dungeons & Dragons: Dark Alliance, Release Date: 2021-06-22T12:00:00Z
+Game: Ender Lilies: Quietus of the Knights, Release Date: 2021-07-20T12:00:00Z
+Game: Olympic Games Tokyo 2020 – The Official Video Game, Release Date: 2021-06-22T12:00:00Z
+Game: Worms Rumble, Release Date: 2020-12-01T12:00:00Z
+Game: Alex Kidd in Miracle World DX, Release Date: 2021-06-24T12:00:00Z
+Game: Legend of Mana, Release Date: 2021-12-08T12:00:00Z
+Game: The Eternal Castle Remastered, Release Date: 2020-05-15T12:00:00Z
+Game: Mario Golf: Super Rush, Release Date: 2021-06-25T12:00:00Z
+Game: Scarlet Nexus, Release Date: 2021-06-25T12:00:00Z
+Game: Curved Space, Release Date: 2021-07-13T12:00:00Z
+Game: Destroy All Humans, Release Date: 2020-12-08T12:00:00Z
+Game: Disgaea 6: Defiance of Destiny, Release Date: 2021-06-29T12:00:00Z
+Game: Doom Eternal, Release Date: 2020-12-08T12:00:00Z
+Game: Spirit of the North, Release Date: 2020-11-26T12:00:00Z
+Game: GreedFall, Release Date: 2021-06-30T12:00:00Z
+Game: Blaster Master Zero, Release Date: 2020-06-29T12:00:00Z
+Game: A Plague Tale: Innocence, Release Date: 2021-07-06T12:00:00Z
+Game: Ultimate Rivals: The Court, Release Date: 2021-07-07T12:00:00Z
+Game: Sam & Max: This Time It's Virtual!, Release Date: 2021-09-10T12:00:00Z
+Game: Claire de Lune, Release Date: 2021-07-12T12:00:00Z
+Game: Where the Heart Leads, Release Date: 2021-07-13T12:00:00Z
+Game: XCOM 2, Release Date: 2020-11-05T12:00:00Z
+Game: Trials of Mana, Release Date: 2020-04-24T12:00:00Z
+Game: Bullet Age, Release Date: 2021-07-15T12:00:00Z
+Game: Lost At Sea, Release Date: 2021-07-15T12:00:00Z
+Game: Space Jam: A New Legacy, Release Date: 2021-07-15T12:00:00Z
+Game: Streets of Rage 4, Release Date: 2020-04-30T12:00:00Z
+Game: F1 2021, Release Date: 2021-07-16T12:00:00Z
+Game: Observer: System Redux, Release Date: 2020-11-12T12:00:00Z
+Game: The Legend Of Zelda: Skyward Sword HD, Release Date: 2021-07-16T12:00:00Z
+Game: Akiba's Trip: Hellbound & Debriefed, Release Date: 2021-07-20T12:00:00Z
+Game: Cris Tales, Release Date: 2021-07-20T12:00:00Z
+Game: Death's Door, Release Date: 2021-11-23T12:00:00Z
+Game: Pokémon Unite, Release Date: 2021-09-22T12:00:00Z
+Game: The Witcher: Monster Slayer, Release Date: 2021-07-21T12:00:00Z
+Game: Last Stop, Release Date: 2021-07-22T12:00:00Z
+Game: Orcs Must Die 3, Release Date: 2020-07-14T12:00:00Z
+Game: Contra Returns, Release Date: 2021-07-26T12:00:00Z
+Game: Blightbound, Release Date: 2021-07-27T12:00:00Z
+Game: Hell Let Loose, Release Date: 2021-10-05T12:00:00Z
+Game: Microsoft Flight Simulator, Release Date: 2020-08-18T12:00:00Z
+Game: Neo: The World Ends With You, Release Date: 2021-09-28T12:00:00Z
+Game: Samurai Warriors 5, Release Date: 2021-07-27T12:00:00Z
+Game: The Great Ace Attorney Chronicles, Release Date: 2021-07-27T12:00:00Z
+Game: Tribes Of Midgard, Release Date: 2021-07-27T12:00:00Z
+Game: Nier Reincarnation, Release Date: 2021-07-28T12:00:00Z
+Game: The Forgotten City, Release Date: 2021-09-23T12:00:00Z
+Game: Eldest Souls, Release Date: 2021-07-29T12:00:00Z
+Game: Alone With You, Release Date: 2021-07-30T12:00:00Z
+Game: Hunter's Arena: Legends, Release Date: 2021-08-02T12:00:00Z
+Game: The Ramp, Release Date: 2021-08-03T12:00:00Z
+Game: My Time At Portia, Release Date: 2021-08-04T12:00:00Z
+Game: Dodgeball Academia, Release Date: 2021-08-05T12:00:00Z
+Game: The Falconeer, Release Date: 2020-11-10T12:00:00Z
+Game: Hellblade: Senua's Sacrifice, Release Date: 2021-08-09T12:00:00Z
+Game: I Am Dead, Release Date: 2020-10-08T12:00:00Z
+Game: Black Book, Release Date: 2021-08-10T12:00:00Z
+Game: Button City, Release Date: 2021-08-10T12:00:00Z
+Game: Godfall, Release Date: 2020-11-12T12:00:00Z
+Game: Library of Ruina, Release Date: 2021-08-10T12:00:00Z
+Game: Sam & Max Save The World Remastered, Release Date: 2020-12-02T12:00:00Z
+Game: Shadowverse: Champion's Battle, Release Date: 2021-08-10T12:00:00Z
+Game: Axiom Verge 2, Release Date: 2021-08-11T12:00:00Z
+Game: Dwarrows, Release Date: 2020-02-28T12:00:00Z
+Game: Glitchpunk, Release Date: 2021-08-11T12:00:00Z
+Game: Necrobarista, Release Date: 2020-07-22T12:00:00Z
+Game: Slime Rancher, Release Date: 2021-08-11T12:00:00Z
+Game: Blair Witch, Release Date: 2020-10-29T12:00:00Z
+Game: Foreclosed, Release Date: 2021-08-12T12:00:00Z
+Game: PAW Patrol: The Movie Adventure City Calls, Release Date: 2021-08-13T12:00:00Z
+Game: Greak: Memories Of Azur, Release Date: 2021-12-14T12:00:00Z
+Game: Marvel's Avengers - War for Wakanda, Release Date: 2021-08-17T12:00:00Z
+Game: Quake (2021), Release Date: 2021-08-19T12:00:00Z
+Game: Recompile, Release Date: 2021-08-19T12:00:00Z
+Game: RiMS Racing, Release Date: 2021-08-19T12:00:00Z
+Game: Twelve Minutes, Release Date: 2021-12-07T12:00:00Z
+Game: Arietta of Spirits, Release Date: 2021-08-20T12:00:00Z
+Game: Madden NFL 22, Release Date: 2021-08-20T12:00:00Z
+Game: Aliens: Fireteam Elite, Release Date: 2021-08-24T12:00:00Z
+Game: Hoa, Release Date: 2021-08-24T12:00:00Z
+Game: I Expect You To Die 2: The Spy and The Liar, Release Date: 2021-08-24T12:00:00Z
+Game: Marvel Future Revolution, Release Date: 2021-08-25T12:00:00Z
+Game: Psychonauts 2, Release Date: 2021-08-25T12:00:00Z
+Game: Myst (2021), Release Date: 2021-08-26T12:00:00Z
+Game: Spelunky, Release Date: 2021-08-26T12:00:00Z
+Game: Baldo: The Guardian Owls, Release Date: 2021-08-27T12:00:00Z
+Game: KeyWe, Release Date: 2021-12-16T12:00:00Z
+Game: Rustler, Release Date: 2021-08-31T12:00:00Z
+Game: Ark: Survival Evolved, Release Date: 2021-09-01T12:00:00Z
+Game: Cloud Gardens, Release Date: 2020-09-09T12:00:00Z
+Game: Darksiders II Deathinitive Edition, Release Date: 2021-09-01T12:00:00Z
+Game: Surgeon Simulator 2, Release Date: 2020-08-27T12:00:00Z
+Game: Big Rumble Boxing: Creed Champions, Release Date: 2021-09-03T12:00:00Z
+Game: Golf Club Wasteland, Release Date: 2021-09-03T12:00:00Z
+Game: Bus Simulator 21, Release Date: 2021-09-07T12:00:00Z
+Game: Encased, Release Date: 2021-09-07T12:00:00Z
+Game: F.I.S.T.: Forged In Shadow Torch, Release Date: 2021-09-07T12:00:00Z
+Game: Katamari Damacy Reroll, Release Date: 2020-11-20T12:00:00Z
+Game: Sonic Colors: Ultimate, Release Date: 2021-09-07T12:00:00Z
+Game: BloodRayne Betrayal: Fresh Bites, Release Date: 2021-09-09T12:00:00Z
+Game: Nuclear Throne, Release Date: 2021-09-09T12:00:00Z
+Game: Life is Strange: True Colors, Release Date: 2021-12-07T12:00:00Z
+Game: Lost in Random, Release Date: 2021-09-10T12:00:00Z
+Game: NBA 2K22, Release Date: 2021-09-10T12:00:00Z
+Game: Tales of Arise, Release Date: 2021-09-10T12:00:00Z
+Game: WarioWare: Get It Together!, Release Date: 2021-09-10T12:00:00Z
+Game: Cruis'n Blast, Release Date: 2021-09-14T12:00:00Z
+Game: Darksiders III, Release Date: 2021-09-30T12:00:00Z
+Game: Flynn: Son of Crimson, Release Date: 2021-09-15T12:00:00Z
+Game: Aragami 2, Release Date: 2021-09-17T12:00:00Z
+Game: Deltarune: Chapter 2, Release Date: 2021-09-23T12:00:00Z
+Game: Ni no Kuni II: Revenant Kingdom, Release Date: 2021-09-17T12:00:00Z
+Game: Kena: Bridge of Spirits, Release Date: 2021-09-21T12:00:00Z
+Game: Sheltered 2, Release Date: 2021-09-21T12:00:00Z
+Game: World War Z: Aftermath, Release Date: 2021-09-21T12:00:00Z
+Game: Actraiser Renaissance, Release Date: 2021-09-23T12:00:00Z
+Game: Beast Breaker, Release Date: 2021-09-23T12:00:00Z
+Game: Castlevania Advance Collection, Release Date: 2021-09-23T12:00:00Z
+Game: Diablo II: Resurrected, Release Date: 2021-09-23T12:00:00Z
+Game: Embr, Release Date: 2020-05-20T12:00:00Z
+Game: The Plane Effect, Release Date: 2021-09-23T12:00:00Z
+Game: Amnesia: The Dark Descent, Release Date: 2021-09-28T12:00:00Z
+Game: Ghostrunner, Release Date: 2020-11-10T12:00:00Z
+Game: Lemnis Gate, Release Date: 2021-09-28T12:00:00Z
+Game: New World, Release Date: 2021-09-28T12:00:00Z
+Game: Outer Wilds: Echoes of the Eye, Release Date: 2021-09-28T12:00:00Z
+Game: Steel Assault, Release Date: 2021-09-28T12:00:00Z
+Game: AI: The Somnium Files, Release Date: 2021-09-30T12:00:00Z
+Game: Aeon Drive, Release Date: 2021-09-30T12:00:00Z
+Game: Astria Ascending, Release Date: 2021-09-30T12:00:00Z
+Game: Bubble Bobble 4 Friends, Release Date: 2020-11-17T12:00:00Z
+Game: Hot Wheels Unleashed, Release Date: 2021-09-30T12:00:00Z
+Game: Imposter Factory, Release Date: 2021-09-30T12:00:00Z
+Game: The Last Friend, Release Date: 2021-09-30T12:00:00Z
+Game: Unsighted, Release Date: 2021-09-30T12:00:00Z
+Game: FIFA 22, Release Date: 2021-10-01T12:00:00Z
+Game: Phoenix Point, Release Date: 2021-10-01T12:00:00Z
+Game: Jett: The Far Shore, Release Date: 2021-10-05T12:00:00Z
+Game: Lego Marvel Super Heroes, Release Date: 2021-10-05T12:00:00Z
+Game: Nickelodeon All-Star Brawl, Release Date: 2021-10-05T12:00:00Z
+Game: Super Monkey Ball Banana Mania, Release Date: 2021-10-05T12:00:00Z
+Game: Enlisted, Release Date: 2020-11-10T12:00:00Z
+Game: Far Cry 6, Release Date: 2021-10-07T12:00:00Z
+Game: Doki Doki Literature Club Plus, Release Date: 2021-10-08T12:00:00Z
+Game: Metroid Dread, Release Date: 2021-10-08T12:00:00Z
+Game: Back 4 Blood, Release Date: 2021-10-12T12:00:00Z
+Game: Dungeon Encounters, Release Date: 2021-10-14T12:00:00Z
+Game: The Jackbox Party Pack 8, Release Date: 2021-10-14T12:00:00Z
+Game: The Riftbreaker, Release Date: 2021-10-14T12:00:00Z
+Game: Crysis Remastered Trilogy, Release Date: 2021-10-15T12:00:00Z
+Game: NHL 22, Release Date: 2021-10-15T12:00:00Z
+Game: The Good Life, Release Date: 2021-10-15T12:00:00Z
+Game: Nuclear Blaze, Release Date: 2021-10-18T12:00:00Z
+Game: Dying Light, Release Date: 2021-10-19T12:00:00Z
+Game: Into the Pit, Release Date: 2021-10-19T12:00:00Z
+Game: Corpse Party (2021), Release Date: 2021-10-20T12:00:00Z
+Game: Grotto, Release Date: 2021-10-20T12:00:00Z
+Game: Echo Generation, Release Date: 2021-10-21T12:00:00Z
+Game: Razer Zephyr, Release Date: 2021-10-21T12:00:00Z
+Game: Resident Evil 4 VR, Release Date: 2021-10-21T12:00:00Z
+Game: The Dark Pictures Anthology: House of Ashes, Release Date: 2021-10-21T12:00:00Z
+Game: Carrion, Release Date: 2020-07-23T12:00:00Z
+Game: Iron Harvest, Release Date: 2020-09-01T12:00:00Z
+Game: L.O.L. Surprise! Movie Night, Release Date: 2021-10-26T12:00:00Z
+Game: Marvel's Guardians of the Galaxy, Release Date: 2021-10-26T12:00:00Z
+Game: NASCAR 21: Ignition, Release Date: 2021-10-26T12:00:00Z
+Game: Pikmin Bloom, Release Date: 2021-10-26T12:00:00Z
+Game: Super Robot Wars 30, Release Date: 2021-10-27T12:00:00Z
+Game: Fatal Frame: Maiden of Black Water, Release Date: 2021-10-28T12:00:00Z
+Game: Riders Republic, Release Date: 2021-10-28T12:00:00Z
+Game: Röki, Release Date: 2020-10-15T12:00:00Z
+Game: Voice Of Cards: The Isle Dragon Roars, Release Date: 2021-10-28T12:00:00Z
+Game: Mario Party Superstars, Release Date: 2021-10-29T12:00:00Z
+Game: First Class Trouble, Release Date: 2021-11-02T12:00:00Z
+Game: Fortnite Minty Legends Pack, Release Date: 2021-11-02T12:00:00Z
+Game: Tunche, Release Date: 2021-11-02T12:00:00Z
+Game: Bloodshore, Release Date: 2021-11-03T12:00:00Z
+Game: A Boy and His Blob, Release Date: 2021-11-04T12:00:00Z
+Game: Just Dance 2022, Release Date: 2021-11-04T12:00:00Z
+Game: Where Cards Fall, Release Date: 2021-11-04T12:00:00Z
+Game: Animal Crossing: New Horizons - Happy Home Paradise DLC, Release Date: 2021-11-05T12:00:00Z
+Game: Call of Duty: Vanguard, Release Date: 2021-11-05T12:00:00Z
+Game: Airborne Kingdom, Release Date: 2020-12-17T12:00:00Z
+Game: Football Manager 2022, Release Date: 2021-11-09T12:00:00Z
+Game: Forza Horizon 5, Release Date: 2021-11-09T12:00:00Z
+Game: Jurassic World Evolution 2, Release Date: 2021-11-09T12:00:00Z
+Game: Among Trees, Release Date: 2021-11-10T12:00:00Z
+Game: Star Wars: Knights of the Old Republic, Release Date: 2021-11-11T12:00:00Z
+Game: The Elder Scrolls V: Skyrim Special Edition, Release Date: 2021-11-11T12:00:00Z
+Game: Shin Megami Tensei V, Release Date: 2021-11-12T12:00:00Z
+Game: Moncage, Release Date: 2021-11-16T12:00:00Z
+Game: Surviving The Aftermath, Release Date: 2021-11-16T12:00:00Z
+Game: The Smurfs: Mission Vileaf Smurftastic Edition, Release Date: 2021-12-14T12:00:00Z
+Game: Fae Tactics, Release Date: 2020-07-31T12:00:00Z
+Game: Final Fantasy VII The First Soldier, Release Date: 2021-11-17T12:00:00Z
+Game: Tamarin, Release Date: 2020-09-10T12:00:00Z
+Game: BloodRayne 2: ReVamped, Release Date: 2021-11-18T12:00:00Z
+Game: BloodRayne: ReVamped, Release Date: 2021-11-18T12:00:00Z
+Game: Epic Chef, Release Date: 2021-11-18T12:00:00Z
+Game: Exo One, Release Date: 2021-11-18T12:00:00Z
+Game: UnDungeon, Release Date: 2021-11-18T12:00:00Z
+Game: Battlefield 2042, Release Date: 2021-11-19T12:00:00Z
+Game: NERF Legends, Release Date: 2021-11-19T12:00:00Z
+Game: Pokémon Brilliant Diamond, Release Date: 2021-11-19T12:00:00Z
+Game: Pokémon Shining Pearl, Release Date: 2021-11-19T12:00:00Z
+Game: Farming Simulator 22, Release Date: 2021-11-22T12:00:00Z
+Game: Disney Classic Games Collection, Release Date: 2021-11-23T12:00:00Z
+Game: MXGP 2021 - The Official Motocross Videogame, Release Date: 2021-11-29T12:00:00Z
+Game: Beyond a Steel Sky, Release Date: 2020-07-16T12:00:00Z
+Game: Dauntless, Release Date: 2021-12-02T12:00:00Z
+Game: Chorus, Release Date: 2021-12-03T12:00:00Z
+Game: Danganronpa Decadence, Release Date: 2021-12-03T12:00:00Z
+Game: Danganronpa S: Ultimate Summer Camp, Release Date: 2021-12-03T12:00:00Z
+Game: Icarus, Release Date: 2021-12-03T12:00:00Z
+Game: Gang Beasts, Release Date: 2021-12-07T12:00:00Z
+Game: Serious Sam 4, Release Date: 2020-09-24T12:00:00Z
+Game: White Shadows, Release Date: 2021-12-07T12:00:00Z
+Game: Halo Infinite, Release Date: 2021-12-08T12:00:00Z
+Game: GTFO, Release Date: 2021-12-09T12:00:00Z
+Game: Monster Rancher 1 & 2 DX, Release Date: 2021-12-09T12:00:00Z
+Game: Analogue Pocket, Release Date: 2021-12-13T12:00:00Z
+Game: Shovel Knight Pocket Dungeon, Release Date: 2021-12-13T12:00:00Z
+Game: Among Us, Release Date: 2020-12-15T12:00:00Z
+Game: Praey for the Gods, Release Date: 2021-12-14T12:00:00Z
+Game: Timelie, Release Date: 2020-05-20T12:00:00Z
+Game: Alien: Isolation, Release Date: 2021-12-16T12:00:00Z
+Game: The Gunk, Release Date: 2021-12-16T12:00:00Z
+Game: Among Us: Crewmate Edition, Release Date: 2021-12-21T12:00:00Z
+Game: AO Tennis 2, Release Date: 2020-02-11T12:00:00Z
+Game: Monster Hunter World: Iceborne, Release Date: 2020-01-09T12:00:00Z
+Game: Stories Untold, Release Date: 2020-10-27T12:00:00Z
+Game: To The Moon, Release Date: 2020-01-16T12:00:00Z
+Game: Tokyo Mirage Sessions #FE, Release Date: 2020-01-17T12:00:00Z
+Game: The Sims 4: Tiny Living, Release Date: 2020-02-04T12:00:00Z
+Game: Iconoclasts, Release Date: 2020-01-23T12:00:00Z
+Game: Mosaic, Release Date: 2020-02-11T12:00:00Z
+Game: Rugby 20, Release Date: 2020-01-23T12:00:00Z
+Game: Kentucky Route Zero, Release Date: 2020-01-28T12:00:00Z
+Game: Pillars of Eternity II: Deadfire, Release Date: 2020-01-28T12:00:00Z
+Game: The Coma 2: Vicious Sisters, Release Date: 2020-09-04T12:00:00Z
+Game: Warcraft III: Reforged, Release Date: 2020-01-28T12:00:00Z
+Game: Coffee Talk, Release Date: 2020-01-29T12:00:00Z
+Game: Ministry of Broadcast, Release Date: 2020-01-30T12:00:00Z
+Game: Through the Darkest of Times, Release Date: 2020-08-13T12:00:00Z
+Game: Sky Rogue, Release Date: 2020-01-31T12:00:00Z
+Game: Dawn of Fear, Release Date: 2020-02-03T12:00:00Z
+Game: Life is Strange 2: Complete Season, Release Date: 2020-02-04T12:00:00Z
+Game: Monster Energy Supercross 3, Release Date: 2020-02-04T12:00:00Z
+Game: The Dark Crystal: Age of Resistance Tactics, Release Date: 2020-02-04T12:00:00Z
+Game: 7th Sector, Release Date: 2020-02-05T12:00:00Z
+Game: Knights and Bikes, Release Date: 2020-02-06T12:00:00Z
+Game: Kunai, Release Date: 2020-02-06T12:00:00Z
+Game: The Turing Test, Release Date: 2020-02-07T12:00:00Z
+Game: Yakuza 5, Release Date: 2020-02-11T12:00:00Z
+Game: Florence, Release Date: 2020-02-13T12:00:00Z
+Game: Luna The Shadow Dust, Release Date: 2020-02-13T12:00:00Z
+Game: Street Fighter V: Champion Edition, Release Date: 2020-02-14T12:00:00Z
+Game: Darksiders Genesis, Release Date: 2020-02-14T12:00:00Z
+Game: Dreams, Release Date: 2020-02-14T12:00:00Z
+Game: Table Manners, Release Date: 2020-02-14T12:00:00Z
+Game: Tony Stewart's Sprint Car Racing, Release Date: 2020-02-21T12:00:00Z
+Game: Corruption 2029, Release Date: 2020-02-17T12:00:00Z
+Game: Bayonetta, Release Date: 2020-02-18T12:00:00Z
+Game: Hunt: Showdown, Release Date: 2020-02-18T12:00:00Z
+Game: Devil May Cry 3: Special Edition, Release Date: 2020-02-20T12:00:00Z
+Game: Infliction: Extended Cut, Release Date: 2020-07-02T12:00:00Z
+Game: Mega Man Zero/ZX Legacy Collection, Release Date: 2020-02-25T12:00:00Z
+Game: Space Channel 5 VR, Release Date: 2020-02-25T12:00:00Z
+Game: Two Point Hospital, Release Date: 2020-02-25T12:00:00Z
+Game: Yakuza 0, Release Date: 2020-02-26T12:00:00Z
+Game: Overpass, Release Date: 2020-03-31T12:00:00Z
+Game: Bloodroots, Release Date: 2020-02-28T12:00:00Z
+Game: Metro Redux, Release Date: 2020-02-28T12:00:00Z
+Game: One Punch Man: A Hero Nobody Knows, Release Date: 2020-02-28T12:00:00Z
+Game: Romance of the Three Kingdoms XIV, Release Date: 2020-02-28T12:00:00Z
+Game: SteamWorld Dig 2, Release Date: 2020-03-01T12:00:00Z
+Game: Granblue Fantasy Versus, Release Date: 2020-03-13T12:00:00Z
+Game: Murder by Numbers, Release Date: 2020-03-06T12:00:00Z
+Game: Pokémon Mystery Dungeon: Rescue Team DX, Release Date: 2020-03-06T12:00:00Z
+Game: Yes, Release Date: Your Grace, 2020-11-10T12:00:00Z
+Game: Call of Duty: Warzone, Release Date: 2020-03-10T12:00:00Z
+Game: SteamWorld Dig, Release Date: 2020-03-10T12:00:00Z
+Game: Ori And The Will Of The Wisps, Release Date: 2020-11-10T12:00:00Z
+Game: Switch 'N' Shoot, Release Date: 2020-03-11T12:00:00Z
+Game: Comanche, Release Date: 2020-03-12T12:00:00Z
+Game: Hidden Through Time, Release Date: 2020-03-12T12:00:00Z
+Game: My Hero One's Justice 2, Release Date: 2020-03-13T12:00:00Z
+Game: Nioh 2, Release Date: 2020-03-13T12:00:00Z
+Game: Roundguard, Release Date: 2020-03-13T12:00:00Z
+Game: State Of Decay 2, Release Date: 2020-03-13T12:00:00Z
+Game: Green: An Orc's Life, Release Date: 2020-03-17T12:00:00Z
+Game: MLB The Show 20, Release Date: 2020-03-17T12:00:00Z
+Game: R.B.I. Baseball 20, Release Date: 2020-03-17T12:00:00Z
+Game: The Division 2, Release Date: 2020-03-17T12:00:00Z
+Game: Animal Crossing: New Horizons, Release Date: 2020-03-20T12:00:00Z
+Game: Doom 64, Release Date: 2020-03-20T12:00:00Z
+Game: Half-Life: Alyx, Release Date: 2020-03-23T12:00:00Z
+Game: The Legend of Heroes: Trails Of Cold Steel III, Release Date: 2020-06-30T12:00:00Z
+Game: Bleeding Edge, Release Date: 2020-03-24T12:00:00Z
+Game: Deep Sky Derelicts, Release Date: 2020-03-24T12:00:00Z
+Game: Moons of Madness, Release Date: 2020-03-24T12:00:00Z
+Game: Bright Memory, Release Date: 2020-11-10T12:00:00Z
+Game: Biped, Release Date: 2020-07-02T12:00:00Z
+Game: Good Job!, Release Date: 2020-03-26T12:00:00Z
+Game: Panzer Dragoon: Remake, Release Date: 2020-03-26T12:00:00Z
+Game: Shinsekai: Into the Depths, Release Date: 2020-03-26T12:00:00Z
+Game: Gigantosaurus The Game, Release Date: 2020-03-27T12:00:00Z
+Game: One Piece: Pirate Warriors 4, Release Date: 2020-03-27T12:00:00Z
+Game: Saints Row IV: Re-Elected, Release Date: 2020-03-27T12:00:00Z
+Game: Treachery in Beatdown City, Release Date: 2020-03-30T12:00:00Z
+Game: Call Of Duty: Modern Warfare 2 Campaign Remastered, Release Date: 2020-04-30T12:00:00Z
+Game: The Complex, Release Date: 2020-03-31T12:00:00Z
+Game: Totally Reliable Delivery Service, Release Date: 2020-04-01T12:00:00Z
+Game: Aeolis Tournament, Release Date: 2020-04-03T12:00:00Z
+Game: HyperParasite, Release Date: 2020-04-03T12:00:00Z
+Game: In Other Waters, Release Date: 2020-04-03T12:00:00Z
+Game: Below, Release Date: 2020-04-07T12:00:00Z
+Game: Disaster Report 4: Summer Memories, Release Date: 2020-04-07T12:00:00Z
+Game: Final Fantasy VII Remake, Release Date: 2020-04-10T12:00:00Z
+Game: Phantasy Star Online 2, Release Date: 2020-05-27T12:00:00Z
+Game: Dead by Daylight, Release Date: 2020-11-12T12:00:00Z
+Game: A Fold Apart, Release Date: 2020-05-19T12:00:00Z
+Game: Beyond Blue, Release Date: 2020-06-11T12:00:00Z
+Game: Gato Roboto, Release Date: 2020-04-21T12:00:00Z
+Game: Pong Quest, Release Date: 2020-05-29T12:00:00Z
+Game: Yakuza Kiwami, Release Date: 2020-04-21T12:00:00Z
+Game: Cloudpunk, Release Date: 2020-10-15T12:00:00Z
+Game: Double Dragon IV, Release Date: 2020-04-23T12:00:00Z
+Game: Iratus: Lord of the Dead, Release Date: 2020-04-23T12:00:00Z
+Game: MotoGP 20, Release Date: 2020-04-23T12:00:00Z
+Game: Pixel Ripped 1995, Release Date: 2020-05-12T12:00:00Z
+Game: Predator: Hunting Grounds, Release Date: 2020-04-24T12:00:00Z
+Game: XCOM: Chimera Squad, Release Date: 2020-04-24T12:00:00Z
+Game: Disco Elysium, Release Date: 2020-04-27T12:00:00Z
+Game: Gears Tactics, Release Date: 2020-11-10T12:00:00Z
+Game: Get Packed, Release Date: 2020-04-28T12:00:00Z
+Game: Indivisible, Release Date: 2020-04-28T12:00:00Z
+Game: Moving Out, Release Date: 2020-04-28T12:00:00Z
+Game: PUBG: Battlegrounds, Release Date: 2020-04-28T12:00:00Z
+Game: Sakura Wars, Release Date: 2020-04-28T12:00:00Z
+Game: Telling Lies, Release Date: 2020-04-28T12:00:00Z
+Game: The Inner Friend, Release Date: 2020-04-28T12:00:00Z
+Game: Dread Nautical, Release Date: 2020-04-29T12:00:00Z
+Game: Legends of Runeterra, Release Date: 2020-04-29T12:00:00Z
+Game: Levelhead, Release Date: 2020-04-30T12:00:00Z
+Game: Lumberjack's Dynasty, Release Date: 2020-04-30T12:00:00Z
+Game: Arcade Spirits, Release Date: 2020-05-01T12:00:00Z
+Game: Neversong, Release Date: 2020-05-20T12:00:00Z
+Game: Forza Street, Release Date: 2020-05-05T12:00:00Z
+Game: John Wick Hex, Release Date: 2020-12-04T12:00:00Z
+Game: Old World, Release Date: 2020-05-05T12:00:00Z
+Game: Population Zero, Release Date: 2020-05-05T12:00:00Z
+Game: Someday You'll Return, Release Date: 2020-05-05T12:00:00Z
+Game: Infinite – Beyond The Mind, Release Date: 2020-05-07T12:00:00Z
+Game: Lonely Mountains: Downhill, Release Date: 2020-05-07T12:00:00Z
+Game: Sonic At The Olympic Games – Tokyo 2020, Release Date: 2020-05-07T12:00:00Z
+Game: Void Bastards, Release Date: 2020-05-07T12:00:00Z
+Game: Wavey The Rocket, Release Date: 2020-05-07T12:00:00Z
+Game: Fury Unleashed, Release Date: 2020-05-08T12:00:00Z
+Game: SuperMash, Release Date: 2020-05-08T12:00:00Z
+Game: Tonight We Riot, Release Date: 2020-05-08T12:00:00Z
+Game: Huntdown, Release Date: 2020-05-12T12:00:00Z
+Game: Jet Lancer, Release Date: 2020-05-12T12:00:00Z
+Game: SpongeBob: Krusty Cook-Off, Release Date: 2020-09-22T12:00:00Z
+Game: VirtuaVerse, Release Date: 2020-05-12T12:00:00Z
+Game: Super Mega Baseball 3, Release Date: 2020-05-13T12:00:00Z
+Game: Ion Fury, Release Date: 2020-05-14T12:00:00Z
+Game: Nimbatus - The Space Drone Constructor, Release Date: 2020-05-14T12:00:00Z
+Game: Oddworld: Munch's Oddysee, Release Date: 2020-05-14T12:00:00Z
+Game: Pandemia: Virus Outbreak, Release Date: 2020-05-14T12:00:00Z
+Game: Tetris Effect, Release Date: 2020-05-14T12:00:00Z
+Game: The Culling: Origins, Release Date: 2020-05-14T12:00:00Z
+Game: The Elder Scrolls: Blades, Release Date: 2020-05-14T12:00:00Z
+Game: Dungeon of the Endless, Release Date: 2020-05-15T12:00:00Z
+Game: Emma: Lost In Memories, Release Date: 2020-05-15T12:00:00Z
+Game: Those Who Remain, Release Date: 2020-05-28T12:00:00Z
+Game: Winding Worlds, Release Date: 2020-05-15T12:00:00Z
+Game: Cranked Up, Release Date: 2020-05-19T12:00:00Z
+Game: Golf With Your Friends, Release Date: 2020-05-19T12:00:00Z
+Game: Gorn, Release Date: 2020-05-19T12:00:00Z
+Game: Mafia II: Definitive Edition, Release Date: 2020-05-19T12:00:00Z
+Game: Mafia III: Definitive Edition, Release Date: 2020-05-19T12:00:00Z
+Game: The Wonderful 101: Remastered, Release Date: 2020-05-19T12:00:00Z
+Game: Crucible, Release Date: 2020-05-21T12:00:00Z
+Game: Crumbling World, Release Date: 2020-05-21T12:00:00Z
+Game: Old Gods Rising, Release Date: 2020-05-21T12:00:00Z
+Game: Red Wings: Aces Of The Sky, Release Date: 2020-10-13T12:00:00Z
+Game: Saints Row: The Third Remastered, Release Date: 2020-05-22T12:00:00Z
+Game: Hero Cantare With Webtoon, Release Date: 2020-05-26T12:00:00Z
+Game: Jotun, Release Date: 2020-05-26T12:00:00Z
+Game: Minecraft Dungeons, Release Date: 2020-05-26T12:00:00Z
+Game: Mortal Kombat 11: Aftermath, Release Date: 2020-05-26T12:00:00Z
+Game: Sundered, Release Date: 2020-05-26T12:00:00Z
+Game: The Elder Scrolls Online: Greymoor, Release Date: 2020-06-16T12:00:00Z
+Game: Warface: Breakout, Release Date: 2020-05-26T12:00:00Z
+Game: Wildfire, Release Date: 2020-12-10T12:00:00Z
+Game: Missile Command: Recharged, Release Date: 2020-05-27T12:00:00Z
+Game: Reky, Release Date: 2020-05-27T12:00:00Z
+Game: Fly Punch Boom!, Release Date: 2020-05-28T12:00:00Z
+Game: Retrograde Arena, Release Date: 2020-05-28T12:00:00Z
+Game: Shantae and the Seven Sirens, Release Date: 2020-05-28T12:00:00Z
+Game: Umihara Kawase Bazooka, Release Date: 2020-10-30T12:00:00Z
+Game: BioShock: The Collection, Release Date: 2020-05-29T12:00:00Z
+Game: Borderlands Legendary Collection, Release Date: 2020-05-29T12:00:00Z
+Game: Xenoblade Chronicles Definitive Edition, Release Date: 2020-05-29T12:00:00Z
+Game: Liberated, Release Date: 2020-07-30T12:00:00Z
+Game: Little Town Hero, Release Date: 2020-06-02T12:00:00Z
+Game: Valorant, Release Date: 2020-06-02T12:00:00Z
+Game: Awesome Pea 2, Release Date: 2020-06-03T12:00:00Z
+Game: Prophecy, Release Date: 2020-06-03T12:00:00Z
+Game: Griftlands, Release Date: 2020-06-04T12:00:00Z
+Game: Pro Cycling Manager 2020, Release Date: 2020-06-04T12:00:00Z
+Game: Tour De France 2020, Release Date: 2020-08-27T12:00:00Z
+Game: Clubhouse Games: 51 Worldwide Classics, Release Date: 2020-06-05T12:00:00Z
+Game: Command & Conquer Remastered Collection, Release Date: 2020-06-05T12:00:00Z
+Game: Endurance, Release Date: 2020-08-31T12:00:00Z
+Game: Outbuddies DX, Release Date: 2020-06-05T12:00:00Z
+Game: Rigid Force Redux, Release Date: 2020-06-05T12:00:00Z
+Game: The Outer Worlds, Release Date: 2020-06-05T12:00:00Z
+Game: West of Dead, Release Date: 2020-08-26T12:00:00Z
+Game: The Dark Eye: Book Of Heroes, Release Date: 2020-06-09T12:00:00Z
+Game: Ys: Memories of Celceta, Release Date: 2020-06-09T12:00:00Z
+Game: Evan's Remains, Release Date: 2020-06-11T12:00:00Z
+Game: Goosebumps Dead of Night, Release Date: 2020-06-12T12:00:00Z
+Game: Warborn, Release Date: 2020-06-12T12:00:00Z
+Game: Invisible, Release Date: Inc., 2020-06-15T12:00:00Z
+Game: Jump Rope Challenge, Release Date: 2020-06-15T12:00:00Z
+Game: Colt Canyon, Release Date: 2020-06-16T12:00:00Z
+Game: Darius Cozmic Collection Arcade, Release Date: 2020-06-16T12:00:00Z
+Game: Darius Cozmic Collection Console, Release Date: 2020-06-16T12:00:00Z
+Game: Desperados III, Release Date: 2020-06-16T12:00:00Z
+Game: Disintegration, Release Date: 2020-06-16T12:00:00Z
+Game: Haxity, Release Date: 2020-06-17T12:00:00Z
+Game: Pokémon Smile, Release Date: 2020-06-17T12:00:00Z
+Game: Pokémon Sword & Shield: The Isle Of Armor, Release Date: 2020-06-17T12:00:00Z
+Game: P.A.M.E.L.A., Release Date: 2020-06-18T12:00:00Z
+Game: Samurai Shodown NeoGeo Collection, Release Date: 2020-07-28T12:00:00Z
+Game: The Bard's Tale ARPG : Remastered and Resnarkled, Release Date: 2020-06-18T12:00:00Z
+Game: Waking, Release Date: 2020-06-18T12:00:00Z
+Game: Burnout Paradise Remastered, Release Date: 2020-06-19T12:00:00Z
+Game: The Academy: The First Riddle, Release Date: 2020-06-19T12:00:00Z
+Game: The Last of Us Part II, Release Date: 2020-06-19T12:00:00Z
+Game: Duke Nukem 3D: 20th Anniversary Edition World Tour, Release Date: 2020-06-23T12:00:00Z
+Game: Pokémon Café Mix, Release Date: 2020-06-23T12:00:00Z
+Game: SpongeBob SquarePants: Battle For Bikini Bottom – Rehydrated, Release Date: 2020-06-23T12:00:00Z
+Game: Star Wars Episode I: Racer, Release Date: 2020-10-27T12:00:00Z
+Game: Tower Of Time, Release Date: 2020-06-26T12:00:00Z
+Game: Ninjala, Release Date: 2020-06-24T12:00:00Z
+Game: Brigandine: The Legend of Runersia, Release Date: 2020-12-10T12:00:00Z
+Game: Control: The Foundation DLC, Release Date: 2020-06-25T12:00:00Z
+Game: Crying Suns, Release Date: 2020-06-25T12:00:00Z
+Game: Observation, Release Date: 2020-06-25T12:00:00Z
+Game: Phantom: Covert Ops, Release Date: 2020-06-25T12:00:00Z
+Game: The Almost Gone, Release Date: 2020-06-25T12:00:00Z
+Game: The Messenger, Release Date: 2020-06-25T12:00:00Z
+Game: Seven Doors, Release Date: 2020-06-26T12:00:00Z
+Game: Hunting Simulator 2, Release Date: 2020-10-15T12:00:00Z
+Game: SinoAlice, Release Date: 2020-07-01T12:00:00Z
+Game: Superhot, Release Date: 2020-07-01T12:00:00Z
+Game: Marvel's Iron Man VR, Release Date: 2020-07-03T12:00:00Z
+Game: Catherine: Full Body, Release Date: 2020-07-07T12:00:00Z
+Game: Superliminal, Release Date: 2020-07-07T12:00:00Z
+Game: CrossCode, Release Date: 2020-07-09T12:00:00Z
+Game: Elden: Path Of The Forgotten, Release Date: 2020-07-09T12:00:00Z
+Game: Thronebreaker: The Witcher Tales, Release Date: 2020-07-09T12:00:00Z
+Game: Bloodstained: Curse of the Moon 2, Release Date: 2020-07-10T12:00:00Z
+Game: Deadly Premonition 2: A Blessing in Disguise, Release Date: 2020-07-10T12:00:00Z
+Game: F1 2020, Release Date: 2020-07-10T12:00:00Z
+Game: NASCAR Heat 5, Release Date: 2020-07-10T12:00:00Z
+Game: Sword Art Online: Alicization Lycoris, Release Date: 2020-07-10T12:00:00Z
+Game: Death Stranding, Release Date: 2020-07-14T12:00:00Z
+Game: Neon Abyss, Release Date: 2020-07-14T12:00:00Z
+Game: Rocket Arena, Release Date: 2020-07-14T12:00:00Z
+Game: Lara Croft and the Temple of Osiris, Release Date: 2020-07-15T12:00:00Z
+Game: Radical Rabbit Stew, Release Date: 2020-07-16T12:00:00Z
+Game: Superhot: Mind Control Delete, Release Date: 2020-07-16T12:00:00Z
+Game: Ghost of Tsushima, Release Date: 2020-07-17T12:00:00Z
+Game: Paper Mario: The Origami King, Release Date: 2020-07-17T12:00:00Z
+Game: Into The Radius, Release Date: 2020-07-20T12:00:00Z
+Game: Rogue Company, Release Date: 2020-07-20T12:00:00Z
+Game: Golftopia, Release Date: 2020-07-21T12:00:00Z
+Game: Panzer Paladin, Release Date: 2020-07-21T12:00:00Z
+Game: Rock Of Ages 3: Make & Break, Release Date: 2020-07-21T12:00:00Z
+Game: Creaks, Release Date: 2020-07-22T12:00:00Z
+Game: Crysis Remastered, Release Date: 2020-09-18T12:00:00Z
+Game: Dying Light: Hellraid, Release Date: 2020-07-23T12:00:00Z
+Game: Ageless, Release Date: 2020-07-28T12:00:00Z
+Game: Cuphead, Release Date: 2020-07-28T12:00:00Z
+Game: Othercide, Release Date: 2020-09-10T12:00:00Z
+Game: Terrorarium, Release Date: 2020-07-28T12:00:00Z
+Game: Cardaclysm, Release Date: 2020-07-29T12:00:00Z
+Game: Fight Crab, Release Date: 2020-09-15T12:00:00Z
+Game: Yakuza Kiwami 2, Release Date: 2020-07-30T12:00:00Z
+Game: CastleStorm II, Release Date: 2020-07-31T12:00:00Z
+Game: Fairy Tail, Release Date: 2020-07-31T12:00:00Z
+Game: What Happened, Release Date: 2020-07-31T12:00:00Z
+Game: Hellbound, Release Date: 2020-08-04T12:00:00Z
+Game: Skully, Release Date: 2020-08-04T12:00:00Z
+Game: 3 out of 10, Release Date: 2020-08-06T12:00:00Z
+Game: Brawlhalla, Release Date: 2020-08-06T12:00:00Z
+Game: UnderMine, Release Date: 2020-08-06T12:00:00Z
+Game: Fast & Furious Crossroads, Release Date: 2020-08-07T12:00:00Z
+Game: Horizon Zero Dawn, Release Date: 2020-08-07T12:00:00Z
+Game: Obduction, Release Date: 2020-08-10T12:00:00Z
+Game: Hyper Scape, Release Date: 2020-08-11T12:00:00Z
+Game: My Diggy Dog 2, Release Date: 2020-08-11T12:00:00Z
+Game: Risk of Rain 2, Release Date: 2020-08-11T12:00:00Z
+Game: Willy Morgan And The Curse Of Bone Town, Release Date: 2020-08-11T12:00:00Z
+Game: Metamorphosis, Release Date: 2020-08-12T12:00:00Z
+Game: Rising Star 2, Release Date: 2020-08-12T12:00:00Z
+Game: Faeria, Release Date: 2020-11-03T12:00:00Z
+Game: Teenage Blob, Release Date: 2020-08-13T12:00:00Z
+Game: The Alto Collection, Release Date: 2020-08-13T12:00:00Z
+Game: Total War Saga: Troy, Release Date: 2020-08-13T12:00:00Z
+Game: EA Sports UFC 4, Release Date: 2020-08-14T12:00:00Z
+Game: A Short Hike, Release Date: 2020-08-18T12:00:00Z
+Game: Pathfinder: Kingmaker, Release Date: 2020-08-18T12:00:00Z
+Game: Raji: An Ancient Epic, Release Date: 2020-10-15T12:00:00Z
+Game: Spiritfarer, Release Date: 2020-08-18T12:00:00Z
+Game: Takeshi and Hiroshi, Release Date: 2020-08-18T12:00:00Z
+Game: Battletoads, Release Date: 2020-08-20T12:00:00Z
+Game: Griefhelm, Release Date: 2020-08-20T12:00:00Z
+Game: Pastel: Blind Karma, Release Date: 2020-08-20T12:00:00Z
+Game: Aokana - Four Rhythms Across the Blue, Release Date: 2020-08-21T12:00:00Z
+Game: Bake 'n Switch, Release Date: 2020-08-21T12:00:00Z
+Game: Inmost, Release Date: 2020-08-21T12:00:00Z
+Game: New Super Lucky's Tale, Release Date: 2020-08-21T12:00:00Z
+Game: PGA Tour 2K21, Release Date: 2020-08-21T12:00:00Z
+Game: Samurai Jack: Battle Through Time, Release Date: 2020-08-21T12:00:00Z
+Game: Descenders, Release Date: 2020-08-31T12:00:00Z
+Game: No Straight Roads, Release Date: 2020-08-25T12:00:00Z
+Game: Street Power Soccer, Release Date: 2020-08-25T12:00:00Z
+Game: Vader Immortal, Release Date: 2020-08-25T12:00:00Z
+Game: Best Friend Forever, Release Date: 2020-08-27T12:00:00Z
+Game: Control: AWE DLC, Release Date: 2020-08-27T12:00:00Z
+Game: Final Fantasy Crystal Chronicles Remastered Edition, Release Date: 2020-08-27T12:00:00Z
+Game: Hypnospace Outlaw, Release Date: 2020-08-27T12:00:00Z
+Game: Stilstand, Release Date: 2020-08-27T12:00:00Z
+Game: Tell Me Why, Release Date: 2020-08-27T12:00:00Z
+Game: The Last Campfire, Release Date: 2020-08-27T12:00:00Z
+Game: Captain Tsubasa: Rise Of New Champions, Release Date: 2020-08-28T12:00:00Z
+Game: Drake Hollow, Release Date: 2020-10-01T12:00:00Z
+Game: Jump Force, Release Date: 2020-08-28T12:00:00Z
+Game: Nexomon: Extinction, Release Date: 2020-08-28T12:00:00Z
+Game: Project Cars 3, Release Date: 2020-08-28T12:00:00Z
+Game: Wasteland 3, Release Date: 2020-08-28T12:00:00Z
+Game: Windbound, Release Date: 2020-08-28T12:00:00Z
+Game: Ary And The Secret Of Seasons, Release Date: 2020-09-01T12:00:00Z
+Game: Hitman, Release Date: 2020-09-01T12:00:00Z
+Game: Hitman 2, Release Date: 2020-09-01T12:00:00Z
+Game: Esports Life Tycoon, Release Date: 2020-11-12T12:00:00Z
+Game: Spellbreak, Release Date: 2020-09-03T12:00:00Z
+Game: WRC 9, Release Date: 2020-11-12T12:00:00Z
+Game: Doraemon: Story of Seasons, Release Date: 2020-09-04T12:00:00Z
+Game: NBA 2K21, Release Date: 2020-11-12T12:00:00Z
+Game: Necromunda: Underhive Wars, Release Date: 2020-09-08T12:00:00Z
+Game: OkunoKA Madness, Release Date: 2020-09-08T12:00:00Z
+Game: Star Renegades, Release Date: 2020-11-25T12:00:00Z
+Game: The Sims 4 Star Wars: Journey to Batuu Game Pack, Release Date: 2020-09-08T12:00:00Z
+Game: The Outer Worlds: Peril On Gorgon DLC, Release Date: 2020-09-09T12:00:00Z
+Game: Bounty Battle, Release Date: 2020-09-10T12:00:00Z
+Game: MO:Astray, Release Date: 2020-09-10T12:00:00Z
+Game: Redneck Ed: Astro Monsters Show, Release Date: 2020-09-10T12:00:00Z
+Game: Inertial Drift, Release Date: 2020-09-11T12:00:00Z
+Game: eFootball PES 2021, Release Date: 2020-09-15T12:00:00Z
+Game: Operencia: The Stolen Sun, Release Date: 2020-09-28T12:00:00Z
+Game: The Long Dark, Release Date: 2020-09-17T12:00:00Z
+Game: Path of Exile, Release Date: 2020-09-18T12:00:00Z
+Game: Super Mario 3D All-Stars, Release Date: 2020-09-18T12:00:00Z
+Game: WWE 2K Battlegrounds, Release Date: 2020-09-18T12:00:00Z
+Game: Hello Neighbor, Release Date: 2020-09-20T12:00:00Z
+Game: When The Past Was Around, Release Date: 2020-12-18T12:00:00Z
+Game: Kirby Fighters 2, Release Date: 2020-09-23T12:00:00Z
+Game: Unrailed, Release Date: 2020-09-23T12:00:00Z
+Game: Going Under, Release Date: 2020-09-24T12:00:00Z
+Game: Little Big Workshop, Release Date: 2020-10-01T12:00:00Z
+Game: Rivals of Aether, Release Date: 2020-09-24T12:00:00Z
+Game: RollerCoaster Tycoon 3: Complete Edition, Release Date: 2020-09-24T12:00:00Z
+Game: Mafia: Definitive Edition, Release Date: 2020-09-25T12:00:00Z
+Game: Trollhunters: Defenders of Arcadia, Release Date: 2020-09-25T12:00:00Z
+Game: Warsaw, Release Date: 2020-10-02T12:00:00Z
+Game: Super Mario Bros. 35, Release Date: 2020-10-01T12:00:00Z
+Game: Ys Origin, Release Date: 2020-10-01T12:00:00Z
+Game: Star Wars: Squadrons, Release Date: 2020-10-02T12:00:00Z
+Game: Foregone, Release Date: 2020-10-05T12:00:00Z
+Game: Nickelodeon Kart Racers 2: Grand Prix, Release Date: 2020-10-05T12:00:00Z
+Game: Blaston, Release Date: 2020-10-08T12:00:00Z
+Game: Ikenfell, Release Date: 2020-10-08T12:00:00Z
+Game: The Uncertain: Light at the End, Release Date: 2020-10-08T12:00:00Z
+Game: Ben 10: Power Trip, Release Date: 2020-10-09T12:00:00Z
+Game: FIFA 21, Release Date: 2020-12-04T12:00:00Z
+Game: The Survivalists, Release Date: 2020-10-09T12:00:00Z
+Game: Rhyme Storm, Release Date: 2020-10-12T12:00:00Z
+Game: G.I. Joe: Operation Blackout, Release Date: 2020-10-13T12:00:00Z
+Game: Oculus Quest 2, Release Date: 2020-10-13T12:00:00Z
+Game: Remothered: Broken Porcelain, Release Date: 2020-10-13T12:00:00Z
+Game: Torchlight III, Release Date: 2020-10-22T12:00:00Z
+Game: Werewolf: The Apocalypse – Heart of the Forest, Release Date: 2020-10-13T12:00:00Z
+Game: Partisans 1941, Release Date: 2020-10-14T12:00:00Z
+Game: Vigil: The Longest Night, Release Date: 2020-10-14T12:00:00Z
+Game: Age of Empires III: Definitive Edition, Release Date: 2020-10-15T12:00:00Z
+Game: Katana Zero, Release Date: 2020-10-15T12:00:00Z
+Game: Monster Truck Championship, Release Date: 2020-11-19T12:00:00Z
+Game: Space Crew, Release Date: 2020-10-15T12:00:00Z
+Game: Tears Of Avia, Release Date: 2020-10-15T12:00:00Z
+Game: 9 Monkeys of Shaolin, Release Date: 2020-10-16T12:00:00Z
+Game: Mario Kart Live: Home Circuit, Release Date: 2020-10-16T12:00:00Z
+Game: NHL 21, Release Date: 2020-10-16T12:00:00Z
+Game: Sniper Elite 4, Release Date: 2020-10-17T12:00:00Z
+Game: Doom Eternal: The Ancient Gods - Part One, Release Date: 2020-10-20T12:00:00Z
+Game: The Guise, Release Date: 2020-10-20T12:00:00Z
+Game: Disc Room, Release Date: 2020-10-22T12:00:00Z
+Game: Pokémon Sword & Shield: The Crown Tundra, Release Date: 2020-10-22T12:00:00Z
+Game: The Red Lantern, Release Date: 2020-10-22T12:00:00Z
+Game: Jetboard Joust, Release Date: 2020-10-23T12:00:00Z
+Game: Pumpkin Jack, Release Date: 2020-10-23T12:00:00Z
+Game: Transformers: Battlegrounds, Release Date: 2020-10-23T12:00:00Z
+Game: Carto, Release Date: 2020-10-27T12:00:00Z
+Game: Oddworld: New 'n' Tasty, Release Date: 2020-10-27T12:00:00Z
+Game: Abs Vs. The Blood Queen, Release Date: 2020-10-28T12:00:00Z
+Game: Watch Dogs: Legion, Release Date: 2020-11-12T12:00:00Z
+Game: Pikmin 3 Deluxe, Release Date: 2020-10-30T12:00:00Z
+Game: Visage, Release Date: 2020-10-30T12:00:00Z
+Game: Jurassic World Evolution, Release Date: 2020-11-03T12:00:00Z
+Game: Breathedge, Release Date: 2020-11-05T12:00:00Z
+Game: Chicken Police, Release Date: 2020-11-05T12:00:00Z
+Game: YesterMorrow, Release Date: 2020-11-05T12:00:00Z
+Game: Need For Speed: Hot Pursuit Remastered, Release Date: 2020-11-06T12:00:00Z
+Game: PAW Patrol: Mighty Pups Save Adventure Bay, Release Date: 2020-11-06T12:00:00Z
+Game: Assassin's Creed Valhalla, Release Date: 2020-11-12T12:00:00Z
+Game: Destiny 2: Beyond Light, Release Date: 2020-12-08T12:00:00Z
+Game: Devil May Cry 5: Special Edition, Release Date: 2020-11-12T12:00:00Z
+Game: Fortnite, Release Date: 2020-11-12T12:00:00Z
+Game: Forza Horizon 4, Release Date: 2020-11-10T12:00:00Z
+Game: Fuser, Release Date: 2020-11-10T12:00:00Z
+Game: Gears 5, Release Date: 2020-11-10T12:00:00Z
+Game: King Oddball, Release Date: 2020-11-12T12:00:00Z
+Game: Liftoff: Drone Racing, Release Date: 2020-11-10T12:00:00Z
+Game: NBA 2K21 (Next-Gen), Release Date: 2020-11-12T12:00:00Z
+Game: Planet Coaster Console Edition, Release Date: 2020-11-12T12:00:00Z
+Game: Sakuna: Of Rice and Ruin, Release Date: 2020-11-10T12:00:00Z
+Game: Warhammer Chaosbane, Release Date: 2020-11-12T12:00:00Z
+Game: Xbox Series S, Release Date: 2020-11-10T12:00:00Z
+Game: Xbox Series X, Release Date: 2020-11-10T12:00:00Z
+Game: Astro's Playroom, Release Date: 2020-11-12T12:00:00Z
+Game: Demon's Souls (PS5), Release Date: 2020-11-12T12:00:00Z
+Game: Handball 21, Release Date: 2020-11-12T12:00:00Z
+Game: Just Dance 2021, Release Date: 2020-11-24T12:00:00Z
+Game: PlayStation 5, Release Date: 2020-11-12T12:00:00Z
+Game: PlayStation 5 Digital Edition, Release Date: 2020-11-12T12:00:00Z
+Game: Call of Duty: Black Ops Cold War, Release Date: 2020-11-13T12:00:00Z
+Game: Mars Horizon, Release Date: 2020-11-17T12:00:00Z
+Game: Mortal Kombat 11 Ultimate, Release Date: 2020-11-17T12:00:00Z
+Game: Bridge Constructor: The Walking Dead, Release Date: 2020-11-19T12:00:00Z
+Game: Ghost Recon Wildlands, Release Date: 2020-11-19T12:00:00Z
+Game: Hyrule Warriors: Age of Calamity, Release Date: 2020-11-20T12:00:00Z
+Game: World of Warcraft: Shadowlands, Release Date: 2020-11-23T12:00:00Z
+Game: Vigor, Release Date: 2020-11-25T12:00:00Z
+Game: Football Manager 2021, Release Date: 2020-11-30T12:00:00Z
+Game: Chronos: Before the Ashes, Release Date: 2020-12-01T12:00:00Z
+Game: Empire Of Sin, Release Date: 2020-12-01T12:00:00Z
+Game: Rainbow Six Siege, Release Date: 2020-12-01T12:00:00Z
+Game: Red Dead Online, Release Date: 2020-12-01T12:00:00Z
+Game: Twin Mirror, Release Date: 2020-12-01T12:00:00Z
+Game: Bloodstained: Ritual of the Night, Release Date: 2020-12-03T12:00:00Z
+Game: Immortals Fenyx Rising, Release Date: 2020-12-03T12:00:00Z
+Game: Warhammer: Vermintide 2, Release Date: 2020-12-03T12:00:00Z
+Game: Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition, Release Date: 2020-12-04T12:00:00Z
+Game: Fire Emblem: Shadow Dragon & the Blade of Light, Release Date: 2020-12-04T12:00:00Z
+Game: Fitness Boxing 2: Rhythm & Exercise, Release Date: 2020-12-04T12:00:00Z
+Game: Destiny 2, Release Date: 2020-12-08T12:00:00Z
+Game: Marvel's Avengers – Operation: Taking AIM, Release Date: 2020-12-08T12:00:00Z
+Game: Unto the End, Release Date: 2020-12-17T12:00:00Z
+Game: Watch Dogs 2, Release Date: 2020-12-09T12:00:00Z
+Game: Medal of Honor: Above and Beyond, Release Date: 2020-12-10T12:00:00Z
+Game: Orwell's Animal Farm, Release Date: 2020-12-10T12:00:00Z
+Game: Pixeljunk Eden 2, Release Date: 2020-12-10T12:00:00Z
+Game: Woodsalt, Release Date: 2020-12-10T12:00:00Z
+Game: Collection Of SaGa Final Fantasy Legend, Release Date: 2020-12-15T12:00:00Z
+Game: Gears 5: Hivebusters, Release Date: 2020-12-15T12:00:00Z
+Game: Marvel Realm Of Champions, Release Date: 2020-12-16T12:00:00Z
+Game: Double Dragon Neon, Release Date: 2020-12-21T12:00:00Z
+Game: Lara Croft and the Guardian of Light, Release Date: 2020-12-22T12:00:00Z
+Game: Override 2: Super Mech League, Release Date: 2020-12-22T12:00:00Z
+Game: Ratropolis, Release Date: 2020-12-22T12:00:00Z
+Game: Cook, Serve, Delicious!, Release Date: 2024-02-28T12:00:00Z
+Game: El Paso, Elsewhere, Release Date: 2023-09-26T12:00:00Z
+Game: Papers, Please, Release Date: 2022-08-05T12:00:00Z
+Game: Yes, Your Grace, Release Date: 2020-11-10T12:00:00Z
+Game: Invisible, Inc., Release Date: 2020-06-15T12:00:00Z
+Game: Cook, Serve, Delicious! 3?!, Release Date: 2020-10-14T12:00:00Z

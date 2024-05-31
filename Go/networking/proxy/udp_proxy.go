@@ -16,7 +16,7 @@ const (
 	UDPBufSize = 65507
 )
 
-// A net.Addr where the IP is split into two fields so you can use it as a key
+// A net.Addr where the ip is split into two fields so you can use it as a key
 // in a map:
 type connTrackKey struct {
 	IPHigh uint64

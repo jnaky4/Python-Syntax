@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  network-monitor:
+    build: .
+    container_name: network-monitor
+    restart: always

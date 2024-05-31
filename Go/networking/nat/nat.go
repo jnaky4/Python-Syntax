@@ -7,9 +7,9 @@ import (
 	"strings"
 )
 
-// PortBinding represents a binding between a Host IP address and a Host Port
+// PortBinding represents a binding between a Host ip address and a Host Port
 type PortBinding struct {
-	// HostIP is the host IP Address
+	// HostIP is the host ip Address
 	HostIP string `json:"HostIp"`
 	// HostPort is the host port number
 	HostPort string
@@ -237,3 +237,5 @@ func ParsePortSpec(rawPort string) ([]PortMapping, error) {
 	}
 	return ports, nil
 }
+
+

@@ -1,16 +1,18 @@
 package docker
 
 import (
+	"archive/tar"
 	"bytes"
 	"context"
+	"errors"
 	"fmt"
-	"github.com/docker/docker/pkg/stdcopy"
+	"github.com/docker/go-connections/nat"
 	"io"
-	"io/ioutil"
-	"log"
 	"os"
 	"os/exec"
+	"os/user"
 	"runtime"
+	"strconv"
 	s "strings"
 	"time"
 
@@ -19,120 +21,175 @@ import (
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/api/types/network"
 	"github.com/docker/docker/client"
-	_ "github.com/docker/docker/pkg/stdcopy"
-	_ "github.com/docker/go-connections/nat"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
-	erp "github.com/pkg/errors"
+	//"github.com/compose-spec/compose-go/cli"
+	//"github.com/docker/cli/cli/command"
+	//"github.com/docker/cli/cli/flags"
+	//"github.com/docker/compose/v2/cmd/formatter"
+	//"github.com/docker/compose/v2/pkg/api"
+	//"github.com/docker/compose/v2/pkg/compose"
 )
 
-// var ctx context.Context
-// var cli client.Client
+//todo docker compose
+//todo sha check
 
-func main() {
-	err := StartColima()
-	if err != nil {
-		fmt.Printf("Colima Error: %s\n", erp.Cause(err).Error())
-		os.Exit(1)
-	}
-
-	cli, ctx, err := Connect()
-	if err != nil {
-		fmt.Printf("Fatal Startup Error -> Cause: %s\n", erp.Cause(err).Error())
-		os.Exit(1)
-	}
-	defer cli.Close()
-
-	// Pull(cli, ctx, "postgres")
-	// ListImages(cli, ctx)
-	// i, err := GetImage(cli,ctx, "postgres")
-	// if err != nil{
-	// 	fmt.Printf("%+v\n", erp.Cause(err))
-	// }
-	// fmt.Printf("Image: %+v\n", i)
-
-	err = PostgresContainer(cli, ctx)
-	if err != nil {
-		println("err: ", erp.Cause(err).Error())
-	}
-
-	println("Waiting 20s")
-	time.Sleep(time.Duration(time.Second) * 20)
-	postgres, err := GetContainer(cli, ctx, "postgres")
-	if err != nil {
-		println("err: ", erp.Cause(err).Error())
-	}
-	err = DeleteContainer(cli, ctx, postgres.ID)
-	if err != nil {
-		println("err: ", erp.Cause(err).Error())
-	}
-
-	// PruneContainer(cli, ctx)
-	// ListContainers(cli,ctx, true)
-	// err = stop(cli, ctx, id)
-	// if err != nil{
-	// 	println("err: ", erp.Cause(err))
-	// }
-
-	// err = DeleteContainer(cli, ctx, id)
-	// if err != nil{
-	// 	println("err: ", erp.Cause(err))
-	// }
-
-	// out, err := cli.ContainerLogs(ctx, resp.ID, types.ContainerLogsOptions{ShowStdout: true})
-	// if err != nil {
-	//     panic(err)
-	// }
-
-	// stdcopy.StdCopy(os.Stdout, os.Stderr, out)
+type Manager struct {
+	Client   *client.Client
+	DockSock string
 }
 
-func StartColima() error {
+type ContainerBuild struct {
+	ImgName       string
+	ContainerName string
+	Port          string
+	EnvVars       []string
+	Cmd           []string
+	ContainerId   string
+	Version       string
+	CPath         string
+	Volumes       []string
+}
+
+func CheckColima() error {
 	err := exec.Command("colima", "status").Run()
 	if err != nil {
+		return err
 		//println(erp.Cause(err).Error())
-		cmd := exec.Command("colima", "Start")
-		cmd.Stdout = os.Stdout
-		cmd.Stderr = os.Stderr
-		err := cmd.Run()
-		if err != nil {
-			return erp.Wrap(err, "Failed to Start Colima\n")
-		}
+		//cmd := exec.Command("colima", "start")
+		//cmd.Stdout = os.Stdout
+		//cmd.Stderr = os.Stderr
+		//err := cmd.Run()
+		//if err != nil {
+		//	return erp.Wrap(err, "Failed to Start Colima\n")
+		//}
 	}
 	return nil
 }
 
 func GetUser() (string, error) {
-	files, err := ioutil.ReadDir("/Users/")
+	usr, err := user.Current()
 	if err != nil {
-		log.Fatal(err)
+		return "", err
 	}
-
-	for _, f := range files {
-		if s.HasPrefix(f.Name(), "Z") && len(f.Name()) == 7 {
-			return f.Name(), nil
-		}
-	}
-	return "", erp.New("cannot find User zID folder in system")
+	return usr.Username, nil
 }
 
-func ListContainers(cli *client.Client, ctx context.Context, all bool) error {
-	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{All: all})
-	if err != nil {
-		return erp.Wrap(err, "failed to get containerList")
+func ValidateBuild(build ContainerBuild) error {
+	errString := "build validation error:"
+
+	if build.ImgName == "" {
+		return fmt.Errorf("%s image name dne -> %s", errString, build.ImgName)
 	}
 
-	fmt.Printf("%-12s\t%-30s\t%-10s\t%s\n", "CONTAINER ID", "IMAGE", "STATUS", "PORTS")
-	for _, c := range containers {
-		fmt.Printf("%-12s\t%.30s\t%.10s\t%v\n", c.ID[:12], fmt.Sprintf("%-30s", c.Image), c.Status, c.Ports)
+	if build.Version == "" {
+		return fmt.Errorf("%s image version dne -> %s", errString, build.Version)
+	}
+
+	if build.ContainerName == "" {
+		return fmt.Errorf("%s container name dne", errString)
 	}
 	return nil
 }
 
-func GetContainer(cli *client.Client, ctx context.Context, nameOrId string) (types.Container, error) {
-	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{All: true})
-	ct := types.Container{}
+func (d *Manager) RunContainer(ctx context.Context, build ContainerBuild) (string, error) {
+	// Define a PORT opening
+	newport, err := nat.NewPort("tcp", build.Port)
 	if err != nil {
-		return ct, erp.Wrap(err, "failed to get containerList")
+		fmt.Println("unable to create nat.NewPort for container")
+		return "", err
+	}
+
+	// Configured hostConfig:
+	// https://godoc.org/github.com/docker/docker/api/types/container#HostConfig
+
+	hostConfig := &container.HostConfig{
+		Binds: build.Volumes,
+		PortBindings: nat.PortMap{
+			newport: []nat.PortBinding{
+				{
+					HostIP:   "0.0.0.0",
+					HostPort: build.Port,
+				},
+			},
+		},
+
+		RestartPolicy: container.RestartPolicy{
+			Name: "always",
+		},
+		LogConfig: container.LogConfig{
+			Type:   "json-file",
+			Config: map[string]string{},
+		},
+	}
+
+	// Define Network config (why isn't PORT in here...?:
+	// https://godoc.org/github.com/docker/docker/api/types/network#NetworkingConfig
+	networkConfig := &network.NetworkingConfig{
+		EndpointsConfig: map[string]*network.EndpointSettings{},
+	}
+	gatewayConfig := &network.EndpointSettings{
+		Gateway: "gatewayname",
+	}
+	networkConfig.EndpointsConfig["bridge"] = gatewayConfig
+
+	// Define ports to be exposed (has to be same as hostconfig.portbindings.newport)
+	exposedPorts := map[nat.Port]struct{}{
+		newport: struct{}{},
+	}
+
+	// Configuration
+	// https://godoc.org/github.com/docker/docker/api/types/container#Config
+	config := &container.Config{
+		Image:        fmt.Sprintf("%s:%s", build.ImgName, build.Version),
+		Env:          build.EnvVars,
+		ExposedPorts: exposedPorts,
+		Hostname:     fmt.Sprintf("%s-hostnameexample", build.ImgName),
+	}
+
+	platform := &v1.Platform{}
+
+	//d.Client.ContainerExecCreate()
+
+	// Creating the actual container. This is "nil,nil,nil" in every example.
+	cont, err := d.Client.ContainerCreate(
+		ctx,
+		config,
+		hostConfig,
+		networkConfig,
+		platform,
+		build.ContainerName,
+	)
+	if err != nil {
+		return "", err
+	}
+
+	// Run the actual container
+	err = d.Client.ContainerStart(context.Background(), cont.ID, types.ContainerStartOptions{})
+	if err != nil {
+		return "", err
+	}
+
+	return cont.ID, nil
+}
+
+func (d *Manager) ListContainers(ctx context.Context) (containers []types.Container, err error) {
+	containers, err = d.Client.ContainerList(ctx, types.ContainerListOptions{All: true})
+	if err != nil {
+		return
+	}
+	//fmt.Printf("%-12s\t%-30s\t%-10s\t%s\n", "CONTAINER ID", "IMAGE", "STATUS", "PORTS")
+	//for _, c := range containers {
+	//	fmt.Printf("%-12s\t%.30s\t%.10s\t%v\n", c.ID[:12], fmt.Sprintf("%-30s", c.Image), c.Status, c.Ports)
+	//}
+
+	return
+}
+
+func (d *Manager) GetContainer(ctx context.Context, nameOrId string) (ct types.Container, err error) {
+	var containers []types.Container
+	containers, err = d.ListContainers(ctx)
+	if err != nil {
+		return
 	}
 
 	for _, c := range containers {
@@ -145,72 +202,128 @@ func GetContainer(cli *client.Client, ctx context.Context, nameOrId string) (typ
 			}
 		}
 	}
-	return ct, nil
+	return ct, errors.New("container doesn't exist")
 }
 
-func Connect() (*client.Client, context.Context, error) {
+func (d *Manager) Connect(ctx context.Context) (err error) {
 	if runtime.GOOS == "darwin" {
 		uID, err := GetUser()
 		if err != nil {
-			log.Fatal(err)
+			return err
 		}
-		sockPath := fmt.Sprintf("unix:///Users/%s/.colima/default/docker.sock", uID)
-		err = os.Setenv("DOCKER_HOST", sockPath)
+		d.DockSock = fmt.Sprintf("unix:///Users/%s/.colima/default/docker.sock", uID)
+		err = os.Setenv("DOCKER_HOST", d.DockSock)
 		if err != nil {
-			return nil, nil, erp.Wrap(err, fmt.Sprintf("Failed to find Docker Socket at path %s", sockPath))
+			return err
 		}
+	} else if runtime.GOOS == "linux" {
+		d.DockSock = fmt.Sprintf("unix:///var/run/docker.sock")
+		err = os.Setenv("DOCKER_HOST", d.DockSock)
+		d.Client, err = client.NewClientWithOpts()
 	}
 
-	ctx := context.Background()
-	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
+	d.Client, err = client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
 	if err != nil {
-		return nil, nil, err
+		return err
 	}
-	return cli, ctx, nil
+
+	for i := 0; i < 3; i++ {
+		_, err := d.Client.Ping(context.TODO())
+		if err == nil {
+			break
+		}
+		time.Sleep(time.Duration(i) * time.Second)
+	}
+
+	return nil
 }
 
-func Pull(cli *client.Client, ctx context.Context, image string) error {
+func (d *Manager) Pull(ctx context.Context, image string) error {
+	//TODO fix Pull Panic when no connection
 
-	reader, err := cli.ImagePull(ctx, image, types.ImagePullOptions{})
+	reader, err := d.Client.ImagePull(ctx, image, types.ImagePullOptions{})
+
 	defer reader.Close()
 	if err != nil {
-		return erp.Wrap(err, fmt.Sprintf("Failed to Pull image %s", image))
+		println(err.Error())
 	}
-	io.Copy(os.Stdout, reader)
-
-	return nil
-}
-
-func PruneContainer(cli *client.Client, ctx context.Context) {
-	fil := filters.Args{}
-	cli.ContainersPrune(ctx, fil)
-}
-
-func DeleteContainer(cli *client.Client, ctx context.Context, id string) error {
-	opts := types.ContainerRemoveOptions{RemoveVolumes: true, Force: true}
-	err := cli.ContainerRemove(ctx, id, opts)
+	_, err = io.Copy(os.Stdout, reader)
 	if err != nil {
-		return erp.Wrap(err, fmt.Sprintf("Failed to DeleteContainer container %s", id))
+		println(err.Error())
+	}
+
+	return nil
+}
+
+func (d *Manager) DeleteContainer(ctx context.Context, id string) error {
+	if err := d.Client.ContainerStop(ctx, id, container.StopOptions{}); err != nil {
+		return err
+	}
+	err := d.Client.ContainerRemove(ctx, id, types.ContainerRemoveOptions{RemoveVolumes: true, Force: true})
+	if err != nil {
+		return err
 	}
 	return nil
 }
 
-//func stop(cli *client.Client, ctx context.Context, id string) error {
-//	err := cli.ContainerStop(ctx, id, nil)
-//	if err != nil {
-//		return erp.Wrap(err, "Failed to stop container")
-//	}
-//	return nil
-//}
+func (d *Manager) FindCachedImage(ctx context.Context, imgName string) (types.ImageSummary, error) {
+	images, err := d.Client.ImageList(ctx, types.ImageListOptions{All: true})
+	if err != nil {
+		return types.ImageSummary{}, err
+	}
+	for _, i := range images {
+		for _, tag := range i.RepoTags {
+			if tag == imgName {
+				return i, nil
+			}
+		}
+	}
+	return types.ImageSummary{}, nil
+}
+
+func (d *Manager) FreeUsedPort(ctx context.Context, port string) error {
+	iPort, err := strconv.Atoi(port)
+	if err != nil {
+		return fmt.Errorf("invalid port number: %s", port)
+	}
+	cList, err := d.Client.ContainerList(ctx, types.ContainerListOptions{All: true})
+	if err != nil {
+		return err
+	}
+
+	for _, containers := range cList {
+		for _, portInfo := range containers.Ports {
+			if portInfo.PublicPort == uint16(iPort) {
+				fmt.Printf("Found container %s using port %s, removing container\n", containers.Names, port)
+				err = d.DeleteContainer(ctx, containers.ID)
+				if err != nil {
+					return err
+				}
+				return nil
+			}
+		}
+	}
+
+	return fmt.Errorf("no running container found on port %s", port)
+}
+
+func (d *Manager) PruneContainer(ctx context.Context) error {
+	fil := filters.Args{}
+	_, err := d.Client.ContainersPrune(ctx, fil)
+	if err != nil {
+		return err
+	}
+	return nil
+}
 
 func Start(cli *client.Client, ctx context.Context, id string) error {
 	opts := types.ContainerStartOptions{}
 	err := cli.ContainerStart(ctx, id, opts)
 	if err != nil {
-		return erp.Wrap(err, "Failed to Start container")
+		return err
 	}
 
-	// statusCh, errCh := cli.ContainerWait(ctx, id, container.WaitConditionNotRunning)
+	// statusCh, errCh := Client.ContainerWait(Ctx, id, container.WaitConditionNotRunning)
 	// select {
 	// case err := <-errCh:
 	//     if err != nil {
@@ -267,227 +380,167 @@ func GetImage(cli *client.Client, ctx context.Context, nameOrId string) (types.I
 	return t, nil
 }
 
-func Create(cli *client.Client, ctx context.Context, tainerConfig *container.Config, hostCon *container.HostConfig,
-	netConfig *network.NetworkingConfig, platform *v1.Platform, cName string) (string, error) {
-	cont, err := cli.ContainerCreate(ctx, tainerConfig, hostCon, netConfig, platform, cName)
-	if err != nil {
-		return "", erp.Wrap(err, "Failed to Create Container")
-	}
-	return cont.ID, nil
-}
+func (d *Manager) BuildImage(ctx context.Context, tags []string, dockerfile string) error {
+	// Create a buffer
+	buf := new(bytes.Buffer)
+	tw := tar.NewWriter(buf)
+	defer tw.Close()
 
-// func PostgresContainer(cli *client.Client, ctx context.Context) (tainerConfig *container.Config, hostCon *container.HostConfig,
-//
-//	netConfig *network.NetworkingConfig, platform *v1.Platform, cName string, err error){
-//
-// func PostgresContainer(cli *client.Client, ctx context.Context) (*container.Config, *container.HostConfig,
-// *network.NetworkingConfig, *v1.Platform, string, error){
-func PostgresContainer(cli *client.Client, ctx context.Context) error {
-	// expPort := "5000"
-	cName := "postgres"
-	// container = client.containers.run(
-	//     image_name,
-	//     detach=True,
-	//     name=container_name,
-	//     ports={'5000/tcp': 5000}
-	//     # environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
-	// )
-
-	// newport, err := nat.NewPort("tcp", expPort)
-	// if err != nil{
-	// 	erp.Wrap(err, fmt.Sprintf("Unable to Create docker port: %s", newport.Port()))
-	// }
-
-	// exposedPorts := map[nat.Port]struct{}{
-	// 	newport: struct{}{},
-	// }
-
-	tainerConfig := container.Config{
-		Image: "postgres",
-		Env:   []string{"POSTGRES_PASSWORD=password"},
-		// ExposedPorts: exposedPorts,//List of exposed ports
-
-		// AttachStdin: true, //Attach the standard input, makes possible user interaction
-
-		// Cmd:   []string{"echo", "hello world"},
-		// WorkingDir: "/",
-	}
-
-	// *hostCon = container.HostConfig{
-	// 	PortBindings: nat.PortMap{
-	// 		newport: []nat.PortBinding{
-	// 			{
-	// 				HostIP:   "0.0.0.0",
-	// 				HostPort: expPort,
-	// 			},
-	// 		},
-	// 	},
-	// 	RestartPolicy: container.RestartPolicy{
-	// 		Name: "always",
-	// 	},
-	// 	LogConfig: container.LogConfig{
-	// 		Type:   "json-file",
-	// 		Config: map[string]string{},
-	// 	},
-	// }
-
-	// *netConfig = network.NetworkingConfig{
-	// 	EndpointsConfig: map[string]*network.EndpointSettings{},
-	// }
-
-	// platform = &v1.Platform{}
-
-	// return &tainerConfig, nil, nil, nil, cName, nil
-
-	fmt.Printf("Creating Container %s\n", cName)
-	id, err := Create(cli, ctx, &tainerConfig, nil, nil, nil, cName)
+	// Create a filereader
+	dockerFileReader, err := os.Open(dockerfile)
 	if err != nil {
 		return err
 	}
-	fmt.Printf("Starting Container %s, id: %s\n", cName, id[:5])
-	err = Start(cli, ctx, id)
+
+	// Read the actual Dockerfile
+	readDockerFile, err := io.ReadAll(dockerFileReader)
 	if err != nil {
 		return err
 	}
+
+	// Make a TAR header for the file
+	tarHeader := &tar.Header{
+		Name: dockerfile,
+		Size: int64(len(readDockerFile)),
+	}
+
+	// Writes the header described for the TAR file
+	err = tw.WriteHeader(tarHeader)
+	if err != nil {
+		return err
+	}
+
+	// Writes the dockerfile data to the TAR file
+	_, err = tw.Write(readDockerFile)
+	if err != nil {
+		return err
+	}
+
+	dockerFileTarReader := bytes.NewReader(buf.Bytes())
+
+	// Define the build options to use for the file
+	// https://godoc.org/github.com/docker/docker/api/types#ImageBuildOptions
+	buildOptions := types.ImageBuildOptions{
+		Context:    dockerFileTarReader,
+		Dockerfile: dockerfile,
+		Remove:     true,
+		Tags:       tags,
+	}
+
+	// Build the actual image
+	imageBuildResponse, err := d.Client.ImageBuild(
+		ctx,
+		dockerFileTarReader,
+		buildOptions,
+	)
+
+	if err != nil {
+		return err
+	}
+
+	// Read the STDOUT from the build process
+	defer imageBuildResponse.Body.Close()
+	_, err = io.Copy(os.Stdout, imageBuildResponse.Body)
+	if err != nil {
+		return err
+	}
+
 	return nil
 }
-//type ExecResult struct {
-//	StdOut string
-//	StdErr string
-//	ExitCode int
-//}
 
-//func PostgresReady(cli *client.Client, ctx context.Context, cID string) (ExecResult,error) {
-//	var execResult ExecResult
-//	//ecfg := types.ExecConfig{
-//	//	AttachStderr: true,
-//	//	AttachStdout: true,
-//	//	Cmd: []string{"pg_isready"},
-//	//}
-//	//create, err := cli.ContainerExecCreate(ctx, cID, ecfg)
-//	//if err != nil {
-//	//	return execResult, err
-//	//}
-//	//err = cli.ContainerExecStart(ctx, create.ID, types.ExecStartCheck{})
-//	//if err != nil {
-//	//	return ExecResult{}, err
-//	//}
-//
-//	//return execResult, nil
-//
-//	resp, err := cli.ContainerExecAttach(ctx, cID, types.ExecStartCheck{})
-//	if err != nil {
-//		return execResult, err
-//	}
-//	defer resp.Close()
-//
-//	//read the output
-//	var outBuf, errBuf bytes.Buffer
-//	outputDone := make(chan error)
-//
-//	go func() {
-//		// StdCopy demultiplexes the stream into two buffers
-//		_, err = stdcopy.StdCopy(&outBuf, &errBuf, resp.Reader)
-//		outputDone <- err
-//	}()
-//
-//	select {
-//	case err := <-outputDone:
-//		if err != nil {
-//			return execResult, err
-//		}
-//		break
-//
-//	case <-ctx.Done():
-//		return execResult, ctx.Err()
-//	}
-//
-//	stdout, err := io.ReadAll(&outBuf)
-//	if err != nil {
-//		return execResult, err
-//	}
-//	stderr, err := io.ReadAll(&errBuf)
-//	if err != nil {
-//		return execResult, err
-//	}
-//
-//	res, err := cli.ContainerExecInspect(ctx, cID)
-//	if err != nil {
-//		return execResult, err
-//	}
-//
-//	execResult.ExitCode = res.ExitCode
-//	execResult.StdOut = string(stdout)
-//	execResult.StdErr = string(stderr)
-//	return execResult, nil
-//
-//}
-type ExecResult struct {
-	ExitCode  int
-	outBuffer *bytes.Buffer
-	errBuffer *bytes.Buffer
+func (d *Manager) GetLatestCachedImgVersion(ctx context.Context, imgName string) (types.ImageSummary, error) {
+	images, err := d.Client.ImageList(ctx, types.ImageListOptions{All: true})
+	var latestTag string
+	var latestImg types.ImageSummary
+	if err != nil {
+		return latestImg, err
+	}
+
+	for _, i := range images {
+		for _, tag := range i.RepoTags {
+			if s.Contains(tag, imgName) && latestTag < tag {
+				fmt.Printf("%v\n", tag)
+				latestTag = tag
+				latestImg = i
+			}
+		}
+	}
+
+	return latestImg, nil
 }
 
-func Exec(ctx context.Context, cli client.APIClient, id string, cmd []string) (ExecResult, error) {
-	// prepare exec
-	execConfig := types.ExecConfig{
+func (d *Manager) Exec(ctx context.Context, containerName string, cmd []string) {
+	//containerName := "pokemon-postgres"
+
+	//// Command to execute inside the Docker container
+	//cmd := []string{"ls", "-l"}
+
+	// Create a Docker client with specified API version
+	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
+	if err != nil {
+		fmt.Println("Error creating Docker client:", err)
+		return
+	}
+
+	containerID, err := d.GetContainerID(ctx, cli, containerName)
+	if err != nil {
+		fmt.Println("Error getting container ID:", err)
+		return
+	}
+
+	execCreateResp, err := cli.ContainerExecCreate(ctx, containerID, types.ExecConfig{
+		Cmd:          cmd,
 		AttachStdout: true,
 		AttachStderr: true,
-		Cmd:          cmd,
-	}
-	cresp, err := cli.ContainerExecCreate(ctx, id, execConfig)
+		Tty:          false,
+	})
 	if err != nil {
-		return ExecResult{}, err
+		fmt.Println("Error creating exec instance:", err)
+		return
 	}
-	execID := cresp.ID
 
-	// run it, with stdout/stderr attached
-	aresp, err := cli.ContainerExecAttach(ctx, execID, types.ExecStartCheck{})
+	resp, err := cli.ContainerExecAttach(ctx, execCreateResp.ID, types.ExecStartCheck{
+		Detach: false,
+		Tty:    false,
+	})
 	if err != nil {
-		return ExecResult{}, err
+		fmt.Println("Error attaching to exec instance:", err)
+		return
 	}
-	defer aresp.Close()
+	defer resp.Close()
 
-	// read the output
-	var outBuf, errBuf bytes.Buffer
-	outputDone := make(chan error)
+	// Print the command output
+	output, err := io.ReadAll(resp.Reader)
+	if err != nil {
+		fmt.Println("Error reading exec instance output:", err)
+		return
+	}
 
-	go func() {
-		// StdCopy demultiplexes the stream into two buffers
-		_, err = stdcopy.StdCopy(&outBuf, &errBuf, aresp.Reader)
-		outputDone <- err
-	}()
+	fmt.Printf("Output:\n%s\n", output)
 
-	select {
-	case err := <-outputDone:
-		if err != nil {
-			return ExecResult{}, err
+	execInspectResp, err := cli.ContainerExecInspect(ctx, execCreateResp.ID)
+	if err != nil {
+		fmt.Println("Error inspecting exec instance:", err)
+		return
+	}
+
+	fmt.Printf("\nExit Code: %d\n", execInspectResp.ExitCode)
+
+}
+
+func (d *Manager) GetContainerID(ctx context.Context, cli *client.Client, containerName string) (string, error) {
+	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{All: true})
+	if err != nil {
+		return "", err
+	}
+
+	for _, tainer := range containers {
+		for _, name := range tainer.Names {
+			if s.Contains(name, containerName) {
+				return tainer.ID, nil
+			}
 		}
-		break
-
-	case <-ctx.Done():
-		return ExecResult{}, ctx.Err()
 	}
 
-	// get the exit code
-	iresp, err := cli.ContainerExecInspect(ctx, execID)
-	if err != nil {
-		return ExecResult{}, err
-	}
-
-	return ExecResult{ExitCode: iresp.ExitCode, outBuffer: &outBuf, errBuffer: &errBuf}, nil
-}
-// Stdout returns stdout output of a command run by Exec()
-func (res *ExecResult) Stdout() string {
-	return res.outBuffer.String()
-}
-
-// Stderr returns stderr output of a command run by Exec()
-func (res *ExecResult) Stderr() string {
-	return res.errBuffer.String()
-}
-
-// Combined returns combined stdout and stderr output of a command run by Exec()
-func (res *ExecResult) Combined() string {
-	return res.outBuffer.String() + res.errBuffer.String()
+	return "", fmt.Errorf("tainer not found: %s", containerName)
 }

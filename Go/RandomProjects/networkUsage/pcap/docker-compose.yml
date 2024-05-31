@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  network-capture:
+    build: .
+    container_name: network-capture
+    restart: always

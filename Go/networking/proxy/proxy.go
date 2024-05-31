@@ -31,7 +31,6 @@ func NewProxy(frontendAddr, backendAddr net.Addr) (Proxy, error) {
 	case *net.TCPAddr:
 		return NewTCPProxy(frontendAddr.(*net.TCPAddr), backendAddr.(*net.TCPAddr))
 	default:
-		panic(fmt.Errorf("Unsupported protocol"))
+		return nil, fmt.Errorf("Unsupported protocol")
 	}
 }
-

@@ -1,0 +1,17 @@
+loglevel: debug
+displayConfig: true
+
+db:
+  host: localhost
+  user: postgres
+  password: pokemon
+  name: Pokemon
+  ssl: disable
+
+container:
+  cname: pokemon_postrgres
+  port: 5432
+
+image:
+  name: postgres
+  version: 16.0

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Releases</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Game Releases</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Game</th>
+                <th>Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game_name, release_date in game_releases.items() %}
+            <tr>
+                <td>{{ game_name }}</td>
+                <td>{{ release_date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

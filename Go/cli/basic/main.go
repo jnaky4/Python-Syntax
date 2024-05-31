@@ -4,10 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"os"
-
 )
 
-func main(){
+func main() {
 	argsWithProg := os.Args
 	argsWithoutProg := os.Args[1:]
 
@@ -16,7 +15,7 @@ func main(){
 	fmt.Println(argsWithoutProg)
 	fmt.Println(arg)
 
-	switch len(os.Args){
+	switch len(os.Args) {
 	case 2:
 		fmt.Println(os.Args[1:])
 	case 3:
@@ -26,7 +25,7 @@ func main(){
 	}
 
 }
-func flagParse(args []string ){
+func flagParse(args []string) {
 	pPtr := flag.String("p", "p", "port forwarding")
 	flag.Parse()
 	fmt.Println("Port PTR: ", *pPtr)

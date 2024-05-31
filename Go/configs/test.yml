@@ -1,0 +1,11 @@
+list:
+  key1: val1
+  key2: val2
+  key3:
+    - list1
+    - list2
+    - list3
+test:
+  - item 1
+  - item 2
+  - item 3
