@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    justify-content: space-between;
+}
+.dayCell{
+    background-color: mediumseagreen;
+}
+
+.calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.month {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.days {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.days td {
+    padding: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.text-areas textarea {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 10px;
+}

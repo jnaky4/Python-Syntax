@@ -1,96 +1,198 @@
 package pokemon_postgres
 
 import (
+	m "Go/models"
 	t "Go/time_completion"
 	"database/sql"
-	"strconv"
+	"errors"
+	"fmt"
+	_ "github.com/go-pg/pg/v10/orm"
+	//sq "github.com/Masterminds/squirrel"
+	_ "github.com/lib/pq"
+	//"os"
 )
 
-type Pokemon struct {
-	//gorm.Model
-	Dexnum       int
-	Name         string
-	Type1        string
-	Type2        string
-	Stage        string
-	Evolve_level int
-	Gender_ratio string
-	Height       float32
-	Weight       float32
-	Description  string
-	Category     string
-	Lvl_speed    float32
-	Base_exp     int
-	Catch_rate   int
+type pgModel struct {
+	DB *sql.DB
 }
 
-//func (Pokemon) TableName() string {
-//	return "Pokedex"
-//}
+type Models struct {
+	Pokemon pgModel
+}
 
-//func GormAllPokemon(db *gorm.DB)(string, error){
-//	defer t.Timer()()
-//	var poke = Pokemon{}
-//	allPokemon := db.Find(&poke)
-//	if allPokemon.Error != nil {
-//		return "", allPokemon.Error
-//	}
-//	println(allPokemon.RowsAffected)
-//
-//	return fmt.Sprintf("%+v\n", allPokemon), nil
-//}
+func NewModels(db *sql.DB) Models {
+	return Models{
+		Pokemon: pgModel{DB: db},
+	}
+}
 
-//func GormAPokemon(Dexnum int, db *gorm.DB)(string, error){
-//	defer t.Timer()()
-//	var poke = Pokemon{Dexnum: Dexnum}
-//
-//	resultPoke := db.First(&poke)
-//	if resultPoke.Error != nil {
-//		return "", resultPoke.Error
-//	}
-//
-//
-//	return fmt.Sprintf("%+v\n", poke), nil
-//}
-
-func GetAllPokemon(db *sql.DB) ([]Pokemon, error) {
-	defer t.FunctionTimer(GetAllPokemon)()
-	rows, err := db.Query(`SELECT * FROM "Pokedex";`)
-	defer rows.Close()
+func (p pgModel) Insert(poke m.Pokemon) error {
+	//defer t.FunctionTimer(p.Insert)()
+	query := `
+	INSERT INTO pokemon (
+	                     dexnum, 
+	                     name, 
+	                     type1, 
+	                     type2, 
+	                     stage, 
+	                     evolve_level, 
+	                     gender_ratio, 
+	                     height, 
+	                     weight, 
+	                     description, 
+	                     category, 
+	                     lvl_speed, 
+	                     base_exp, 
+	                     catch_rate
+	                     )
+	VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)`
+	args := []interface{}{poke.Dexnum, poke.Name, poke.Type1, poke.Type2, poke.Stage, poke.EvolveLevel, poke.GenderRatio,
+		poke.Height, poke.Weight, poke.Description, poke.Category, poke.LvlSpeed, poke.BaseExp, poke.CatchRate}
+	_, err := p.DB.Exec(query, args...)
 	if err != nil {
-		println("Query Fail")
+		return err
+	}
+	return nil
+
+}
+
+func (p pgModel) Get(dexnum int, count int) (allPoke []m.Pokemon, err error) {
+	defer t.FunctionTimer(p.Get)()
+	var query string
+	var rows *sql.Rows
+	tn := "pokemon"
+
+	if dexnum == 0 {
+		query = fmt.Sprintf(`SELECT * FROM %s `, tn)
+	} else if count == 0 {
+		query = fmt.Sprintf(`SELECT * FROM %s WHERE dexnum=%d`, tn, dexnum)
+	} else {
+		query = fmt.Sprintf(`SELECT * FROM %s WHERE dexnum BETWEEN %d AND %d`, tn, dexnum, count)
+	}
+
+	rows, err = p.DB.Query(query)
+	if err != nil {
 		return nil, err
 	}
-	var poke Pokemon
-	var allpoke []Pokemon
+	defer rows.Close()
 
+	var poke m.Pokemon
 	for rows.Next() {
 		//err := rows.Scan(&poke) splat operator?
-		err := rows.Scan(&poke.Dexnum, &poke.Name, &poke.Type1, &poke.Type2, &poke.Stage, &poke.Evolve_level, &poke.Gender_ratio, &poke.Height, &poke.Weight, &poke.Description, &poke.Category, &poke.Lvl_speed, &poke.Base_exp, &poke.Catch_rate)
+		err = rows.Scan(
+			&poke.Dexnum,
+			&poke.Name,
+			&poke.Type1,
+			&poke.Type2,
+			&poke.Stage,
+			&poke.EvolveLevel,
+			&poke.GenderRatio,
+			&poke.Height,
+			&poke.Weight,
+			&poke.Description,
+			&poke.Category,
+			&poke.LvlSpeed,
+			&poke.BaseExp,
+			&poke.CatchRate,
+		)
 		if err != nil {
-			println("Scan fail")
-			return nil, err
+			switch {
+			case errors.Is(err, sql.ErrNoRows):
+				return nil, errors.New("record not found")
+			default:
+				return nil, err
+			}
+
 		}
-		allpoke = append(allpoke, poke)
+		allPoke = append(allPoke, poke)
 	}
-	return allpoke, nil
+	return allPoke, nil
 }
 
-func GetAPokemon(dexnum string, db *sql.DB) (*Pokemon, error) {
-	defer t.FunctionTimer(GetAPokemon)()
-	atoi, err := strconv.Atoi(dexnum)
-	if err != nil || atoi < 1 {
-		println("Invalid Dexnum")
-		return nil, err
+func (p pgModel) Update(poke m.Pokemon) error {
+	query := `
+		UPDATE Pokemon
+		SET Id = $1,
+		Name = $2,
+		Type1 = $3,
+		Type2 = $4,
+		Stage = $5,
+		EvolveLevel = $6,
+		GenderRatio = $7,
+		Height = $8,
+		Weight = $9,
+		Description = $10,
+		Category = $11,
+		LvlSpeed = $12,
+		BaseExp = $13,
+		CatchRate = $14,
+		WHERE dexnum = $1
+	`
+	args := []interface{}{
+		poke.Dexnum,
+		poke.Name,
+		poke.Type1,
+		poke.Type2,
+		poke.Stage,
+		poke.EvolveLevel,
+		poke.GenderRatio,
+		poke.Height,
+		poke.Weight,
+		poke.Description,
+		poke.Category,
+		poke.LvlSpeed,
+		poke.BaseExp,
+		poke.CatchRate,
 	}
-	var poke Pokemon
-	query := `SELECT * FROM "Pokedex" WHERE Dexnum=` + dexnum
-	rows := db.QueryRow(query)
+	return p.DB.QueryRow(query, args...).Scan()
+}
 
-	err = rows.Scan(&poke.Dexnum, &poke.Name, &poke.Type1, &poke.Type2, &poke.Stage, &poke.Evolve_level, &poke.Gender_ratio, &poke.Height, &poke.Weight, &poke.Description, &poke.Category, &poke.Lvl_speed, &poke.Base_exp, &poke.Catch_rate)
+func (p pgModel) Delete(dexnum int) error {
+	query := `
+	DELETE FROM Pokemon
+	Where Id = $1
+	`
+	r, err := p.DB.Exec(query, dexnum)
 	if err != nil {
-		println("Scan fail")
-		return nil, err
+		return err
 	}
-	return &poke, nil
+	affected, err := r.RowsAffected()
+	if err != nil {
+		return err
+	}
+	if affected == 0 {
+		return errors.New("record not found")
+	}
+	return nil
+}
+
+func (p pgModel) Len(tn string) (size int, err error) {
+	err = p.DB.QueryRow(fmt.Sprintf(`SELECT COUNT(*) FROM ` + tn)).Scan(&size)
+	return
+}
+
+func (p pgModel) CreatePokemonTable() error {
+	tn := "pokemon"
+	query := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s ("+
+		"dexnum INT NOT NULL PRIMARY KEY, "+
+		"name TEXT NOT NULL,"+
+		"type1 TEXT NOT NULL,"+
+		"type2 TEXT,"+
+		"stage TEXT NOT NULL,"+
+		"evolve_level INT,"+
+		"gender_ratio TEXT NOT NULL,"+
+		"height FLOAT NOT NULL,"+
+		"weight FLOAT NOT NULL,"+
+		"description TEXT NOT NULL,"+
+		"category TEXT NOT NULL,"+
+		"lvl_speed TEXT NOT NULL,"+
+		"base_exp INT NOT NULL,"+
+		"catch_rate INT NOT NULL"+
+		")", tn)
+	_, err := p.DB.Exec(query)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }

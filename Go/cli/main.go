@@ -7,15 +7,14 @@ import (
 	"os/exec"
 )
 
-func main(){
+func main() {
 
 	singleCommand()
 	//pipeCommand()
 
-
 }
 
-func singleCommand(){
+func singleCommand() {
 	//windows
 	cmd1 := exec.Command("cmd", "/C", "dir")
 	//mac
@@ -24,7 +23,7 @@ func singleCommand(){
 	println(string(out))
 }
 
-func pipeCommand(){
+func pipeCommand() {
 	//windows
 	//fuck windows
 	//mac

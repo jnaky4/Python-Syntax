@@ -1,0 +1,22 @@
+version: "1.0"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5435:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=pokemon
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=Pokemon
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

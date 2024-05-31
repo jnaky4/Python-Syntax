@@ -1,0 +1,3 @@
+grafana:
+  port: 4444
+  version: latest

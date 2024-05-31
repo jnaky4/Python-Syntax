@@ -30,23 +30,16 @@ https://docs.sqlalchemy.org/en/14/core/engines.html#database-urls
 
 # Postgres: Currently Used
 # Driver :// user : password @ hostname(uri) : port / Database
-engine = create_engine('postgresql+psycopg2://postgres:pokemon@localhost:5432/Pokemon')
+engine = create_engine('postgresql://postgres:pokemon@localhost/Pokemon')
 # engine = create_engine("host=localhost port=%s password=%s user=%s dbname=%s sslmode=disable")
 
 # My SQL Example
 # engine = create_engine('mysql+pymydsql://root@localhost/mydb')
 
-
-# grabs route correctly independent of OS routing:
-#   Linux/Mac: ..//CSV//Pokemon.csv
-#   Windows: ..\\CSV\\Pokemon.csv
-
-
 cwd = os.getcwd()
 pokemon_csv = os.path.join(cwd, "Pokemon.csv")
 base_stats_csv = os.path.join(cwd, "Base_Stats.csv")
 routes_csv = os.path.join(cwd, "Routes.csv")
-
 
 # explanation of csv reader
 # https://www.delftstack.com/howto/python/python-csv-to-dictionary/
@@ -77,7 +70,7 @@ base = declarative_base()
 class Pokemon(base):
     # A class using Declarative at a minimum needs a __tablename__ attribute,
     # and at least one Column which is part of a primary key
-    __tablename__ = 'Pokedex'
+    __tablename__ = 'pokemon'
     dexnum = Column(Integer, primary_key=True)
     # some databases require len of stings
     name = Column(String(11), nullable=False)

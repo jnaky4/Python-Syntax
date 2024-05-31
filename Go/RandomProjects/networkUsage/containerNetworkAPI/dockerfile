@@ -1,0 +1,39 @@
+# Use Golang image as the base image
+FROM golang:alpine AS builder
+
+# Set the current working directory inside the container
+WORKDIR /app
+
+# Install required packages
+# RUN apk update && \
+#     apk add --no-cache git libpcap-dev
+
+# Copy the Go program source code into the container
+COPY . .
+
+# Explicitly disable Go modules
+ENV GO111MODULE=off
+
+# # Initialize Go module
+# RUN go mod init
+#
+# # Tidy Go module
+# RUN go mod tidy
+
+# Build the Go program
+RUN go build -o network_monitor .
+
+# Use a minimal Alpine Linux image for the final container
+FROM alpine:latest
+
+# Set the current working directory inside the container
+WORKDIR /app
+
+# Copy the built executable from the previous stage
+COPY --from=builder /app/network_monitor .
+
+# Expose the port your application listens on
+EXPOSE 8080
+
+# Run the Go program
+CMD ["./network_monitor"]

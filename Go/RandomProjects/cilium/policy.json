@@ -1,0 +1,23 @@
+[{
+  "labels": [{"key": "testKey", "value": "testValue"}],
+  "endpointSelector": {"matchLabels":{"app":"myService"}},
+  "egress": [
+    {"toCIDR": ["20.1.1.1/32"]},
+    {"toCIDRSet": [{ "cidr": "10.0.0.0/8", "except": ["10.96.0.0/12"] }] }
+  ]
+}]
+
+
+{
+  "endpointSelector":{"matchLabels":{"any:app":"myService"}},
+  "ingress":[{}],
+  "egress":[
+    {
+      "toCIDR":["10.0.0.0/8"],
+      "toCIDRSet":[{"cidr":"20.1.1.1/32"}]
+    }
+  ],
+  "labels":[{"key":"app","value":"myService","source":"unspec"}],
+  "description":"test"}
+}
+

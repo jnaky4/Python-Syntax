@@ -9,8 +9,8 @@ import (
 // TCPProxy is a proxy for TCP connections. It implements the Proxy interface to
 // handle TCP traffic forwarding between the frontend and backend addresses.
 type TCPProxy struct {
-	Logger   logger
-	listener *net.TCPListener
+	Logger       logger
+	listener     *net.TCPListener
 	frontendAddr *net.TCPAddr
 	backendAddr  *net.TCPAddr
 }
@@ -103,4 +103,3 @@ func (proxy *TCPProxy) FrontendAddr() net.Addr { return proxy.frontendAddr }
 
 // BackendAddr returns the TCP proxied address.
 func (proxy *TCPProxy) BackendAddr() net.Addr { return proxy.backendAddr }
-

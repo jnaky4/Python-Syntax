@@ -9,15 +9,15 @@ import (
 	"os"
 )
 
-//p 8080:80
-//Map TCP port 80 in the container to port 8080 on the Docker host.
-//p 192.168.1.100:8080:80
-//Map TCP port 80 in the container to port 8080 on the Docker host for connections to host IP 192.168.1.100.
-//p 8080:80/udp
-//Map UDP port 80 in the container to port 8080 on the Docker host.
-//p 8080:80/tcp -p 8080:80/udp
-//Map TCP port 80 in the container to TCP port 8080 on the Docker host,
-//and map UDP port 80 in the container to UDP port 8080 on the Docker host.
+// p 8080:80
+// Map TCP port 80 in the container to port 8080 on the Docker host.
+// p 192.168.1.100:8080:80
+// Map TCP port 80 in the container to port 8080 on the Docker host for connections to host ip 192.168.1.100.
+// p 8080:80/udp
+// Map UDP port 80 in the container to port 8080 on the Docker host.
+// p 8080:80/tcp -p 8080:80/udp
+// Map TCP port 80 in the container to TCP port 8080 on the Docker host,
+// and map UDP port 80 in the container to UDP port 8080 on the Docker host.
 func main() {
 	fmt.Println(os.Args[2])
 	if len(os.Args) < 3 {
@@ -44,7 +44,6 @@ func main() {
 		//println("PortMapping: ", portMappings)
 		//println("bindings: ", bindings)
 
-
 		parts := strings.SplitN(portArg, "/", 2)
 		if len(parts) == 2 && len(parts[1]) != 0 {
 			portArg = parts[0]
@@ -64,7 +63,6 @@ func main() {
 		//}
 		//println("Error: No public port '%s' published for %s", natPort, opts.container)
 
-
 		ports := strings.Split(portArg, ":")
 
 		argsIndex := 0
@@ -74,7 +72,7 @@ func main() {
 		var portForward int
 
 		if len(ports) == 3 {
-			//Local IP specified
+			//Local ip specified
 			localIP = ports[0]
 			argsIndex = 1
 		}

@@ -1,0 +1,7 @@
+loglevel: debug
+fiber:
+  port: 3001
+  env: dev
+cors:
+  allowHeaders: "Origin, Content-Type, Accept"
+  allowOrigins: "http://localhost:3000"

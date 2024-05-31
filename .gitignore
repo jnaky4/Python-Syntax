@@ -2,5 +2,6 @@
 *.pyc
 *.iml
 *.idea
+.DS_Store
 Python/venv/*
 Groovy/out/*

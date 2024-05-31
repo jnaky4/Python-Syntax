@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  network-monitor:
+    build: .
+    container_name: network-monitor
+    restart: always
+    ports:
+      - "8080:8080"

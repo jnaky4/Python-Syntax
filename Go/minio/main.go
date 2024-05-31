@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 )
 
-func main(){
+func main() {
 	endpoint := "localhost:9000"
 	accessKeyID := "poke"
 	secretAccessKey := "pokemon123"
@@ -24,11 +24,10 @@ func main(){
 	if err != nil {
 		return
 	}
-	path := filepath.Join(getwd,filePath)
+	path := filepath.Join(getwd, filePath)
 	println(path)
 	err = minioClient.FGetObject(context.Background(), bucket, "pokemon\\"+filePath, path, minio.GetObjectOptions{})
-	if err != nil{
+	if err != nil {
 		println(err.Error())
 	}
-
 }

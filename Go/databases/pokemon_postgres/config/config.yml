@@ -1,7 +1,0 @@
-loglevel: debug
-db:
-  host: localhost
-  port: 5432
-  user: postgres
-  password: pokemon
-  dbname: Pokemon
