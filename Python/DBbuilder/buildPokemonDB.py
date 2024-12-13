@@ -1,5 +1,5 @@
+import sqlalchemy
 from sqlalchemy import create_engine, Column, Integer, String, Float, MetaData, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship, backref
 import pandas as pd
 import os
@@ -8,7 +8,16 @@ from docker.errors import APIError, NotFound
 import time
 from typing import Optional, Dict
 
-docker_client = docker.DockerClient('unix:///Users/Z004X7X/.colima/default/docker.sock')
+
+db_password = "pokemon"
+db_user = "postgres"
+db_port = "5432"
+db_host = "localhost"
+db_name = "Pokemon"
+
+
+docker_client = docker.from_env()
+# docker_client = docker.DockerClient('unix:///Users/Z004X7X/.colima/default/docker.sock')
 
 # docker_client.containers.run("postgres", detach=True, ports=[5432])
 
@@ -30,7 +39,9 @@ https://docs.sqlalchemy.org/en/14/core/engines.html#database-urls
 
 # Postgres: Currently Used
 # Driver :// user : password @ hostname(uri) : port / Database
-engine = create_engine('postgresql://postgres:pokemon@localhost/Pokemon')
+# engine = create_engine('postgresql://postgres:pokemon@localhost/Pokemon')
+
+engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}')
 # engine = create_engine("host=localhost port=%s password=%s user=%s dbname=%s sslmode=disable")
 
 # My SQL Example
@@ -57,14 +68,12 @@ base_stats_dict = base_stats_items.transpose().to_dict(orient='series')
 # route_dict = route_item.transpose().to_dict(orient='series')
 
 
-
-
 """
 The Engine, when first returned by create_engine(), 
 has not actually tried to connect to the database yet; 
 that happens only the first time it is asked to perform a task against the database.
 """
-base = declarative_base()
+base = sqlalchemy.orm.declarative_base()
 
 
 class Pokemon(base):
@@ -294,8 +303,8 @@ def create_postgres_container(container_name: str, image_name: str, timeout: int
         image_name,
         detach=True,
         name=container_name,
-        ports={'5432/tcp': 5432},
-        environment={"POSTGRES_PASSWORD": "pokemon", "POSTGRES_DB": "Pokemon"}
+        ports={'5432/tcp': db_port},
+        environment={"POSTGRES_PASSWORD": db_password, "POSTGRES_DB": db_name}
     )
 
     """
@@ -315,40 +324,55 @@ def create_postgres_container(container_name: str, image_name: str, timeout: int
 
     print(f"Container {container} Ready")
 
+
 def auto_start_container(image_name: str, container_name: str):
     # How many seconds we are willing to wait for container to run
     timeout = 10
 
-    # does container exists on system
-    container_already_exists = container_exists(container_name)
-
-    if container_already_exists:
-        # is container running already?
-        container_running = is_container_running(container_name)
-        # container is already running on system, do we want to restart container? or do nothing?
-        if container_running:
-            print(f"Container Already Running: {container_name}")
+    # check and pull image
+    print(f"Checking if image '{image_name}' exists...")
+    if not image_exists(image_name):
+        print(f"Image '{image_name}' not found. Attempting to pull...")
+        if not pull_image(image_name):
+            print(f"Failed to pull image '{image_name}'. Please check the image name.")
             return
-        # container isn't running, run container
-        else:
-            start_container(container_name)
 
-    # container doesnt exist, check if image exists
-    else:
-        print(f"Image Name: {image_name}")
-        does_image_exist = image_exists(image_name)
-        print(f"exists: {does_image_exist}")
-        if not does_image_exist:
-            print(f"Pulling Image {image_name}, may take a minute")
-            image_id = pull_image(image_name)
-            if image_id is None:
-                print("Image does not exist as a repository to pull from, try another name")
-                return
-        try:
-            if image_name == "postgres":
-                create_postgres_container(container_name, image_name, timeout)
-        except Exception as e:
-            print(f"Exception: {e}")
+    # delete old container
+    try:
+        # Check if the container with the same name already exists and remove it
+        existing_container = docker_client.containers.get(container_name)
+        existing_container.remove(force=True)
+        print(f"Existing container '{container_name}' found and removed.")
+    except docker.errors.NotFound:
+        pass  # Container does not exist, proceed to run a new one
+
+    except docker.errors.APIError as e:
+        print(f"Error while checking existing container: {e}")
+        return
+
+    try:
+        if image_name == "postgres":
+            create_postgres_container(container_name, image_name, timeout)
+    except Exception as e:
+        print(f"Exception: {e}")
+
+    container_running = is_container_running(container_name)
+    if not container_running:
+        start_container(container_name)
+
+    # start_container(container_name)
+    #
+    #
+    # print(f"Image Name: {image_name}")
+    # does_image_exist = image_exists(image_name)
+    # print(f"exists: {does_image_exist}")
+    # if not does_image_exist:
+    #     print(f"Pulling Image {image_name}, may take a minute")
+    #     image_id = pull_image(image_name)
+    #     if image_id is None:
+    #         print("Image does not exist as a repository to pull from, try another name")
+    #         return
+
 
 
 def image_exists(image_name: str) -> Optional[bool]:
@@ -453,4 +477,4 @@ def is_container_running(container_name: str) -> Optional[bool]:
 
 if __name__ == "__main__":
     auto_start_container("postgres", "pokemon-postgres")
-    reset_database()
+    # reset_database()
