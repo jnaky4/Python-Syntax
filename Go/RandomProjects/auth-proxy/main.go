@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 )
+
 type AuthorizationV1 struct {
 	Name           string   `json:"name"`
 	Authorizations []string `json:"authorizations"`
@@ -17,7 +18,7 @@ type AuthorizationV2 struct { //app-tap-vessel - ldap group for admin
 	Applications []AuthorizationV1 `json:"applications"`
 	Admin        bool              `json:"admin"`
 }
-type Access struct{
+type Access struct {
 	READ  []string `json:"READ"`
 	WRITE []string `json:"WRITE"`
 }
@@ -29,7 +30,7 @@ type Permission struct {
 	Permissions    Access `json:"permissions"`
 }
 
-func main(){
+func main() {
 	permissions, err := GetUserPermissions([]string{"app-tap-spin-price-execution-ro"})
 	if err != nil {
 		fmt.Printf("%s\n", err.Error())
@@ -57,7 +58,7 @@ func main(){
 //
 //func fetchPermissions() ([]Permission, error){
 //	var permissions []Permission
-//	get, err := http.Select("https://storespinnaker-front50.prod.target.com/permissions/applications")
+//	get, err := http.Select("")
 //	if err != nil {
 //		fmt.Printf("%s\n", err.Error())
 //		return nil, err
@@ -282,7 +283,7 @@ func mergeAuthV1Lists(existing []AuthorizationV1, adding []AuthorizationV1) []Au
 				}
 			}
 		}
-		if !found{
+		if !found {
 			existing = append(existing, a)
 		}
 	}

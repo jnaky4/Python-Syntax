@@ -1,10 +1,13 @@
 package time_completion
 
 import (
+	"Go/cli/colors"
+	tc "Go/const/terminalColors"
 	"fmt"
 	"github.com/rs/zerolog"
 	"reflect"
 	"runtime"
+	"strconv"
 	"sync"
 	"time"
 )
@@ -75,7 +78,14 @@ func Timer() func() {
 	start := time.Now()
 	return func() {
 		fmt.Printf("elapsed: %s\n", time.Since(start))
+		//fmt.Printf(colors.SetColor(fmt.Sprintf("%s\n", time.Since(start)), tc.Salmon))
 	}
+}
+
+func TimeFunction(task func()) time.Duration {
+	start := time.Now()
+	task()
+	return time.Since(start)
 }
 
 func FunctionTimer(i interface{}) func() {
@@ -92,5 +102,115 @@ func LogTimer(log *zerolog.Logger, funcInfo string) func() {
 	return func() {
 		//log.Info().Msgf("%s time elapes: %s", funcName, time.Since(start))
 		log.Info().Msgf("%s time elapsed: %s", funcInfo, time.Since(start))
+	}
+}
+
+// todo multithread the calls, to speed up benchmarking
+func TrackFunction(fn func(), repeat int) {
+	// Ensure times is positive
+	if repeat <= 0 {
+		return
+	}
+
+	var totalTime time.Duration
+
+	for i := 0; i < repeat; i++ {
+		start := time.Now()
+
+		fn()
+
+		elapsed := time.Since(start)
+		fmt.Printf("Elapsed -> %s\n", colors.SetColor(fmt.Sprintf("%s", elapsed), tc.Salmon))
+		totalTime += elapsed
+	}
+
+	averageTime := totalTime / time.Duration(repeat)
+	fmt.Printf(" %dns/%d=%s\n", totalTime, time.Duration(repeat), averageTime)
+
+	// Print average time
+	fmt.Printf("Function ran %s times, average time: %s\n", colors.SetColor(fmt.Sprintf("%d", repeat), tc.Salmon), colors.SetColor(fmt.Sprintf("%v", averageTime), tc.Salmon))
+}
+
+type TimeEntry struct {
+	durations []time.Duration // Store each individual duration
+}
+
+type TimerTracker struct {
+	sync.Mutex
+	times map[string]*TimeEntry
+}
+
+func NewTimerTracker() *TimerTracker {
+	return &TimerTracker{
+		times: make(map[string]*TimeEntry),
+	}
+}
+
+func (tracker *TimerTracker) Track(key string, task func()) {
+	start := time.Now()
+	task()                         // Run the function being tracked
+	timeSpent := time.Since(start) // Get the elapsed time for this run
+
+	tracker.Lock()
+	defer tracker.Unlock()
+
+	// Ensure entry exists in the map
+	entry, exists := tracker.times[key]
+	if !exists {
+		entry = &TimeEntry{}
+		tracker.times[key] = entry
+	}
+
+	// Append the individual execution time to the slice
+	entry.durations = append(entry.durations, timeSpent)
+}
+
+func (tracker *TimerTracker) Report() {
+	tracker.Lock()
+	defer tracker.Unlock()
+
+	for key, entry := range tracker.times {
+
+		totalTime := time.Duration(0)
+		for _, d := range entry.durations {
+			//fmt.Printf("%s: %s\n", key, colors.SetColor(FormatDuration(d.Nanoseconds()), tc.Salmon))
+			totalTime += d
+		}
+
+		averageTime := float64(totalTime) / float64(len(entry.durations))
+
+		fmt.Printf("Average %s: Count: %d -> %s\n", colors.SetColor(FormatDuration(int64(averageTime)), tc.Salmon), len(entry.durations), colors.SetColor(key, tc.Mint))
+	}
+}
+
+//func FormatDuration(duration int64) string {
+//	switch {
+//	case duration < 1000:
+//		return strconv.FormatInt(duration, 10) + "ns"
+//	case duration < 1000000:
+//		return strconv.FormatInt(duration/1000, 10) + "us"
+//	case duration < 1000000000:
+//		return strconv.FormatInt(duration/1000000, 10) + "ms"
+//	default:
+//		return strconv.FormatInt(duration/1000000000, 10) + "s"
+//	}
+//}
+
+func FormatDuration(duration int64) string {
+	switch {
+	case duration < 1000:
+		return strconv.FormatInt(duration, 10) + "ns"
+	case duration < 1000000:
+		// Convert to microseconds and round to 2 decimal places
+		us := float64(duration) / 1000
+		return fmt.Sprintf("%.2fus", us)
+	case duration < 1000000000:
+		// Convert to milliseconds and round to 2 decimal places
+		ms := float64(duration) / 1000000
+		return fmt.Sprintf("%.2fms", ms)
+	default:
+		// Convert to seconds and round to 2 decimal places
+		sec := float64(duration) / 1000000000
+		return fmt.Sprintf("%.2fs", sec)
 	}
 }

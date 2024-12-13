@@ -5,3 +5,5 @@
 .DS_Store
 Python/venv/*
 Groovy/out/*
+Go/t/*
+Go/test/*
